@@ -4,7 +4,7 @@
   "description": "",
   "main": "1-conhecimento-inicial.js",
   "scripts": {
-    "dev": "nodemon ./index.js",
+    "dev": "nodemon ./10-conexao-api-postgres.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,6 +13,7 @@
   "dependencies": {
     "date-fns": "^2.30.0",
     "express": "^4.18.2",
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "pg": "^8.11.3"
   }
 }
