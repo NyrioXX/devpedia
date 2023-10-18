@@ -13,12 +13,17 @@ const pool = new Pool({
   password: "gglimas01",
   port: 5432,
 });
-app.get("/:id", async (req, res) => {
+app.get("/", async (req, res) => {
   try {
-    const { id } = req.params;
-    const query = `Update empresas set site = $2 where id = $1`;
-    const params = [id, "www.cakewalk.com"];
-    const resultado = await pool.query(query, params);
+    const query = `select emp.id as empresaID,
+    fil.id as filialID,
+    fil.pais
+    from empresas emp
+    join filiais fil on emp.id = fil.empresa_id
+    join pessoas pes on emp.id = pes.empresa_id
+    order by emp.id asc;`;
+
+    const resultado = await pool.query(query);
     res.json(resultado.rows);
   } catch (error) {
     console.log(error.message);

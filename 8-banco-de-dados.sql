@@ -214,12 +214,25 @@ DELETE from produtos
 where id >= 6
     and id <= 7;
 /*-------------------------------------------------------------------------------------------------------------*/
---> JOIN: Permite agrupar duas ou mais tabelas em uma unica consulta
---> INNER JOIN: pode usar só JOIN ou usar INNER JOIN
+--> JOIN: Permite agrupar duas ou mais tabelas em uma unica consulta;
+--> INNER JOIN: pode usar só JOIN ou usar INNER JOIN;
 --> Truque do poderoso guido: para evitar ficar escrevendo o nome inteiro da tabela pode dar um apelido logo a frente do nome da tabela (exemplo abaixo: empresas 'e' / filiais 'f');
 select emp.id as empresaID,
-    fil.id as filialID,
+    fil.id as filialID
+from empresas emp
+    join filiais fil on emp.id = fil.empresa_id;
+--> LEFT JOIN: permite que sejam exibidos todos os resultados da esquerda e somente os que atendem à condição da direita
+SELECT *
+from empresas emp
+    left join filiais fil on emp.id = fil.id;
+--> RIGHT JOIN: permite que sejam exibidos todos os resultados da direita e somente os que atendem à condição da esquerda
+SELECT *
+from empresas emp
+    RIGHT join filiais fil on emp.id = fil.id;
+--> FULL JOIN: junta todas as tabelas mesmo que não haja relação entre as tabelas
+SELECT emp.id as empresaID,
+    fil.id as filialIDm,
+    emp.nome,
     fil.pais
 from empresas emp
-    join filiais fil on emp.id = fil.empresa_id
-    join pessoas pes on emp.id = pes.empresa_id;
+    full join filiais fil on emp.id = fil.empresa_id;
