@@ -5,39 +5,53 @@ let teste;
 
 //.shift(): remove o primeiro item do array e o retorna
 console.log(arrayDeNumeros.shift());
+
 //.unshift(): adiciona algo ao primeiro item do array
 console.log(arrayDeNumeros.unshift(0));
+
 //.pop(): remove o ultimo item do array
 console.log(arrayDeNomes.pop());
+
 //.push(): adiciona um item ao ultimo item da lista
 console.log(arrayDeNumeros.push(10));
+
 //.indexOf(): retorna o indice daquilo que foi procurado, se nao encontrar retorna -1
 console.log(arrayDeNomes.indexOf("jose"));
+
 //.includes(): retorna um booleano se há ou não o que estou procurand
 console.log(arrayDeNomes.includes("felipe"));
+
 //.reverse(): inverte a ordem do array -> altera o array original
 console.log(arrayDeNumeros.reverse());
+
 //.join(): junta os itens do array em forma de string separando-os com o que for passado entre parenteses
 console.log(arrayDeNomes.join(" "));
+
 //.concat(): junta varios arrays em 1 só
 console.log(arrayDeNumeros.concat(arrayDeNomes));
+
 //.slice(): retira um pedaço do array, começa do primeiro numero no parenteses e termina no segundo (se n especificar o segundo termina no fim do array)
 console.log(arrayDeNomes.slice(1, 3));
+
 //.splice(indice inical, quantos itens deletar(se n especificar vai ate o fim do array), o que adicionar)
 //altera o conteudo de uma lista, removendo itens e tendo a opção de adicionar novos no lugar
 //altera o array original
 //retorna a lista do que foi deletado
 console.log(arrayDeNomes.splice(0, arrayDeNomes.length, "felipe"));
+
 //.every(funcao): serve para testar todos os elementos de um array são verdadeiros
 console.log(arrayDeNumeros.every(Number));
+
 //.some(funcao): serve para testar se algum elemento do array é valido
 console.log(arrayDeNomes.some(isNaN));
+
 //.find(funcao): retorna o primeiro elemento do array que for encontrado no array de acordo com a condicao
 console.log(
   arrayDeNomes.find((nome) => {
     return nome === "marta";
   })
 );
+
 //.findIndex(funcao): encontra o indice do primeiro elemento correspondente a funcao
 
 //FUNÇÕES CALLBACK

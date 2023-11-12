@@ -236,3 +236,14 @@ SELECT emp.id as empresaID,
     fil.pais
 from empresas emp
     full join filiais fil on emp.id = fil.empresa_id;
+/*-------------------------------------------------------------------------------------------------------------*/
+--> PAGINAÇÃO: usa limit e offset em conjunto
+SELECT emp.id AS empresaID,
+    fil.id AS filialID,
+    fil.pais
+FROM empresas AS emp
+    JOIN filiais AS fil ON emp.id = fil.empresa_id
+    JOIN pessoas AS pes ON emp.id = pes.empresa_id
+ORDER BY emp.id ASC
+LIMIT 10 OFFSET 5;
+-->
