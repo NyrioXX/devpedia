@@ -48,3 +48,11 @@ https://www.npmjs.com/package/dotenv
 //Integração com dominios
 npm i cors
 https://www.npmjs.com/package/cors
+
+//Envio de email
+npm i nodemailer
+https://www.npmjs.com/package/nodemailer
+
+//Manipulação de html
+npm i handlebars
+https://www.npmjs.com/package/handlebars
