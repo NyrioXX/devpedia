@@ -1,16 +1,30 @@
-// 4 principios da criptografia: Confidencialidade, integridade, autenticação, não-repudio
-//Bibliotecas
-//jsonwebtoken e bcript
-const bcrypt = require("bcrypt");
-const jwt = require("jsonwebtoken");
-const senhaJwt = require("../senhaJwt");
+# Princípios de Criptografia e Autenticação
 
-//exemplo de cadastro com senha criptografada
+## 4 Princípios da Criptografia
+
+1. **Confidencialidade**: Garante que as informações são acessíveis apenas por usuários autorizados.
+
+2. **Integridade**: Assegura que os dados não foram alterados durante a transmissão ou armazenamento.
+
+3. **Autenticação**: Verifica a identidade das partes envolvidas no processo, garantindo que são quem afirmam ser.
+
+4. **Não-Repúdio**: Impede que uma parte negue a autenticidade de uma comunicação ou transação.
+
+## Bibliotecas Utilizadas
+
+- **bcrypt**: Biblioteca para a criptografia de senhas.
+- **jsonwebtoken**: Biblioteca para a criação e verificação de tokens JWT.
+
+## Exemplo de Cadastro com Senha Criptografada
+
+### Método: `cadastrarUsuario`
+
+```javascript
 const cadastrarUsuario = async (req, res) => {
   const { nome, email, senha } = req.body;
 
   try {
-    //criptografa a senha antes de salvar no banco de dados
+    // Criptografa a senha antes de salvar no banco de dados
     const senhaCriptografada = await bcrypt.hash(senha, 10);
 
     const novoUsuario = await pool.query(
@@ -23,7 +37,13 @@ const cadastrarUsuario = async (req, res) => {
     return res.status(500).json({ mensagem: "Erro interno do servidor" });
   }
 };
-//exemplo de login
+```
+
+## Exemplo de Login
+
+### Método: `login`
+
+```javascript
 const login = async (req, res) => {
   const { email, senha } = req.body;
 
@@ -34,15 +54,17 @@ const login = async (req, res) => {
     );
 
     if (usuario.rowCount < 1) {
-      return res.status(404).json({ mensagem: "Email ou senha invalida" });
+      return res.status(404).json({ mensagem: "Email ou senha inválida" });
     }
-    //comparando a senha
+
+    // Comparando a senha
     const senhaValida = await bcrypt.compare(senha, usuario.rows[0].senha);
 
     if (!senhaValida) {
-      return res.status(400).json({ mensagem: "Email ou senha invalida" });
+      return res.status(400).json({ mensagem: "Email ou senha inválida" });
     }
-    //estabelecendo o token de login
+
+    // Estabelecendo o token de login
     const token = jwt.sign({ id: usuario.rows[0].id }, senhaJwt, {
       expiresIn: "8h",
     });
@@ -54,8 +76,13 @@ const login = async (req, res) => {
     return res.status(500).json({ mensagem: "Erro interno do servidor" });
   }
 };
+```
 
-//exemplo de intermediario de verificação
+## Exemplo de Intermediário de Verificação
+
+### Método: `verificarUsuarioLogado`
+
+```javascript
 const jwt = require("jsonwebtoken");
 const pool = require("../conexao");
 const senhaJwt = require("../senhaJwt");
@@ -90,3 +117,6 @@ const verificarUsuarioLogado = async (req, res, next) => {
 };
 
 module.exports = verificarUsuarioLogado;
+```
+
+**Observação**: Certifique-se de que o exemplo acima esteja integrado ao restante do seu código, incluindo a importação adequada das bibliotecas e a configuração do `pool` de conexão com o banco de dados.
