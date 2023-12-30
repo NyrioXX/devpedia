@@ -56,3 +56,11 @@ https://www.npmjs.com/package/nodemailer
 //Manipulação de html
 npm i handlebars
 https://www.npmjs.com/package/handlebars
+
+//Gerar documentação automatica com swagger
+npm install --save swagger-autogen
+https://www.npmjs.com/package/swagger-autogen
+
+//Plataforma de chat bot blip
+npm install blip-sdk
+
