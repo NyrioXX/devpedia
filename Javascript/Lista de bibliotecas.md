@@ -63,4 +63,8 @@ https://www.npmjs.com/package/swagger-autogen
 
 //Plataforma de chat bot blip
 npm install blip-sdk
+https://www.npmjs.com/package/blip-sdk
 
+//Utilizar status codes corretamente
+npm i http-status-codes
+https://www.npmjs.com/package/http-status-codes
