@@ -1,20 +1,36 @@
 # Comandos
 
-- docker --help -> lista os comandos do docker
-- docker ps -> listar containers rodando
-- docker ps -a -> lista todos os containers incluindo os que pararam
+```bash
+docker --help # lista os comandos do docker
+```
 
-- docker build -t -> constroi a imagem (tem que estar na mesma pagina que o dockerfile); O -t significa tag, o docker gera uma tag ajuda no versionamento
+```bash
+docker ps # listar containers rodando
+```
 
-- docker run 'nome da imagem' - roda a imagem
+```bash
+docker ps -a # lista todos os containers incluindo os que pararam
+```
 
-- docker exec -ti 'id do container (obtido com o comando docker ps) -> executa o container
+```bash
+docker build -t # constroi a imagem (tem que estar na mesma pagina que o dockerfile); O -t significa tag, o docker gera uma tag ajuda no versionamento
+```
 
-- 'comando' -d -> mantem o container rodando em background (libera o terminal)
+```bash
+docker run 'nome da imagem' # roda a imagem
+```
 
-- docker inspect -> inspeciona qualquer coisa e traz um json com informações
+```bash
+docker exec -ti 'id_do_container' (obtido com o comando docker ps) # executa o container
+```
 
----
+```bash
+'comando' -d # mantem o container rodando em background (libera o terminal)
+```
+
+```bash
+docker inspect # inspeciona qualquer coisa e traz um json com informações
+```
 
 # Volumes
 
@@ -28,11 +44,15 @@ Existem 3 tipos de volume docker:
 
 - Docker volume
 
-        - docker volume create `nome_do_volume`
+```bash
+docker volume create 'nome_do_volume'
+```
 
 - Docker bind
 
-        - docker run -d (rodar em background) --name `nome_do_container` --mount type=`tipo_do_volume`,source = `caminho_da_pasta_local`,target=`nome_do_workdir_no_dockerfile`
+```bash
+ docker run -d '(rodar em background)' --name 'nome_do_container' --mount type=`tipo_do_volume`,source = `caminho_da_pasta_local`,target=`nome_do_workdir_no_dockerfile`
+```
 
 # Redes
 
@@ -44,11 +64,15 @@ Geralmente containers não são usados sozinhos e devem se conectar com outros c
 
 ## Criar rede
 
-        - docker network create --driver= `tipo_da_rede` --subnet=`numero_da_subnet` --ip-range=`range_de_ip` --gateway=`numero_do_gateway` `nome da rede`
+```bash
+docker network create --driver='tipo_da_rede' --subnet=`numero_da_subnet` --ip-range='range_de_ip' --gateway='numero_do_gateway' 'nome da rede'
+```
 
 ## Ver rede
 
-        - docker network ls
+```bash
+docker network ls
+```
 
 # Ecossistema de containers
 

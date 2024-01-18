@@ -16,17 +16,17 @@ Existem 3 formas de interagir com a AWS:
 
 O AWS CAF é estruturado em seis perspectivas-chave, cada uma focada em um aspecto específico da adoção da nuvem:
 
-1.  **Negocios:** Concentra-se nas metas comerciais e nos resultados desejados pela organização. Ajuda a alinhar a estratégia de nuvem com os objetivos de negócios.
+1.  **_Negocios_:** Concentra-se nas metas comerciais e nos resultados desejados pela organização. Ajuda a alinhar a estratégia de nuvem com os objetivos de negócios.
 
-2.  **Governança:** Aborda a governança da nuvem, incluindo políticas, controles e conformidade. Isso garante que a adoção da nuvem esteja alinhada com os padrões e regulamentações da organização.
+2.  **_Governança_:** Aborda a governança da nuvem, incluindo políticas, controles e conformidade. Isso garante que a adoção da nuvem esteja alinhada com os padrões e regulamentações da organização.
 
-3.  **Plataforma:** Oferece orientações sobre a seleção de serviços da AWS para criar uma plataforma de nuvem que atenda às necessidades específicas da organização.
+3.  **_Plataforma_:** Oferece orientações sobre a seleção de serviços da AWS para criar uma plataforma de nuvem que atenda às necessidades específicas da organização.
 
-4.  **Pessoas:** Enfatiza a importância da cultura, habilidades e capacitação da equipe na adoção bem-sucedida da nuvem. Inclui estratégias para treinamento e desenvolvimento.
+4.  **_Pessoas_:** Enfatiza a importância da cultura, habilidades e capacitação da equipe na adoção bem-sucedida da nuvem. Inclui estratégias para treinamento e desenvolvimento.
 
-5.  **Segurança:** Aborda a segurança em todos os níveis, desde a proteção de dados até o controle de acesso. Inclui práticas recomendadas para garantir ambientes seguros na nuvem.
+5.  **_Segurança_:** Aborda a segurança em todos os níveis, desde a proteção de dados até o controle de acesso. Inclui práticas recomendadas para garantir ambientes seguros na nuvem.
 
-6.  **Operações:** Foca nas operações contínuas na nuvem, incluindo monitoramento, gerenciamento de mudanças e otimização de recursos para maximizar a eficiência e reduzir custos.
+6.  **_Operações_:** Foca nas operações contínuas na nuvem, incluindo monitoramento, gerenciamento de mudanças e otimização de recursos para maximizar a eficiência e reduzir custos.
 
         O AWS CAF fornece uma estrutura flexível e adaptável que pode ser personalizada de acordo com as necessidades específicas de cada organização. Ele é projetado para ajudar as empresas a evoluir em direção a uma abordagem mais ágil e orientada para a nuvem, permitindo uma transformação digital eficiente e eficaz.
 

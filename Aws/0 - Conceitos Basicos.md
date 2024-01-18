@@ -2,9 +2,17 @@
 
 ## **O que é computação em nuvem**
 
-- A computação em nuvem é a entrega **_sob demanda_** de poder computacional, de banco de dados, de armazenamento, de aplicativos e de outros recursos de TI.
+- A computação em nuvem é a entrega `sob demanda` de poder computacional, de banco de dados, de armazenamento, de aplicativos e de outros recursos de TI.
 
-- Esses recursos são entregues por meio de uma plataforma de serviços de nuvem via Internet, com **_pagamento conforme o uso_**.
+- Esses recursos são entregues por meio de uma plataforma de serviços de nuvem via Internet, com `pagamento conforme o uso`.
+
+## **_Conceito NIST → 5 requisitos para ser considerado servidor de nuvem_**
+
+1. Serviço de atendimento sob demanda → serviço de fácil uso e aquisição (self service)
+2. Acesso amplo à rede → possibilidade de acesso de qualquer lugar ou periférico
+3. Agrupamento de recursos → recursos agrupados e disponíveis
+4. Elasticidade rápida → velocidade de provisionamento
+5. Serviço medido → cobrança proporcional ao uso
 
 ## **Modelo de computação tradicional VS modelo de computação em nuvem**
 
