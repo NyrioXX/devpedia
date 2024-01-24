@@ -2,7 +2,7 @@
 
 ## **AWS**
 
-    A aws é um provedor de serviços web. Um serviço da web é qualquer parte do software disponibilizada pela Internet. Ele usa um formato padronizado, como XML ou JavaScript Object Notation (JSON), para solicitação e resposta de uma interação de uma interface de programação de aplicativo (API).
+A aws é um provedor de serviços web. Um serviço da web é qualquer parte do software disponibilizada pela Internet. Ele usa um formato padronizado, como XML ou JavaScript Object Notation (JSON), para solicitação e resposta de uma interação de uma interface de programação de aplicativo (API).
 
 Existem 3 formas de interagir com a AWS:
 
@@ -12,7 +12,7 @@ Existem 3 formas de interagir com a AWS:
 
 ## **AWS Cloud Adoption Framework (AWS CAF)**
 
-    O AWS Cloud Adoption Framework (AWS CAF) é um conjunto de práticas recomendadas, abordagens e recursos fornecidos pela Amazon Web Services (AWS) para ajudar organizações a criar uma estratégia abrangente para adoção da nuvem. Ele é projetado para orientar empresas em sua jornada para a nuvem, oferecendo diretrizes para a transformação digital e a implementação eficaz de serviços em nuvem.
+O AWS Cloud Adoption Framework (AWS CAF) é um conjunto de práticas recomendadas, abordagens e recursos fornecidos pela Amazon Web Services (AWS) para ajudar organizações a criar uma estratégia abrangente para adoção da nuvem. Ele é projetado para orientar empresas em sua jornada para a nuvem, oferecendo diretrizes para a transformação digital e a implementação eficaz de serviços em nuvem.
 
 O AWS CAF é estruturado em seis perspectivas-chave, cada uma focada em um aspecto específico da adoção da nuvem:
 
@@ -28,6 +28,6 @@ O AWS CAF é estruturado em seis perspectivas-chave, cada uma focada em um aspec
 
 6.  **_Operações_:** Foca nas operações contínuas na nuvem, incluindo monitoramento, gerenciamento de mudanças e otimização de recursos para maximizar a eficiência e reduzir custos.
 
-        O AWS CAF fornece uma estrutura flexível e adaptável que pode ser personalizada de acordo com as necessidades específicas de cada organização. Ele é projetado para ajudar as empresas a evoluir em direção a uma abordagem mais ágil e orientada para a nuvem, permitindo uma transformação digital eficiente e eficaz.
+O AWS CAF fornece uma estrutura flexível e adaptável que pode ser personalizada de acordo com as necessidades específicas de cada organização. Ele é projetado para ajudar as empresas a evoluir em direção a uma abordagem mais ágil e orientada para a nuvem, permitindo uma transformação digital eficiente e eficaz.
 
-        Nota: As perspectivas: negocios, pessoas e governanças se concentram nas capacidades de negocio enquanto as perpesctivas: plataforma, segurança e operação se concentram nas capacidades tecnicas
+Nota: As perspectivas: negocios, pessoas e governanças se concentram nas capacidades de negocio enquanto as perpesctivas: plataforma, segurança e operação se concentram nas capacidades tecnicas

@@ -34,7 +34,7 @@
 - Infraestrutura de rede: Detecção de intrusão
 - Infraestrutura de virtualização: Isolamento de instância
 
-        A proteção dessa infraestrutura é a prioridade número um da AWS. Não é possível visitar os data centers ou escritórios da AWS para conferir essa proteção pessoalmente. No entanto, a Amazon oferece vários relatórios de auditores de terceiros que verificaram a conformidade da AWS com várias de normas e regulamentos de segurança de computadores.
+A proteção dessa infraestrutura é a prioridade número um da AWS. Não é possível visitar os data centers ou escritórios da AWS para conferir essa proteção pessoalmente. No entanto, a Amazon oferece vários relatórios de auditores de terceiros que verificaram a conformidade da AWS com várias de normas e regulamentos de segurança de computadores.
 
 ## **_Caracteristicas do serviço e responsabilidade de segurança_**
 

@@ -1,7 +1,7 @@
 # Infraestrutura AWS
 
-    Os data centers são a base da infraestrutura da AWS. Data center é um local onde os dados físicos reais residem e o processamento de dados ocorre. Os data centers da AWS são construídos em clusters em várias Regiões globais.
-    Os data centers são projetados com segurança, com vários fatores em mente.
+Os data centers são a base da infraestrutura da AWS. Data center é um local onde os dados físicos reais residem e o processamento de dados ocorre. Os data centers da AWS são construídos em clusters em várias Regiões globais.
+Os data centers são projetados com segurança, com vários fatores em mente.
 
 - A Infraestrutura global da AWS foi projetada e construída para oferecer um ambiente de computação em nuvem **`flexível, confiável, dimensionável e seguro com desempenho de rede global de alta qualidade e tolerante a falhas`**.
 - Cada local é cuidadosamente avaliado para mitigar os riscos ambientais
