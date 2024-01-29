@@ -11,7 +11,7 @@
   1. Perguntas cujo principal objetivo é oferecer uma compreensão criteriosa das decisões de arquitetura
   2. Serviços e soluções relevantes para cada pergunta
   3. Referências a recursos relevantes
-- AWS Well-Architected Framework tem base em cinco diferentes perspectivas ou pilares
+- AWS Well-Architected Framework tem base em `seis` diferentes perspectivas ou pilares
 
 ## **_1. Excelência operacional_**
 
@@ -22,7 +22,7 @@
 - Responder a eventos
 - Responder às alterações
 
-### **_Principios de design de excelencia operacional_**
+### **_Princípios de design de excelencia operacional_**
 
 - Executar operações como código
 - Anotar a documentação
@@ -71,7 +71,7 @@
 - Gerenciamento de alterações
 - Gerenciamento de falhas
 
-### **_Princípios de design confiabilidade_**
+### **_Princípios de design de confiabilidade_**
 
 - Testar os procedimentos de recuperação
 - Recuperar automaticamente
@@ -88,7 +88,7 @@
 - Monitorar serviços da AWS
 - Considerar as compensações
 
-### **_Princípios de design eficiencia_**
+### **_Princípios de design de eficiencia de desempenho_**
 
 - Democratizar tecnologias avançadas
 - Obter alcance global em minutos
@@ -105,9 +105,27 @@
 - Aumentar a conscientização sobre despesas
 - Otimizar ao longo do tempo
 
-### **_Princípios de design otimização de custos_**
+### **_Princípios de design de otimização de custos_**
 
 - Adotar um modelo de consumo
 - Medir a eficiência geral
 - Reduzir os gastos com operações do data center
 - Analisar e atribuir despesas Usar serviços gerenciados
+
+## **_6. Sustentabilidade_**
+
+- Escolha de região
+- Padrões de comportamento do usuário
+- Padrões de software e arquitetura
+- Padrões de dados
+- Padrões de hardware
+- Processo de desenvolvimento e implantação
+
+### **_Princípios de design de sustentabilidade_**
+
+- Compreenda seu impacto
+- Estabeleça metas de sustentabilidade
+- Maximize a utilização
+- Antecipe e adote ofertas de hardware e software novos e mais eficientes
+- Use serviços gerenciados
+- Reduza o impacto posterior de suas workloads na nuvem
