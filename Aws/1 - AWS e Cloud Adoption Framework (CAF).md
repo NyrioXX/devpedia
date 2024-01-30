@@ -12,22 +12,37 @@ Existem 3 formas de interagir com a AWS:
 
 ## **AWS Cloud Adoption Framework (AWS CAF)**
 
-O AWS Cloud Adoption Framework (AWS CAF) é um conjunto de práticas recomendadas, abordagens e recursos fornecidos pela Amazon Web Services (AWS) para ajudar organizações a criar uma estratégia abrangente para adoção da nuvem. Ele é projetado para orientar empresas em sua jornada para a nuvem, oferecendo diretrizes para a transformação digital e a implementação eficaz de serviços em nuvem.
+- O AWS CAF oferece orientações e práticas recomendadas para ajudar as organizações a criar uma abordagem abrangente de computação em nuvem em toda a organização e durante todo o ciclo de vida da TI para acelerar a adoção bem-sucedida da nuvem
+- O AWS CAF está estruturado em torno de seis perspectivas. Essas perspectivas consistem em conjuntos de recursos
 
-O AWS CAF é estruturado em seis perspectivas-chave, cada uma focada em um aspecto específico da adoção da nuvem:
+  1. **_`Negocios`_** -> Recurso empresarial
 
-1.  **_Negocios_:** Concentra-se nas metas comerciais e nos resultados desejados pela organização. Ajuda a alinhar a estratégia de nuvem com os objetivos de negócios.
+  - É necessário garantir que a TI esteja alinhada com as necessidades empresariais e que os investimentos em TI possam ser relacionados a resultados de negócios demonstráveis
+  - Principais recursos em foco são: `finanças de TI, estrategia de TI, realização de beneficios, gerenciamento de riscos empresariais`
 
-2.  **_Governança_:** Aborda a governança da nuvem, incluindo políticas, controles e conformidade. Isso garante que a adoção da nuvem esteja alinhada com os padrões e regulamentações da organização.
+  2. **_`Pessoas`_** -> Recurso empresarial
 
-3.  **_Plataforma_:** Oferece orientações sobre a seleção de serviços da AWS para criar uma plataforma de nuvem que atenda às necessidades específicas da organização.
+  - É necessário priorizar o treinamento, a equipe e as mudanças organizacionais para criar uma organização ágil
+  - Principais recursos em foco são: `gerenciamento de recursos, gerenciamento de incentivos, gerenciamento de carreiras, gerenciamento de treinamento, gerenciamento de mudanças organizacionais`
 
-4.  **_Pessoas_:** Enfatiza a importância da cultura, habilidades e capacitação da equipe na adoção bem-sucedida da nuvem. Inclui estratégias para treinamento e desenvolvimento.
+  3. **_`Governança`_** -> Recurso empresarial
 
-5.  **_Segurança_:** Aborda a segurança em todos os níveis, desde a proteção de dados até o controle de acesso. Inclui práticas recomendadas para garantir ambientes seguros na nuvem.
+  - É necessário garantir que as habilidades e os processos alinhem a estratégia e as metas de TI com a estratégia e as metas empresariais para que a organização possa maximizar o valor comercial de seu investimento em TI e minimizar os riscos empresariais
+  - Principais recursos em foco são: `gerenciamento de portifolio, gerenciamento de programas e projetos, medição de desempenho dos negocios, gerenciamento de licença`
 
-6.  **_Operações_:** Foca nas operações contínuas na nuvem, incluindo monitoramento, gerenciamento de mudanças e otimização de recursos para maximizar a eficiência e reduzir custos.
+  4. **_`Plataforma`_** -> Recurso tecnico
 
-O AWS CAF fornece uma estrutura flexível e adaptável que pode ser personalizada de acordo com as necessidades específicas de cada organização. Ele é projetado para ajudar as empresas a evoluir em direção a uma abordagem mais ágil e orientada para a nuvem, permitindo uma transformação digital eficiente e eficaz.
+  - É necessário compreender e comunicar a natureza dos sistemas de TI e as relações entre eles. Devemos ter capacidade para descrever a arquitetura do ambiente do estado de destino em detalhes
+  - Principais recursos em foco são: `provisionamento de computação, provisionamento de rede, posicionamento de armazenamento, provisionamento de banco de dados, arquitetura de sistemas e soluções, desenvolvimento de aplicativos`
 
-Nota: As perspectivas: negocios, pessoas e governanças se concentram nas capacidades de negocio enquanto as perpesctivas: plataforma, segurança e operação se concentram nas capacidades tecnicas
+  5. **_`Segurança`_** -> Recurso tecnico
+
+  - É necessário garantir que a organização atenda aos seus objetivos de segurança
+  - Principais recursos em foco são: `gerenciamento de identidade de acesso, controle de detecção, segurança da infraestrutura, proteção de dados, resposta a incidentes`
+
+  6. **_`Operações`_** -> Recurso tecnico
+
+  - Alinhar e apoiar as operações da empresa e definimos como os negócios serão conduzidos a cada dia, trimestre e ano
+  - Principais recursos em foco são: `Monitoramento de serviços, monitoramento de desempenho de aplicativos, gerenciamento de inventario de recursos, gerenciamento de versões ou alterações, relatorios e analise, continuidade dos negocios ou recuperação de desastres, catalogo dos serviços de TI`
+
+- A responsabilidade sobre os recursos fica a cargo dos **`stakeholders`**
