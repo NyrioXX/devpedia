@@ -8,7 +8,7 @@
 
 ### Instalação do Axios
 
-Antes de começar, certifique-se de ter o `axios` instalado. Caso não tenha, você pode instalá-lo utilizando o seguinte comando:
+Antes de começar, certifique-se de ter o `axios` instalado. Caso não tenha, o usuario pode instalá-lo utilizando o seguinte comando:
 
 ```bash
 npm install axios
@@ -75,7 +75,7 @@ module.exports = enviarDadosParaAPI;
 
 ### Uso nos Arquivos Principais
 
-Para utilizar os métodos criados nos seus arquivos principais, você pode fazer o seguinte:
+Para utilizar os métodos criados nos seus arquivos principais, o usuario pode fazer o seguinte:
 
 ```javascript
 // Importando os métodos de consumo de API
@@ -105,4 +105,4 @@ async function exemploDeUso() {
 exemploDeUso();
 ```
 
-**Observação**: Certifique-se de ajustar as URLs e os dados conforme a API de terceiros que você estiver utilizando.
+**Observação**: Certifique-se de ajustar as URLs e os dados conforme a API de terceiros que o usuario estiver utilizando.

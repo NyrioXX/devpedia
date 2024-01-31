@@ -1,6 +1,6 @@
 # Documentação do Multer
 
-O Multer é um middleware para o Node.js que facilita o upload de arquivos em aplicativos web. Ele é especialmente útil quando você precisa lidar com formulários que contêm campos de arquivo. Nesta documentação, você aprenderá como usar o Multer para gerenciar o upload de arquivos em seu aplicativo Node.js.
+O Multer é um middleware para o Node.js que facilita o upload de arquivos em aplicativos web. Ele é especialmente útil quando o usuario precisa lidar com formulários que contêm campos de arquivo. Nesta documentação, o usuario aprenderá como usar o Multer para gerenciar o upload de arquivos em seu aplicativo Node.js.
 
 ## Instalação
 
@@ -61,4 +61,4 @@ O Multer oferece várias opções avançadas para personalizar o comportamento d
 
 ## Conclusão
 
-Com esta documentação, você deve ser capaz de começar a usar o Multer em seu aplicativo Node.js para facilitar o upload de arquivos. Certifique-se de verificar a documentação oficial para obter mais informações e opções disponíveis.
+Com esta documentação, o usuario deve ser capaz de começar a usar o Multer em seu aplicativo Node.js para facilitar o upload de arquivos. Certifique-se de verificar a documentação oficial para obter mais informações e opções disponíveis.

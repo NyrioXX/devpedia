@@ -14,7 +14,7 @@ npm install aws-sdk
 
 ### 2. **Configuração das Credenciais da AWS**
 
-Antes de começar, configure as credenciais da AWS. Você pode fazer isso de várias maneiras:
+Antes de começar, configure as credenciais da AWS. O usuario pode fazer isso de várias maneiras:
 
 - **Arquivo de Configuração `~/.aws/credentials`:**
   Crie um arquivo em `~/.aws/credentials` com as seguintes informações:

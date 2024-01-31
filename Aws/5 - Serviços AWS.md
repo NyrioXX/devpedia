@@ -60,7 +60,7 @@
 - AWS auto scaling
 - AWS command line interface
 - AWS trusted advisor
-  - Ferramenta on-line que analisa o ambiente da AWS e fornece orientações e recomendações em tempo real para ajudar você a provisionar seus recursos seguindo as práticas recomendadas da AWS. O serviço Trusted Advisor é oferecido como parte do seu plano do AWS Support. Alguns dos recursos do Trusted Advisor são gratuitos para todas as contas, mas os clientes do Business Support e do Enterprise Support têm acesso ao conjunto completo de verificações e recomendações do Trusted Advisor
+  - Ferramenta on-line que analisa o ambiente da AWS e fornece orientações e recomendações em tempo real para ajudar o usuario a provisionar seus recursos seguindo as práticas recomendadas da AWS. O serviço Trusted Advisor é oferecido como parte do seu plano do AWS Support. Alguns dos recursos do Trusted Advisor são gratuitos para todas as contas, mas os clientes do Business Support e do Enterprise Support têm acesso ao conjunto completo de verificações e recomendações do Trusted Advisor
 - AWS cloudtrail
 
 ---

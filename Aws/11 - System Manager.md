@@ -16,7 +16,7 @@
 
   - É possivel usar o gerente de inventário para coletar e consultar informações sobre a configuração e o inventário das suas instâncias do EC2 e o software instalado nelas
 
-  - Com a Janela de manutenção, você pode definir uma janela de tempo recorrente para executar tarefas administrativas e de manutenção nas suas instâncias
+  - Com a Janela de manutenção, o usuario pode definir uma janela de tempo recorrente para executar tarefas administrativas e de manutenção nas suas instâncias
 
 ## **Recursos do System Manager**
 
@@ -26,7 +26,7 @@
 
   - O recurso de automação pode executar todas as etapas do documento em uma coleção inteira de recursos da AWS
 
-    - Por exemplo, você pode definir uma automação para corrigir instâncias inacessíveis, criar imagens de máquina da Amazon (AMIs) douradas ou corrigir instâncias
+    - Por exemplo, o usuario pode definir uma automação para corrigir instâncias inacessíveis, criar imagens de máquina da Amazon (AMIs) douradas ou corrigir instâncias
 
   - Automações personalizadas também podem ser criadas em JavaScript Object Notation (JSON)
 
@@ -43,7 +43,7 @@
     - Excluir imagens antigas
     - Encerrar uma instância
 
-    3. Monitorar o fluxo de trabalho de automação (por exemplo, usando o console de gerenciamento da AWS). Após a conclusão da automação, confirme se os resultados esperados foram obtidos. Por exemplo, você pode executar uma instância de teste a partir de uma AMI que foi atualizada por uma automação do Systems Manager para verificar se ela tem as características esperadas
+    3. Monitorar o fluxo de trabalho de automação (por exemplo, usando o console de gerenciamento da AWS). Após a conclusão da automação, confirme se os resultados esperados foram obtidos. Por exemplo, o usuario pode executar uma instância de teste a partir de uma AMI que foi atualizada por uma automação do Systems Manager para verificar se ela tem as características esperadas
 
 - **_`Run command`_**
 
@@ -113,13 +113,13 @@
   - _`Como funciona:`_
 
   1. Primeiro, crie um documento do AWS Systems Manager (SSM) ou identifique um documento existente que defina as ações que o Systems Manager executará nas suas instâncias gerenciadas
-  2. Os documentos são criados em JavaScript Object Notation (JSON) ou YAML Ain't Markup Language (YAML) e incluem as etapas e os parâmetros que você especifica
-  3. Em seguida, associe suas instâncias gerenciadas ao documento do SSM. Ao criar a associação, você define o programação de quantas vezes aplicar o estado configurado
+  2. Os documentos são criados em JavaScript Object Notation (JSON) ou YAML Ain't Markup Language (YAML) e incluem as etapas e os parâmetros que o usuario especifica
+  3. Em seguida, associe suas instâncias gerenciadas ao documento do SSM. Ao criar a associação, o usuario define o programação de quantas vezes aplicar o estado configurado
   4. Por fim, é possível optar por gravar a saída dos comandos em um bucket do Amazon Simple Storage Service (Amazon S3) ao criar uma associação
 
 - **_`Parameter Store`_**
 
-  - Em vez de armazenar dados confidenciais em arquivos de configuração ou codificá-los no código-fonte, você pode usar o Armazenamento de parâmetros do Systems Manager para armazenar esses parâmetros e em seguida, fazer referência a essas informações em aplicativos ou scripts
+  - Em vez de armazenar dados confidenciais em arquivos de configuração ou codificá-los no código-fonte, o usuario pode usar o Armazenamento de parâmetros do Systems Manager para armazenar esses parâmetros e em seguida, fazer referência a essas informações em aplicativos ou scripts
 
   - Use o Parameter Store para armazenar informações de configuração, como:
 

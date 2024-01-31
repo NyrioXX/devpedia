@@ -18,7 +18,7 @@ Lembre-se de ajustar as configurações conforme as necessidades específicas do
 
 ## Configuração do CORS na API
 
-O CORS (Cross-Origin Resource Sharing) é uma medida de segurança implementada nos navegadores para controlar solicitações HTTP feitas a partir de origens diferentes. Para permitir solicitações de origens específicas, como frontend hospedado em domínio diferente, você pode configurar o CORS na sua API.
+O CORS (Cross-Origin Resource Sharing) é uma medida de segurança implementada nos navegadores para controlar solicitações HTTP feitas a partir de origens diferentes. Para permitir solicitações de origens específicas, como frontend hospedado em domínio diferente, o usuario pode configurar o CORS na sua API.
 
 ### Exemplo de Configuração do CORS com Express (Node.js)
 
@@ -52,11 +52,11 @@ O CORS (Cross-Origin Resource Sharing) é uma medida de segurança implementada 
    });
    ```
 
-   Este exemplo permite todas as origens, mas você pode configurar opções mais restritivas conforme necessário.
+   Este exemplo permite todas as origens, mas o usuario pode configurar opções mais restritivas conforme necessário.
 
 3. **Configuração Específica do CORS:**
 
-   Para configurações mais específicas, você pode passar um objeto de opções para o middleware CORS. Exemplo:
+   Para configurações mais específicas, o usuario pode passar um objeto de opções para o middleware CORS. Exemplo:
 
    ```javascript
    const corsOptions = {

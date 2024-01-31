@@ -29,7 +29,7 @@ swaggerAutogen(outputFile, endpointsFiles);
 
 ### Sem Anotações Swagger
 
-Se preferir não usar anotações Swagger, você pode definir manualmente as informações de documentação no mesmo arquivo `swaggerConfig.js`.
+Se preferir não usar anotações Swagger, o usuario pode definir manualmente as informações de documentação no mesmo arquivo `swaggerConfig.js`.
 
 ```javascript
 // swaggerConfig.js
@@ -66,7 +66,7 @@ Isso criará ou atualizará o arquivo chamado `swagger-output.json` na raiz do s
 
 ## Inicializando o Swagger UI
 
-Para visualizar a documentação Swagger, você pode usar o Swagger UI. Crie um novo arquivo chamado `swagger-ui.js`:
+Para visualizar a documentação Swagger, o usuario pode usar o Swagger UI. Crie um novo arquivo chamado `swagger-ui.js`:
 
 ```javascript
 // swagger-ui.js

@@ -20,7 +20,7 @@
   3. **NURI** → Instancias reservadas sem pagamento antecipado que possuem menor desconto
 
 - Alguns serviços da AWS são gratuitos por um ano para novos clientes (micro instância T2, EC2, S3, EBS, …)
-- A AWS também oferece vários serviços e recursos sem custo adicional. (VPC, IAM, Cobrança consolidada, AWS beanstalk, AWS cloudformation, auto scaling, AWS opsworks). Embora não haja cobrança por esses serviços, pode haver cobranças associadas a outros serviços da AWS usados com esses serviços. Por exemplo, quando você dimensionar automaticamente instâncias do EC2 adicionais, haverá cobranças por essas instâncias.
+- A AWS também oferece vários serviços e recursos sem custo adicional. (VPC, IAM, Cobrança consolidada, AWS beanstalk, AWS cloudformation, auto scaling, AWS opsworks). Embora não haja cobrança por esses serviços, pode haver cobranças associadas a outros serviços da AWS usados com esses serviços. Por exemplo, quando o usuario dimensionar automaticamente instâncias do EC2 adicionais, haverá cobranças por essas instâncias.
 - A calculadora de preços da aws ajuda a estimar o valor da fatura de acordo com os serviços escolhidos, alem de fornecer detalhes de custo dos serviços. É possivel criar modelos de serviços e analisar qual tem melhor custo-beneficio, identificando possibilidade de otimização de custos
 - O custo total de propriedade (TCO) é a estimativa financeira que ajuda a identificar custos diretos e indiretos de um sistema. Serve para comparar custos de um infraestutura interna com a utilização do serviço em nuvem
   - Considerações sobre o TCO:

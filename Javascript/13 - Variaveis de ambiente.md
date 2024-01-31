@@ -34,7 +34,7 @@ Isso garantirá que as variáveis do arquivo `.env` sejam carregadas no objeto `
 
 ## Uso no Código
 
-Após a configuração, você pode acessar as variáveis de ambiente no seu código da seguinte forma:
+Após a configuração, o usuario pode acessar as variáveis de ambiente no seu código da seguinte forma:
 
 ```javascript
 const porta = process.env.PORT || 3000;
@@ -44,7 +44,7 @@ const chaveAPI = process.env.API_KEY;
 
 ## Deploy na Cyclic
 
-Ao fazer o deploy na Cyclic, você pode configurar suas variáveis de ambiente diretamente no painel de controle.
+Ao fazer o deploy na Cyclic, o usuario pode configurar suas variáveis de ambiente diretamente no painel de controle.
 
 1. **Acesse o Painel de Controle da Cyclic:**
 

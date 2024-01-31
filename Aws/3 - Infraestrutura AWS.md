@@ -17,7 +17,7 @@ Os data centers são projetados com segurança, com vários fatores em mente.
 - Cada Zona de Disponibilidade é composta de um ou mais data centers
 - Projetada para isolamento de falhas
 - Interconectada com outras Zonas de Disponibilidade por meio de links privados de alta velocidade
-- Você escolhe suas Zonas de Disponibilidade
+- O usuario escolhe suas Zonas de Disponibilidade
 - A AWS recomenda replicar entre Zonas de Disponibilidade para fins de resiliência
 
 ## **Regiões AWS** (Região conjunta de zonas de disponibilidade)
@@ -25,13 +25,13 @@ Os data centers são projetados com segurança, com vários fatores em mente.
 - Uma Região da AWS é uma área geográfica
 - A AWS tem 24 regiões ao redor do mundo
 - Cada Região é composta de duas ou mais Zonas de Disponibilidade
-- Você habilita e controla a replicação de dados entre Regiões
+- O usuario habilita e controla a replicação de dados entre Regiões
 - A comunicação entre as Regiões usa a estrutura de conexões de rede da infraestrutura da AWS
 
-Você deve considerar alguns fatores ao selecionar a Região ou as Regiões ideais para armazenar dados e usar os serviços da AWS.
+O usuario deve considerar alguns fatores ao selecionar a Região ou as Regiões ideais para armazenar dados e usar os serviços da AWS.
 
 - Uma consideração essencial é a **_governança de dados e os requisitos legais_**. As leis locais podem exigir que determinadas informações sejam mantidas dentro de limites geográficos. Essas leis podem restringir as Regiões onde é possível oferecer conteúdo ou serviços.
-- Se todos os demais fatores permanecerem inalterados, será desejável executar os aplicativos e armazenar os dados em uma Região que esteja mais próxima possível do usuário e dos sistemas que os acessarão. Isso ajudará você a reduzir a **`latência`**. O CloudPing é um site que pode ser usado para testar a latência entre sua localização e em todas as Regiões AWS.
+- Se todos os demais fatores permanecerem inalterados, será desejável executar os aplicativos e armazenar os dados em uma Região que esteja mais próxima possível do usuário e dos sistemas que os acessarão. Isso ajudará o usuario a reduzir a **`latência`**. O CloudPing é um site que pode ser usado para testar a latência entre sua localização e em todas as Regiões AWS.
 - Lembre-se de que nem todos os serviços estão disponíveis em todas as Regiões. Para saber mais, consulte a página AWS Regional Services.
 - Por fim, **`há alguma variação no custo da execução de serviços, que pode depender da Região escolhida`**.
 

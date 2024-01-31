@@ -12,7 +12,7 @@ Com isso, o TypeScript ficará em modo de observação, recompilando automaticam
 
 ## tsconfig.json
 
-O arquivo `tsconfig.json` é utilizado para configurar as opções do compilador TypeScript. Ele permite que você defina diversas configurações, como o alvo da versão do ECMAScript, o diretório de saída, configurações de módulos, entre outros. Aqui está um exemplo básico de um `tsconfig.json`:
+O arquivo `tsconfig.json` é utilizado para configurar as opções do compilador TypeScript. Ele permite que o usuario defina diversas configurações, como o alvo da versão do ECMAScript, o diretório de saída, configurações de módulos, entre outros. Aqui está um exemplo básico de um `tsconfig.json`:
 
 ```json
 {
@@ -57,7 +57,7 @@ const mySymbol: symbol = Symbol("description");
 
 ### Designação de Tipos
 
-Você pode definir seus próprios tipos usando a palavra-chave `type` ou `interface`.
+O usuario pode definir seus próprios tipos usando a palavra-chave `type` ou `interface`.
 Os tipos de são:
 string = "Alice";
 number = 25;
@@ -193,7 +193,7 @@ let funcaoAnonima = function (x: number, y: number): number {
 
 ### Construtor de Função
 
-Você pode usar a função construtora para criar funções dinamicamente:
+O usuario pode usar a função construtora para criar funções dinamicamente:
 
 ```typescript
 let minhaFuncao = new Function("x", "y", "return x + y");
@@ -238,7 +238,7 @@ class Animal {
 
 ## Instância de Classe
 
-Para criar uma instância da classe, você utiliza a palavra-chave `new`:
+Para criar uma instância da classe, o usuario utiliza a palavra-chave `new`:
 
 ```typescript
 let meuAnimal: Animal = new Animal("Fido", 3);

@@ -28,7 +28,7 @@ let arrayComFuncao: {
 
 ## **_Construtor de Arrays_**
 
-Você pode utilizar construtores para inicializar arrays com valores predefinidos:
+O usuario pode utilizar construtores para inicializar arrays com valores predefinidos:
 
 ```typescript
 let arrayConstrutor: number[] = new Array(3).fill(0); // Inicializa um array com três elementos, todos iguais a 0.

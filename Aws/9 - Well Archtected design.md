@@ -26,9 +26,9 @@
 - `Orientada por dados`
   - Muitas vezes, as decisões sobre arquitetura são tomadas de acordo com padrões organizacionais
   - Geralmente, não é possível gerar conjuntos de dados
-  - É provável que você use modelos e suposições para dimensionar a arquitetura
+  - É provável que o usuario use modelos e suposições para dimensionar a arquitetura
 - `Simulações`
-  - Você usa o runbook somente quando ocorre algo ruim na produção
+  - O usuario usa o runbook somente quando ocorre algo ruim na produção
 
 ### **_Ambiente em nuvem_**
 

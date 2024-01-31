@@ -85,7 +85,7 @@
 
 - É possível escrever o provisionamento personalizado em uma função do Lambda e configurar uma pilha do AWS CloudFormation para acionar essa função ao criar a pilha
 
-  - Por exemplo, você pode escrever uma lógica de provisionamento personalizada para tarefas, como procurar os IDs mais recentes da imagem de máquina da Amazon (AMI) para que você possa usá-los nas suas pilhas
+  - Por exemplo, o usuario pode escrever uma lógica de provisionamento personalizada para tarefas, como procurar os IDs mais recentes da imagem de máquina da Amazon (AMI) para que o usuario possa usá-los nas suas pilhas
 
 ## **_Ops Works_**
 
@@ -93,7 +93,7 @@
 
 - O Chef e o Puppet são plataformas de automação que permitem usar um código para automatizar as configurações de servidores
 
-- Com o AWS OpsWorks, você pode usar o Chef e o Puppet para automatizar como os servidores são configurados, implantados e gerenciados nas suas instâncias do EC2 ou ambientes de computação locais.
+- Com o AWS OpsWorks, o usuario pode usar o Chef e o Puppet para automatizar como os servidores são configurados, implantados e gerenciados nas suas instâncias do EC2 ou ambientes de computação locais.
 
 - O AWS OpsWorks tem três ofertas:
 
