@@ -1,5 +1,9 @@
 # **Preços AWS**
 
+- [**Preços AWS**](#preços-aws)
+  - [**_3 fatores fundamentais de custos na AWS_**](#3-fatores-fundamentais-de-custos-na-aws)
+  - [**_Caracteristicas da precificação na AWS_**](#caracteristicas-da-precificação-na-aws)
+
 ## **_3 fatores fundamentais de custos na AWS_**
 
 1. Computação: é cobrado por hora/minuto e varia com o tipo de instancia (somente linux)

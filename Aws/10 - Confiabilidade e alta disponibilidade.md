@@ -1,3 +1,8 @@
+- [**Alta confiabilidade e disponibilidade**](#alta-confiabilidade-e-disponibilidade)
+  - [**_Confiabilidade_**](#confiabilidade)
+    - [**_Confiabilidade VS Disponibilidade_**](#confiabilidade-vs-disponibilidade)
+  - [**_Disponibilidade_**](#disponibilidade)
+
 # **Alta confiabilidade e disponibilidade**
 
 ## **_Confiabilidade_**

@@ -1,5 +1,14 @@
 # **Conceitos basicos**
 
+- [**Conceitos basicos**](#conceitos-basicos)
+  - [**O que é computação em nuvem**](#o-que-é-computação-em-nuvem)
+  - [**_Conceito NIST → 5 requisitos para ser considerado servidor de nuvem_**](#conceito-nist--5-requisitos-para-ser-considerado-servidor-de-nuvem)
+  - [**Modelo de computação tradicional VS modelo de computação em nuvem**](#modelo-de-computação-tradicional-vs-modelo-de-computação-em-nuvem)
+  - [**Modelos de serviços de nuvem**](#modelos-de-serviços-de-nuvem)
+  - [**Modelos de implantação de Nuvem**](#modelos-de-implantação-de-nuvem)
+  - [**Infraestrutura de nuvem vs infraestrutura local**](#infraestrutura-de-nuvem-vs-infraestrutura-local)
+  - [**Vantagens da computação em Nuvem**](#vantagens-da-computação-em-nuvem)
+
 ## **O que é computação em nuvem**
 
 - A computação em nuvem é a entrega `sob demanda` de poder computacional, de banco de dados, de armazenamento, de aplicativos e de outros recursos de TI.

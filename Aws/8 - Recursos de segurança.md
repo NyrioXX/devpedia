@@ -1,3 +1,5 @@
+- [**Recursos de segurança**](#recursos-de-segurança)
+
 # **Recursos de segurança**
 
 As equipes de conta da AWS fornecem um primeiro ponto de contato que pode orientar a implantação e implementação e indicar os recursos certos para resolver problemas de segurança

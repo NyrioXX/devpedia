@@ -1,3 +1,8 @@
+- [**Well architected desgin**](#well-architected-desgin)
+  - [**Ambiente tradicional VS Ambiente de nuvem**](#ambiente-tradicional-vs-ambiente-de-nuvem)
+    - [**_Ambiente tradicional_**](#ambiente-tradicional)
+    - [**_Ambiente em nuvem_**](#ambiente-em-nuvem)
+
 # **Well architected desgin**
 
 - O Well-Architected identifica um conjunto de princípios gerais de design para simplificar projetos de boa qualidade na nuvem
