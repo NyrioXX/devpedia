@@ -67,4 +67,6 @@
 
 Ainda não sei a classe
 
-Amazon Chime é um serviço de comunicação que permite realizar reuniões, conversar e realizar chamadas de negócios dentro e fora da sua organização, usando um só aplicativo. É um serviço de comunicações com pagamento conforme o uso sem taxas iniciais, compromissos ou contratos de longo prazo.
+`Amazon Chime` é um serviço de comunicação que permite realizar reuniões, conversar e realizar chamadas de negócios dentro e fora da sua organização, usando um só aplicativo. É um serviço de comunicações com pagamento conforme o uso sem taxas iniciais, compromissos ou contratos de longo prazo.
+
+O `Amazon Rekognition` pode identificar objetos, pessoas, textos, cenas e atividades. Ele fornece análise e reconhecimento facial. O Lambda recupera a imagem do Amazon S3 e retorna rótulos para a propriedade e as respectivas comodidades.
