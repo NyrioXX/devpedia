@@ -1,6 +1,7 @@
 - [**Rest**](#rest)
   - [**Principios do design REST**](#principios-do-design-rest)
   - [**Solicitações REST**](#solicitações-rest)
+  - [**Estrutura de pastas**](#estrutura-de-pastas)
 
 # **Rest**
 
@@ -71,3 +72,19 @@
 - Uma solicitação também deve fornecer as credenciais para a autenticação no cabeçalho da solicitação. As credenciais de autenticação não são exibidas no exemplo
 
 - O exemplo de resposta está no formato JavaScript Object Notation (JSON)
+
+## **Estrutura de pastas**
+
+- A estrutura de pastas em um projeto RESTful pode variar de acordo com a preferência da equipe de desenvolvimento e as tecnologias utilizadas. No entanto, uma estrutura comum pode incluir:
+
+- `controllers`: Responsável por lidar com as solicitações HTTP e interagir com os modelos.
+
+- `models`: Representação dos dados e lógica de negócios.
+
+- `routes`: Definição das rotas da API, mapeando URLs para os controladores correspondentes.
+
+- `middlewares`: Funções intermediárias que podem ser executadas antes ou após o processamento da solicitação.
+
+- `utils`: Módulos de utilidade para funcionalidades comuns.
+
+- `config`: Configurações gerais do aplicativo.
