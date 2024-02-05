@@ -1,10 +1,9 @@
-- [**API e Rest**](#api-e-rest)
+- [**Rest**](#rest)
   - [**Principios do design REST**](#principios-do-design-rest)
   - [**Solicitações REST**](#solicitações-rest)
 
-# **API e Rest**
+# **Rest**
 
-- A AWS Command Line Interface (AWS CLI) é uma ferramenta que fornece acesso direto às APIs públicas dos serviços da AWS
 - Algumas APIs seguem os princípios de transferência de estado representacional (REST)
 
 - As APIs REST se comunicam por meio de HTTP. As APIs baseadas na web que seguem os princípios de design REST são chamadas de RESTful
