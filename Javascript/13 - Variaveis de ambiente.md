@@ -2,9 +2,9 @@
 
 As variáveis de ambiente são essenciais para configurar e personalizar o comportamento do seu aplicativo, especialmente durante o deploy na Cyclic. Este guia mostrará como utilizar variáveis de ambiente no Node.js, especificamente ao fazer o deploy na Cyclic.
 
-## Configuração Básica
+# Configuração Básica
 
-### 1. **Instalação do Pacote `dotenv`**
+# 1. **Instalação do Pacote `dotenv`**
 
 Certifique-se de incluir o pacote `dotenv` no seu projeto. Caso ainda não o tenha instalado, utilize o seguinte comando:
 
@@ -12,7 +12,7 @@ Certifique-se de incluir o pacote `dotenv` no seu projeto. Caso ainda não o ten
 npm install dotenv
 ```
 
-### 2. **Criação do Arquivo `.env`**
+# 2. **Criação do Arquivo `.env`**
 
 Na raiz do seu projeto, crie um arquivo chamado `.env` para armazenar suas variáveis de ambiente. Inclua as configurações necessárias:
 
@@ -22,7 +22,7 @@ DATABASE_URL=sua_url_de_producao
 API_KEY=sua_chave_secreta
 ```
 
-### 3. **Uso do Pacote `dotenv` no Código**
+# 3. **Uso do Pacote `dotenv` no Código**
 
 No seu arquivo principal (por exemplo, `index.js` ou `app.js`), adicione o seguinte código para carregar as variáveis de ambiente:
 
@@ -32,7 +32,7 @@ require("dotenv").config();
 
 Isso garantirá que as variáveis do arquivo `.env` sejam carregadas no objeto `process.env`.
 
-## Uso no Código
+# Uso no Código
 
 Após a configuração, o usuario pode acessar as variáveis de ambiente no seu código da seguinte forma:
 
@@ -42,7 +42,7 @@ const urlDoBancoDeDados = process.env.DATABASE_URL;
 const chaveAPI = process.env.API_KEY;
 ```
 
-## Deploy na Cyclic
+# Deploy na Cyclic
 
 Ao fazer o deploy na Cyclic, o usuario pode configurar suas variáveis de ambiente diretamente no painel de controle.
 

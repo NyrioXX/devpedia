@@ -1,6 +1,6 @@
 # Documentação sobre Watch Mode, tsconfig.json e Tipos em TypeScript
 
-## Watch Mode
+# Watch Mode
 
 O Watch Mode é uma funcionalidade no TypeScript que permite observar e recompilar automaticamente seus arquivos TypeScript quando ocorrem alterações. Isso é extremamente útil durante o desenvolvimento, pois reduz a necessidade de recompilar manualmente após cada modificação. Para usar o Watch Mode, basta adicionar a flag `--watch` ao seu comando de compilação:
 
@@ -10,7 +10,7 @@ tsc --watch
 
 Com isso, o TypeScript ficará em modo de observação, recompilando automaticamente os arquivos conforme são alterados.
 
-## tsconfig.json
+# tsconfig.json
 
 O arquivo `tsconfig.json` é utilizado para configurar as opções do compilador TypeScript. Ele permite que o usuario defina diversas configurações, como o alvo da versão do ECMAScript, o diretório de saída, configurações de módulos, entre outros. Aqui está um exemplo básico de um `tsconfig.json`:
 
@@ -27,11 +27,11 @@ O arquivo `tsconfig.json` é utilizado para configurar as opções do compilador
 }
 ```
 
-## Tipos de Informações e Validações em TypeScript
+# Tipos de Informações e Validações em TypeScript
 
 O TypeScript é um superset de JavaScript que adiciona tipagem estática ao código. Aqui estão alguns dos tipos básicos e recursos de validação disponíveis:
 
-### Tipos Básicos (Primitives)
+# Tipos Básicos (Primitives)
 
 - `number`: Números inteiros ou de ponto flutuante.
 - `string`: Cadeias de caracteres.
@@ -39,7 +39,7 @@ O TypeScript é um superset de JavaScript que adiciona tipagem estática ao cód
 - `null` e `undefined`: Tipos para representar a ausência de valor.
 - `void`: Usado em funções que não retornam valor.
 
-### BigInt
+# BigInt
 
 O tipo `bigint` é usado para representar números inteiros arbitrariamente grandes.
 
@@ -47,7 +47,7 @@ O tipo `bigint` é usado para representar números inteiros arbitrariamente gran
 let bigIntValue: bigint = 9007199254740991n + 1n;
 ```
 
-### Symbol
+# Symbol
 
 O tipo `symbol` é usado para criar identificadores únicos e é frequentemente usado como chave em objetos.
 
@@ -55,7 +55,7 @@ O tipo `symbol` é usado para criar identificadores únicos e é frequentemente 
 const mySymbol: symbol = Symbol("description");
 ```
 
-### Designação de Tipos
+# Designação de Tipos
 
 O usuario pode definir seus próprios tipos usando a palavra-chave `type` ou `interface`.
 Os tipos de são:
@@ -88,9 +88,9 @@ interface OutroTipo {
 }
 ```
 
-## Union, Enum e Literals
+# Union, Enum e Literals
 
-### Union
+# Union
 
 Union permite que uma variável aceite múltiplos tipos:
 
@@ -100,7 +100,7 @@ numeroOuString = 10; // Válido
 numeroOuString = "Dez"; // Também válido
 ```
 
-### Enum
+# Enum
 
 Enum permite definir um conjunto nomeado de constantes:
 
@@ -119,7 +119,7 @@ let diaAtual: DiasDaSemana = DiasDaSemana.Quarta;
 console.log(diaAtual); // Saída: 3 (índice baseado em zero)
 ```
 
-### Literals
+# Literals
 
 Literais são valores específicos que representam um subconjunto de seus tipos:
 
@@ -129,9 +129,9 @@ numeroLiteral = 2; // Válido
 // numeroLiteral = 4; // Inválido
 ```
 
-## Tuples e Desconstrução de Tuple
+# Tuples e Desconstrução de Tuple
 
-### Tuples
+# Tuples
 
 Tuples são arrays com um número fixo de elementos, onde cada elemento pode ter um tipo diferente:
 
@@ -140,7 +140,7 @@ let tupla: [string, number, boolean];
 tupla = ["typescript", 3, true];
 ```
 
-### Desconstrução de Tuple
+# Desconstrução de Tuple
 
 Desconstrução de tuples permite atribuir valores a variáveis individuais:
 
@@ -149,9 +149,9 @@ let [curso, duracao, online] = tupla;
 console.log(curso, duracao, online); // Saída: typescript 3 true
 ```
 
-## Alias, Funções e Arrow Functions
+# Alias, Funções e Arrow Functions
 
-### Alias
+# Alias
 
 Aliases ajudam a nomear tipos complexos:
 
@@ -161,7 +161,7 @@ type Coordenadas = [number, number];
 let ponto: Coordenadas = [10, 20];
 ```
 
-### Funções
+# Funções
 
 Declaração de função tradicional:
 
@@ -171,7 +171,7 @@ function soma(a: number, b: number): number {
 }
 ```
 
-### Arrow Functions
+# Arrow Functions
 
 Arrow functions são formas mais concisas de expressar funções:
 
@@ -179,9 +179,9 @@ Arrow functions são formas mais concisas de expressar funções:
 let multiplicacao = (a: number, b: number): number => a * b;
 ```
 
-## Funções Anônimas e Construtor
+# Funções Anônimas e Construtor
 
-### Funções Anônimas
+# Funções Anônimas
 
 Funções anônimas são aquelas sem um nome associado:
 
@@ -191,7 +191,7 @@ let funcaoAnonima = function (x: number, y: number): number {
 };
 ```
 
-### Construtor de Função
+# Construtor de Função
 
 O usuario pode usar a função construtora para criar funções dinamicamente:
 
@@ -200,7 +200,7 @@ let minhaFuncao = new Function("x", "y", "return x + y");
 console.log(minhaFuncao(3, 5)); // Saída: 8
 ```
 
-## Casting
+# Casting
 
 Casting é a conversão explícita de um tipo para outro:
 
@@ -209,11 +209,11 @@ let valor: any = "123";
 let comprimento: number = (valor as string).length;
 ```
 
-## Classes
+# Classes
 
 As classes são uma parte fundamental da programação orientada a objetos no TypeScript. Elas permitem definir estruturas de dados complexas e encapsular lógica relacionada. Aqui estão os principais conceitos relacionados a classes no TypeScript:
 
-## Declaração de Classe
+# Declaração de Classe
 
 A declaração de uma classe segue o seguinte formato:
 
@@ -236,7 +236,7 @@ class Animal {
 }
 ```
 
-## Instância de Classe
+# Instância de Classe
 
 Para criar uma instância da classe, o usuario utiliza a palavra-chave `new`:
 
@@ -244,7 +244,7 @@ Para criar uma instância da classe, o usuario utiliza a palavra-chave `new`:
 let meuAnimal: Animal = new Animal("Fido", 3);
 ```
 
-## Herança
+# Herança
 
 Classes podem herdar de outras classes para compartilhar comportamentos e propriedades:
 
@@ -264,7 +264,7 @@ class Cachorro extends Animal {
 }
 ```
 
-## Modificadores de Acesso
+# Modificadores de Acesso
 
 O TypeScript suporta modificadores de acesso para controlar a visibilidade de propriedades e métodos:
 
@@ -290,7 +290,7 @@ O TypeScript suporta modificadores de acesso para controlar a visibilidade de pr
 }
 ```
 
-## Getters e Setters
+# Getters e Setters
 
 Os getters e setters permitem controlar o acesso às propriedades de uma classe:
 
@@ -314,7 +314,7 @@ class Pessoa {
 }
 ```
 
-## Métodos Estáticos
+# Métodos Estáticos
 
 Métodos estáticos pertencem à classe, não às instâncias. São invocados diretamente na classe, não em uma instância:
 
@@ -328,7 +328,7 @@ class Utilidades {
 let resultado: number = Utilidades.dobrarNumero(5);
 ```
 
-## Abstract Classes
+# Abstract Classes
 
 Classes abstratas não podem ser instanciadas diretamente; elas são projetadas para serem subclasses:
 

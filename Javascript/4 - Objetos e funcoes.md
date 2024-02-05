@@ -1,8 +1,8 @@
 # Funções e Métodos em JavaScript
 
-## Funções
+# Funções
 
-### Função Padrão
+# Função Padrão
 
 ```javascript
 // O parâmetro da função se comporta como uma variável
@@ -11,7 +11,7 @@ function nomeDaFunc(parametro) {
 }
 ```
 
-### Arrow Function
+# Arrow Function
 
 ```javascript
 // Outra forma de escrever a função, chamada arrow function
@@ -20,9 +20,9 @@ const nomeDafunc = (parametro) => {
 };
 ```
 
-## Métodos
+# Métodos
 
-### Método em Objeto
+# Método em Objeto
 
 ```javascript
 // Método é uma função que está dentro de um objeto. Como usar um método:
@@ -42,23 +42,23 @@ const pessoa = {
 pessoa.apresentar();
 ```
 
-## Temporizadores
+# Temporizadores
 
-### setTimeout()
+# setTimeout()
 
 ```javascript
 // Para atrasar a execução em um tempo determinado
 setTimeout("função, tempo em milissegundos");
 ```
 
-### setInterval()
+# setInterval()
 
 ```javascript
 // Para executar a função em intervalos de tempo
 setInterval("função, tempo em milissegundos");
 ```
 
-### clearInterval()
+# clearInterval()
 
 ```javascript
 // Para parar a execução de um intervalo: identificador é uma variável que retém o setInterval

@@ -1,12 +1,12 @@
 # Consumo de API de Terceiros com Axios
 
-## Biblioteca Utilizada
+# Biblioteca Utilizada
 
 - **axios**: Biblioteca para realizar requisições HTTP.
 
-## Exemplo de Consumo de API de Terceiros
+# Exemplo de Consumo de API de Terceiros
 
-### Instalação do Axios
+# Instalação do Axios
 
 Antes de começar, certifique-se de ter o `axios` instalado. Caso não tenha, o usuario pode instalá-lo utilizando o seguinte comando:
 
@@ -14,9 +14,9 @@ Antes de começar, certifique-se de ter o `axios` instalado. Caso não tenha, o 
 npm install axios
 ```
 
-### Exemplo de Requisição GET
+# Exemplo de Requisição GET
 
-#### Método: `getDadosDaAPI`
+# Método: `getDadosDaAPI`
 
 ```javascript
 const axios = require("axios");
@@ -43,9 +43,9 @@ const getDadosDaAPI = async () => {
 module.exports = getDadosDaAPI;
 ```
 
-### Exemplo de Requisição POST
+# Exemplo de Requisição POST
 
-#### Método: `enviarDadosParaAPI`
+# Método: `enviarDadosParaAPI`
 
 ```javascript
 const axios = require("axios");
@@ -73,7 +73,7 @@ const enviarDadosParaAPI = async (dados) => {
 module.exports = enviarDadosParaAPI;
 ```
 
-### Uso nos Arquivos Principais
+# Uso nos Arquivos Principais
 
 Para utilizar os métodos criados nos seus arquivos principais, o usuario pode fazer o seguinte:
 

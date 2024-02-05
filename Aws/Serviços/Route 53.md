@@ -1,11 +1,8 @@
-- [**Route 53**](#route-53)
-  - [**Conceitos**](#conceitos)
-  - [**DNS e elastic load balancer**](#dns-e-elastic-load-balancer)
-  - [**Politicas de roteamento**](#politicas-de-roteamento)
+- [**Conceitos**](#conceitos)
+- [**DNS e elastic load balancer**](#dns-e-elastic-load-balancer)
+- [**Politicas de roteamento**](#politicas-de-roteamento)
 
-# **Route 53**
-
-## **Conceitos**
+# **Conceitos**
 
 - O Amazon Route 53 fornece um serviço Web de Domain Name System (DNS) na nuvem altamente disponível e escalável
 - O Amazon Route 53 foi projetado para fornecer uma maneira confiável e econômica de rotear usuários finais a aplicativos da Internet
@@ -24,7 +21,7 @@
 
 - O Amazon Route 53 também oferece registro de nome de domínio. ‒ O usuario pode comprar e gerenciar nomes de domínio, como example.com, e o Amazon Route 53 automaticamente definirá as configurações de DNS para os seus domínios.
 
-## **DNS e elastic load balancer**
+# **DNS e elastic load balancer**
 
 - Quando o usuario cria um balanceador de carga do ELB, ele recebe um nome DNS padrão. O usuario pode optar por usar o nome DNS padrão ou associar o seu próprio nome DNS, que pode ser gerenciado usando o Route 53
 
@@ -32,7 +29,7 @@
   - Um registro CNAME pode redirecionar consultas DNS para qualquer registro DNS. Por exemplo, o usuario pode criar um registro CNAME que redireciona consultas de apex.example.com para acme.example.com ou acme.example.org
   - Um registro de alias só pode redirecionar consultas para recursos selecionados da AWS. Exemplos desses recursos podem ser buckets do S3, distribuições do Amazon CloudFront ou outro registro na zona hospedada do Route 53 em que o usuario cria o alias
 
-## **Politicas de roteamento**
+# **Politicas de roteamento**
 
 - O Amazon Route 53 oferece suporte a sete políticas de roteamento diferentes.
 

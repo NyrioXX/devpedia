@@ -1,9 +1,9 @@
 - [**Amazon Relational Database Service (RDS)**](#amazon-relational-database-service-rds)
-  - [**Alta disponibilidade**](#alta-disponibilidade)
-  - [**Replicas de leitura**](#replicas-de-leitura)
-  - [**Scaling do RDS**](#scaling-do-rds)
-  - [**Notas sobre o RDS**](#notas-sobre-o-rds)
-  - [**Comandos CLI para o RDS**](#comandos-cli-para-o-rds)
+- [**Alta disponibilidade**](#alta-disponibilidade)
+- [**Replicas de leitura**](#replicas-de-leitura)
+- [**Scaling do RDS**](#scaling-do-rds)
+- [**Notas sobre o RDS**](#notas-sobre-o-rds)
+- [**Comandos CLI para o RDS**](#comandos-cli-para-o-rds)
 
 # **Amazon Relational Database Service (RDS)**
 
@@ -34,7 +34,7 @@
   5. MariaDB
   6. Oracle
 
-## **Alta disponibilidade**
+# **Alta disponibilidade**
 
 - Um dos principais recursos do Amazon RDS é configurar uma instância de banco de dados com alta disponibilidade usando uma **_`implantação multi-AZ`_**
   - Essa configuração gera automaticamente uma cópia em espera da instância de banco de dados em outra zona de disponibilidade na mesma Virtual Private Cloud (VPC – Nuvem Privada Virtual)
@@ -46,7 +46,7 @@
   - Os aplicativos solicitantes usam o endpoint do Domain Name System (DNS) do Amazon RDS para referenciar o banco de dados pelo nome
   - O **_`failover`_** ocorre sem a necessidade de alterar o código do aplicativo e também que não há perda de dados devido à replicação síncrona
 
-## **Replicas de leitura**
+# **Replicas de leitura**
 
 - Além de uma configuração de alta disponibilidade, o Amazon RDS oferece outros meios para fornecer escalabilidade
   - É possível criar réplicas de leitura para MySQL, MariaDB, PostgreSQL e Amazon Aurora
@@ -58,14 +58,14 @@
   - As réplicas de leitura podem ser criadas em uma região diferente da instância primária de banco de dados.
     - Esse recurso ajuda a cumprir os requisitos de recuperação de desastres ou reduzir a latência direcionando as leituras para uma réplica de leitura em uma área geográfica mais próxima do usuário.
 
-## **Scaling do RDS**
+# **Scaling do RDS**
 
 - É possivel aumentar a capacidade de um servidor de banco de dados alterando sua classe da instância ou capacidade de armazenamento
 - A alteração da classe da instância permite aumentar a CPU e a memória disponíveis para a instância
   - Observação: a alteração de uma classe de instância requer tempo de inatividade
 - A modificação do armazenamento alocado permite aumentar a capacidade de armazenamento sem a necessidade de tempo de inatividade
 
-## **Notas sobre o RDS**
+# **Notas sobre o RDS**
 
 - `Use o Amazon RDS quando seu aplicativo exigir:`
 
@@ -86,7 +86,7 @@
 - Para situações em que o usuario não deve usar o Amazon RDS, é possível usar uma solução de banco de dados NoSQL, como o DynamoDB
 - Outra alternativa ao Amazon RDS é executar o mecanismo de banco de dados relacional em instâncias do Amazon EC2, o que oferece mais opções para personalizar o banco de dados (instalar um banco de dados numa instancia EC2)
 
-## **Comandos CLI para o RDS**
+# **Comandos CLI para o RDS**
 
 - **_Criar um snapshot_**
 

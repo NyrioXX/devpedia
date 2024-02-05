@@ -1,10 +1,10 @@
 - [**Elastic Load Balancing**](#elastic-load-balancing)
-  - [**Tipos de balanceadores de carga**](#tipos-de-balanceadores-de-carga)
-    - [**_Application Load Balancer_**](#application-load-balancer)
-    - [**_Network Load Balancer_**](#network-load-balancer)
-    - [**_Classic Load Balancer_**](#classic-load-balancer)
-  - [**Listeners**](#listeners)
-    - [**Como funciona**](#como-funciona)
+- [**Tipos de balanceadores de carga**](#tipos-de-balanceadores-de-carga)
+  - [**_Application Load Balancer_**](#application-load-balancer)
+  - [**_Network Load Balancer_**](#network-load-balancer)
+  - [**_Classic Load Balancer_**](#classic-load-balancer)
+- [**Listeners**](#listeners)
+- [**Como funciona**](#como-funciona)
 
 # **Elastic Load Balancing**
 
@@ -39,9 +39,9 @@
   3. Para fornecer alta disponibilidade e tolerância a falhas com a capacidade de distribuir o tráfego entre várias zonas de disponibilidade
   4. Para aumentar a elasticidade e a escalabilidade com o mínimo de sobrecarga
 
-## **Tipos de balanceadores de carga**
+# **Tipos de balanceadores de carga**
 
-### **_Application Load Balancer_**
+## **_Application Load Balancer_**
 
 - Funciona no nível do aplicativo
 
@@ -64,7 +64,7 @@
   - Métricas aprimoradas e logs de acesso
   - Verificações de integridade direcionadas
 
-### **_Network Load Balancer_**
+## **_Network Load Balancer_**
 
 - Projetado para lidar com dezenas de milhões de solicitações por segundo, mantendo alta taxa de transferência com baixa latência
 
@@ -88,7 +88,7 @@
   5. Veja o número de hosts íntegros e não íntegros
   6. Filtre métricas com base em zonas de disponibilidade ou balanceador de carga
 
-### **_Classic Load Balancer_**
+## **_Classic Load Balancer_**
 
 - Fornece balanceamento de carga básico entre várias instâncias do Amazon EC2
 
@@ -106,7 +106,7 @@
   3. Ofereça alta disponibilidade e tolerância a falhas
   4. Aumente a elasticidade e a escalabilidade
 
-## **Listeners**
+# **Listeners**
 
 - Um listener verifica as solicitações de conexão de clientes usando o protocolo e a porta que o usuario configurar
 
@@ -123,7 +123,7 @@
 
 - Até 50 ouvintes podem estar em um balanceador de carga
 
-### **Como funciona**
+# **Como funciona**
 
 - **_No balanceador de aplicação_**
 

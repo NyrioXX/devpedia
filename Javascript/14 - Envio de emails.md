@@ -2,9 +2,9 @@
 
 O envio de e-mails é uma funcionalidade comum em muitas aplicações. O Handlebars é uma engine de templates que permite criar e-mails dinâmicos de forma eficiente. Este guia abordará como configurar o envio de e-mails no Node.js, utilizando o Handlebars, com exemplos de implementação.
 
-## Configuração Básica
+# Configuração Básica
 
-### 1. **Instalação dos Pacotes Necessários**
+# 1. **Instalação dos Pacotes Necessários**
 
 Certifique-se de ter os pacotes necessários instalados. Utilize os seguintes comandos:
 
@@ -12,7 +12,7 @@ Certifique-se de ter os pacotes necessários instalados. Utilize os seguintes co
 npm install nodemailer handlebars
 ```
 
-### 2. **Configuração do Handlebars**
+# 2. **Configuração do Handlebars**
 
 Crie um diretório para armazenar seus modelos de e-mail com o Handlebars. Dentro deste diretório, crie um arquivo `.hbs` para o seu modelo.
 
@@ -33,9 +33,9 @@ Exemplo de modelo (`email-template.hbs`):
 </html>
 ```
 
-## Implementação do Envio de E-mail
+# Implementação do Envio de E-mail
 
-### 1. **Uso do Nodemailer e Handlebars no Código**
+# 1. **Uso do Nodemailer e Handlebars no Código**
 
 Crie um arquivo para gerenciar o envio de e-mails (`sendEmail.js`):
 
@@ -87,7 +87,7 @@ const enviarEmail = async (destinatario, assunto, caminhoTemplate, dados) => {
 module.exports = enviarEmail;
 ```
 
-### 2. **Uso no Seu Código Principal**
+# 2. **Uso no Seu Código Principal**
 
 Utilize a função `enviarEmail` no seu código principal:
 

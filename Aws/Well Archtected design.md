@@ -1,7 +1,7 @@
 - [**Well architected desgin**](#well-architected-desgin)
-  - [**Ambiente tradicional VS Ambiente de nuvem**](#ambiente-tradicional-vs-ambiente-de-nuvem)
-    - [**_Ambiente tradicional_**](#ambiente-tradicional)
-    - [**_Ambiente em nuvem_**](#ambiente-em-nuvem)
+- [**Ambiente tradicional VS Ambiente de nuvem**](#ambiente-tradicional-vs-ambiente-de-nuvem)
+  - [**_Ambiente tradicional_**](#ambiente-tradicional)
+  - [**_Ambiente em nuvem_**](#ambiente-em-nuvem)
 
 # **Well architected desgin**
 
@@ -12,9 +12,9 @@
   4. Permitir que as arquiteturas evoluam
   5. Impulsionar arquiteturas orientadas por dados. • Aprimorar por meio de simulações.
 
-## **Ambiente tradicional VS Ambiente de nuvem**
+# **Ambiente tradicional VS Ambiente de nuvem**
 
-### **_Ambiente tradicional_**
+## **_Ambiente tradicional_**
 
 - `Capacidade`
   - Estimar a capacidade antes de implantar um sistema, pode resultar recursos caros ociosos
@@ -35,7 +35,7 @@
 - `Simulações`
   - O usuario usa o runbook somente quando ocorre algo ruim na produção
 
-### **_Ambiente em nuvem_**
+## **_Ambiente em nuvem_**
 
 - `Capacidade`
   - Elimina as suposições sobre as necessidades de capacidade de infraestrutura

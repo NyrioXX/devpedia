@@ -1,5 +1,5 @@
 - [**AWS CloudTrail**](#aws-cloudtrail)
-  - [**Praticas recomendadas**](#praticas-recomendadas)
+- [**Praticas recomendadas**](#praticas-recomendadas)
 
 # **AWS CloudTrail**
 
@@ -22,7 +22,7 @@
   7. Resposta
 - `Por padrão os logs são mantidos por 7 dias mas podem ser enviados para outros serviços AWS (Amazon S3 por exemplo) o que permite manter os logs por tempo indeterminado`
 
-## **Praticas recomendadas**
+# **Praticas recomendadas**
 
 1. Ativar a validação de arquivos de log do cloudtrail
 2. Agregar arquivos de log a um unico bucket S3

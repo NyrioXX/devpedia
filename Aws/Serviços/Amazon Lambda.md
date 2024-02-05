@@ -1,12 +1,12 @@
 - [**Amazon Lambda**](#amazon-lambda)
-  - [**Conceitos**](#conceitos)
-  - [**Como implementar**](#como-implementar)
-  - [**Camadas do lambda**](#camadas-do-lambda)
-  - [**Limites do lambda**](#limites-do-lambda)
+- [**Conceitos**](#conceitos)
+- [**Como implementar**](#como-implementar)
+- [**Camadas do lambda**](#camadas-do-lambda)
+- [**Limites do lambda**](#limites-do-lambda)
 
 # **Amazon Lambda**
 
-## **Conceitos**
+# **Conceitos**
 
 - A computação sem servidor permite que o usuario crie e execute aplicativos e serviços sem se preocupar com servidores. Os aplicativos sem servidor não exigem que o usuario provisione, dimensione ou gerencie nenhum servidor
 
@@ -49,7 +49,7 @@
   5. Internet das Coisas (IoT)
   6. Operação de sites sem servidor
 
-## **Como implementar**
+# **Como implementar**
 
 - Processo de desenvolvimento e implantação de uma função do AWS Lambda com dependências:
 
@@ -70,7 +70,7 @@
 6. Monitore suas funções do Lambda e métricas de relatórios por meio do Amazon CloudWatch
    - Exemplos do que o usuario pode monitorar incluem o número de solicitações, a latência e o número de solicitações que resultam em erros
 
-## **Camadas do lambda**
+# **Camadas do lambda**
 
 - As camadas do Lambda permitem que os desenvolvedores:
 
@@ -93,7 +93,7 @@
 
 - As camadas são extraídas para o diretório /opt no ambiente de execução da função
 
-## **Limites do lambda**
+# **Limites do lambda**
 
 - O AWS Lambda restringe a quantidade de recursos de computação e de armazenamento que o usuario pode usar para executar e armazenar funções
   - Por exemplo, no momento da redação deste texto, a alocação máxima de memória para uma única função do Lambda é 3 GB. O Lambda também tem limites de simultaneidade e tamanho de pacote (250 MB neste momento)

@@ -27,7 +27,7 @@
 - O conjunto completo de verificações e orientação está disponível nos planos de suporte Business e Enterprise.
 - Usando esse recurso, é possivel melhorar o desempenho e a confiabilidade do sistema, aumentar a segurança e procurar oportunidades de economizar dinheiro.
 
-## **Recursos do Trusted Advisor**
+# **Recursos do Trusted Advisor**
 
 - `Notificações do Trusted Advisor`: atualizado com a implantação de recursos da AWS. Notificado por uma mensagem de e-mail semanal ao optar por este serviço.
 - `AWS Identity and Access Management (IAM)`: controle o acesso a verificações ou categorias de verificações específicas.

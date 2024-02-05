@@ -2,7 +2,7 @@
 
 O Multer é um middleware para o Node.js que facilita o upload de arquivos em aplicativos web. Ele é especialmente útil quando o usuario precisa lidar com formulários que contêm campos de arquivo. Nesta documentação, o usuario aprenderá como usar o Multer para gerenciar o upload de arquivos em seu aplicativo Node.js.
 
-## Instalação
+# Instalação
 
 Antes de começar, certifique-se de ter o Node.js instalado em seu sistema. Em seguida, instale o Multer usando o npm (Node Package Manager):
 
@@ -10,7 +10,7 @@ Antes de começar, certifique-se de ter o Node.js instalado em seu sistema. Em s
 npm install multer
 ```
 
-## Uso Básico
+# Uso Básico
 
 1. Importe o Multer em seu aplicativo:
 
@@ -55,10 +55,10 @@ app.post("/upload", upload.single("arquivo"), (req, res) => {
 
 A rota `/upload` agora aceitará arquivos enviados através do formulário.
 
-## Opções Avançadas
+# Opções Avançadas
 
 O Multer oferece várias opções avançadas para personalizar o comportamento do upload, como o limite de tamanho de arquivo, o número máximo de arquivos, entre outros. Consulte a [documentação oficial do Multer](https://www.npmjs.com/package/multer) para obter detalhes sobre essas opções.
 
-## Conclusão
+# Conclusão
 
 Com esta documentação, o usuario deve ser capaz de começar a usar o Multer em seu aplicativo Node.js para facilitar o upload de arquivos. Certifique-se de verificar a documentação oficial para obter mais informações e opções disponíveis.

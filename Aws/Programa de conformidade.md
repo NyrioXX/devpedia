@@ -1,13 +1,10 @@
-- [**Programa de conformidade de segurança**](#programa-de-conformidade-de-segurança)
-  - [**Conformidade da AWS**](#conformidade-da-aws)
-    - [1. `Gerenciamento de riscos empresariais`](#1-gerenciamento-de-riscos-empresariais)
-    - [2. `Ambiente de controle e automação`](#2-ambiente-de-controle-e-automação)
-    - [3. `Segurança da informação`](#3-segurança-da-informação)
-  - [**Conformidade do cliente**](#conformidade-do-cliente)
+- [**Conformidade da AWS**](#conformidade-da-aws)
+  - [1. `Gerenciamento de riscos empresariais`](#1-gerenciamento-de-riscos-empresariais)
+  - [2. `Ambiente de controle e automação`](#2-ambiente-de-controle-e-automação)
+  - [3. `Segurança da informação`](#3-segurança-da-informação)
+- [**Conformidade do cliente**](#conformidade-do-cliente)
 
-# **Programa de conformidade de segurança**
-
-## **Conformidade da AWS**
+# **Conformidade da AWS**
 
 - **_`Responsabilidade AWS`_**
   1. Fornecer ambiente seguro e controlado
@@ -21,7 +18,7 @@
 
 - O programa de conformidade e riscos da AWS é composto por três elementos:
 
-### 1. `Gerenciamento de riscos empresariais`
+## 1. `Gerenciamento de riscos empresariais`
 
 - **_Plano de negocios_**
   - Inclui gerenciamento de riscos
@@ -43,7 +40,7 @@
     - A AWS verifica regularmente vulnerabilidade em IPs publicos de endpoint de serviços dentro das instancias EC2 do cliente e notifica sugerindo correções
   - Avaliações de ameaça e vulnerabilidade tambem são feitas por empresas terceiras, contratadas pela AWS, a fim de validar a integridade da estrutura. **_`Essas avaliações não substituem as verificações do proprio cliente para garantir a conformidade e os clientes podem solicitar suas proprias verificações desde que se limitem a suas instancias e não violem a politica de uso da AWS`_**
 
-### 2. `Ambiente de controle e automação`
+## 2. `Ambiente de controle e automação`
 
 - **_Controle de acesso ao ambiente_**
   - Inclui políticas, processos e atividades de controle
@@ -57,7 +54,7 @@
   - Integra controles identificados por órgãos de nuvem líderes do setor
   - Monitora ideias de práticas líderes para gerenciar o ambiente de controle
 
-### 3. `Segurança da informação`
+## 3. `Segurança da informação`
 
 - **_`Protege`_**
   - Confidencialidade
@@ -65,7 +62,7 @@
   - Disponibilidade
 - Publica documento técnico de segurança
 
-## **Conformidade do cliente**
+# **Conformidade do cliente**
 
 - **_`Responsabilidae do cliente`_**
 

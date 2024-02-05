@@ -1,10 +1,10 @@
 - [**Amazon CloudFront**](#amazon-cloudfront)
-  - [**Conceitos**](#conceitos)
-  - [**Custos**](#custos)
+- [**Conceitos**](#conceitos)
+- [**Custos**](#custos)
 
 # **Amazon CloudFront**
 
-## **Conceitos**
+# **Conceitos**
 
 - Serviço de entrega de conteudo (CDN)
 
@@ -31,7 +31,7 @@
 
   6. Funciona com outros serviços da AWS para que o usuario possa distribuir conteúdo para usuários finais com baixa latência, altas velocidades de transferência de dados e sem compromissos mínimos exigidos
 
-## **Custos**
+# **Custos**
 
 - Quando o usuario começa a estimar o custo do Amazon CloudFront, deve considerar a distribuição de tráfego, as solicitações e a transferência de dados para fora
 

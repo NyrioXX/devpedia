@@ -1,9 +1,9 @@
 - [**Amazon S3**](#amazon-s3)
-  - [**Classes de armazenamento**](#classes-de-armazenamento)
-  - [**Preços**](#preços)
-    - [**Fatores que estimam o custo**](#fatores-que-estimam-o-custo)
-  - [**Hospedagem de site estatico no S3**](#hospedagem-de-site-estatico-no-s3)
-    - [**_Dominio_**](#dominio)
+- [**Classes de armazenamento**](#classes-de-armazenamento)
+- [**Preços**](#preços)
+  - [**Fatores que estimam o custo**](#fatores-que-estimam-o-custo)
+- [**Hospedagem de site estatico no S3**](#hospedagem-de-site-estatico-no-s3)
+  - [**_Dominio_**](#dominio)
 
 # **Amazon S3**
 
@@ -21,7 +21,7 @@
 - É possivel recuperar os dados a qualquer momento e em qualquer lugar na internet
 - Os nomes dos buckets devem ser exclusivos entre todos os nomes de buckets existentes no Amazon S3
 
-## **Classes de armazenamento**
+# **Classes de armazenamento**
 
 - O Amazon S3 oferece uma variedade de classes de armazenamento no nível do objeto projetadas para diferentes casos de uso:
 
@@ -50,7 +50,7 @@
 - Nomeclatura: https://s3-ap-northeast-1.amazonaws.com/[nome do bucket]/[nome do objeto]
 - O scaling do S3 é initerrupta e nenhum infraestrutura precisa ser gerida pelo cliente
 
-## **Preços**
+# **Preços**
 
 - **_`O usuario paga por:`_**
 
@@ -63,14 +63,14 @@
 1. Transferencia para **_`dentro`_** do amazon S3
 2. Transferencia para **_`fora`_** entre o amazon S3 e o Cloudfront ou EC2 **_`na mesma região`_**
 
-### **Fatores que estimam o custo**
+## **Fatores que estimam o custo**
 
 1. Tipo/classe do armazenamento
 2. Quantidade de armazenamento
 3. Quantidade de solicitações (as solicitações GET tem taxas diferentes)
 4. Transferencia de **_`saida`_**
 
-## **Hospedagem de site estatico no S3**
+# **Hospedagem de site estatico no S3**
 
 - O Amazon S3 fornece armazenamento de objetos e tem muitos usos práticos
 
@@ -97,7 +97,7 @@
   - Deve incluir um documento de índice definido durante a configuração do bucket
     - O nome padrão é index.html
 
-### **_Dominio_**
+## **_Dominio_**
 
 - Em vez de acessar um site estático por meio do seu URL de ponto de extremidade do Amazon S3 atribuído, um usuário pode, opcionalmente, usar o serviço Amazon Route 53 para mapear o próprio nome de domínio do usuário para o ponto de extremidade do Amazon S3
 

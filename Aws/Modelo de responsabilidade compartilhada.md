@@ -1,13 +1,10 @@
-# **Modelo de responsabilidade compartilhada**
+- [**_Responsabilidade do cliente_**](#responsabilidade-do-cliente)
+  - [**`Segurança na nuvem`** (Responsabilidade do cliente)](#segurança-na-nuvem-responsabilidade-do-cliente)
+- [**_Responsabilidade da AWS_**](#responsabilidade-da-aws)
+  - [**`Segurança da nuvem`** (Responsabilidade da AWS)](#segurança-da-nuvem-responsabilidade-da-aws)
+- [**_Caracteristicas do serviço e responsabilidade de segurança_**](#caracteristicas-do-serviço-e-responsabilidade-de-segurança)
 
-- [**Modelo de responsabilidade compartilhada**](#modelo-de-responsabilidade-compartilhada)
-  - [**_Responsabilidade do cliente_**](#responsabilidade-do-cliente)
-    - [**`Segurança na nuvem`** (Responsabilidade do cliente)](#segurança-na-nuvem-responsabilidade-do-cliente)
-  - [**_Responsabilidade da AWS_**](#responsabilidade-da-aws)
-    - [**`Segurança da nuvem`** (Responsabilidade da AWS)](#segurança-da-nuvem-responsabilidade-da-aws)
-  - [**_Caracteristicas do serviço e responsabilidade de segurança_**](#caracteristicas-do-serviço-e-responsabilidade-de-segurança)
-
-## **_Responsabilidade do cliente_**
+# **_Responsabilidade do cliente_**
 
 - Dados do cliente
 - Aplicativos, IAM
@@ -16,7 +13,7 @@
 - Criptografia no lado do servidor (sistema de arquivos ou dados)
 - Proteção de trafego de rede
 
-### **`Segurança na nuvem`** (Responsabilidade do cliente)
+## **`Segurança na nuvem`** (Responsabilidade do cliente)
 
 - Sistema operacional da instância do Amazon Elastic Compute Cloud (Amazon EC2)
   - Incluindo aplicação de patches, manutenção
@@ -28,12 +25,12 @@
 - Gerenciamento de contas
   - Configurações de permissão e login para cada usuário
 
-## **_Responsabilidade da AWS_**
+# **_Responsabilidade da AWS_**
 
 - Serviços fundamentais (computação, armazenamento, banco de dados, redes)
 - Infraestrutura global (regiões, zonas de disponibilidade, locais de borda)
 
-### **`Segurança da nuvem`** (Responsabilidade da AWS)
+## **`Segurança da nuvem`** (Responsabilidade da AWS)
 
 - Segurança física dos data centers: Acesso controlado e baseado em necessidades
 - Infraestrutura de hardware e de software:
@@ -43,7 +40,7 @@
 
 A proteção dessa infraestrutura é a prioridade número um da AWS. Não é possível visitar os data centers ou escritórios da AWS para conferir essa proteção pessoalmente. No entanto, a Amazon oferece vários relatórios de auditores de terceiros que verificaram a conformidade da AWS com várias de normas e regulamentos de segurança de computadores.
 
-## **_Caracteristicas do serviço e responsabilidade de segurança_**
+# **_Caracteristicas do serviço e responsabilidade de segurança_**
 
 - **_IaaS_** (`Ex: EC2, EBS, VPC`)
   - O cliente tem mais flexibilidade em relação a configuração de rede e armazenamento

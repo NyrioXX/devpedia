@@ -1,6 +1,6 @@
 # Métodos de Array
 
-## Array de Números e Nomes
+# Array de Números e Nomes
 
 ```javascript
 const arrayDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -8,7 +8,7 @@ const arrayDeNomes = ["maria", "jose", "joao", "marta"];
 let teste;
 ```
 
-### .shift()
+# .shift()
 
 Remove o primeiro item do array e o retorna.
 
@@ -16,7 +16,7 @@ Remove o primeiro item do array e o retorna.
 console.log(arrayDeNumeros.shift());
 ```
 
-### .unshift()
+# .unshift()
 
 Adiciona algo ao primeiro item do array.
 
@@ -24,7 +24,7 @@ Adiciona algo ao primeiro item do array.
 console.log(arrayDeNumeros.unshift(0));
 ```
 
-### .pop()
+# .pop()
 
 Remove o último item do array.
 
@@ -32,7 +32,7 @@ Remove o último item do array.
 console.log(arrayDeNomes.pop());
 ```
 
-### .push()
+# .push()
 
 Adiciona um item ao final do array.
 
@@ -40,7 +40,7 @@ Adiciona um item ao final do array.
 console.log(arrayDeNumeros.push(10));
 ```
 
-### .indexOf()
+# .indexOf()
 
 Retorna o índice do item procurado; se não encontrar, retorna -1.
 
@@ -48,7 +48,7 @@ Retorna o índice do item procurado; se não encontrar, retorna -1.
 console.log(arrayDeNomes.indexOf("jose"));
 ```
 
-### .includes()
+# .includes()
 
 Retorna um booleano se o item procurado está presente.
 
@@ -56,7 +56,7 @@ Retorna um booleano se o item procurado está presente.
 console.log(arrayDeNomes.includes("felipe"));
 ```
 
-### .reverse()
+# .reverse()
 
 Inverte a ordem do array (altera o array original).
 
@@ -64,7 +64,7 @@ Inverte a ordem do array (altera o array original).
 console.log(arrayDeNumeros.reverse());
 ```
 
-### .join()
+# .join()
 
 Junta os itens do array em uma string, separando-os com o especificado.
 
@@ -72,7 +72,7 @@ Junta os itens do array em uma string, separando-os com o especificado.
 console.log(arrayDeNomes.join(" "));
 ```
 
-### .concat()
+# .concat()
 
 Junta vários arrays em um só.
 
@@ -80,7 +80,7 @@ Junta vários arrays em um só.
 console.log(arrayDeNumeros.concat(arrayDeNomes));
 ```
 
-### .slice()
+# .slice()
 
 Retira um pedaço do array, começando do primeiro número especificado e terminando no segundo.
 
@@ -88,7 +88,7 @@ Retira um pedaço do array, começando do primeiro número especificado e termin
 console.log(arrayDeNomes.slice(1, 3));
 ```
 
-### .splice()
+# .splice()
 
 Altera o conteúdo do array, removendo e/ou adicionando itens.
 
@@ -96,7 +96,7 @@ Altera o conteúdo do array, removendo e/ou adicionando itens.
 console.log(arrayDeNomes.splice(0, arrayDeNomes.length, "felipe"));
 ```
 
-### .every()
+# .every()
 
 Testa se todos os elementos do array são verdadeiros.
 
@@ -104,7 +104,7 @@ Testa se todos os elementos do array são verdadeiros.
 console.log(arrayDeNumeros.every(Number));
 ```
 
-### .some()
+# .some()
 
 Testa se algum elemento do array é verdadeiro.
 
@@ -112,7 +112,7 @@ Testa se algum elemento do array é verdadeiro.
 console.log(arrayDeNomes.some(isNaN));
 ```
 
-### .find()
+# .find()
 
 Retorna o primeiro elemento do array que atende à condição.
 
@@ -124,7 +124,7 @@ console.log(
 );
 ```
 
-### .findIndex()
+# .findIndex()
 
 Encontra o índice do primeiro elemento correspondente à função.
 
@@ -136,7 +136,7 @@ console.log(
 );
 ```
 
-### .filter()
+# .filter()
 
 Cria um novo array com os itens que atendem às condições do filtro.
 
@@ -148,7 +148,7 @@ console.log(
 );
 ```
 
-### .map()
+# .map()
 
 Executa a função em cada elemento do array.
 
@@ -158,7 +158,7 @@ arrayDeNumeros.map((numero) => {
 });
 ```
 
-### .sort()
+# .sort()
 
 Ordena o array de acordo com a tabela Unicode. Pode ser usado com uma função para ordenação personalizada.
 
@@ -175,7 +175,7 @@ console.log(
 );
 ```
 
-### .toLocaleString()
+# .toLocaleString()
 
 Converte o array de números em uma string formatada.
 
@@ -183,7 +183,7 @@ Converte o array de números em uma string formatada.
 console.log(arrayDeNumeros.toLocaleString());
 ```
 
-### .reduce()
+# .reduce()
 
 Executa uma função em todos os elementos do array e retorna um resultado.
 
@@ -195,7 +195,7 @@ console.log(
 );
 ```
 
-### .reduce() com Condição Opcional
+# .reduce() com Condição Opcional
 
 Pode usar uma condição opcional.
 
@@ -207,7 +207,7 @@ console.log(
 );
 ```
 
-### Como Reduzir Vários Arrays
+# Como Reduzir Vários Arrays
 
 Usando `reduce` para reduzir vários arrays.
 

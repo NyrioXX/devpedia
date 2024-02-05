@@ -1,7 +1,7 @@
 - [**Rest**](#rest)
-  - [**Principios do design REST**](#principios-do-design-rest)
-  - [**Solicitações REST**](#solicitações-rest)
-  - [**Estrutura de pastas**](#estrutura-de-pastas)
+- [**Principios do design REST**](#principios-do-design-rest)
+- [**Solicitações REST**](#solicitações-rest)
+- [**Estrutura de pastas**](#estrutura-de-pastas)
 
 # **Rest**
 
@@ -11,7 +11,7 @@
 
 - REST é um design de API muito conhecido que substituiu amplamente o Simple Object Access Protocol (SOAP) como padrão para serviços da web
 
-## **Principios do design REST**
+# **Principios do design REST**
 
 - O REST segue seis princípios de design
 
@@ -27,7 +27,7 @@
 
 6. Opcionalmente, os serviços RESTful podem comportar código sob demanda. Código sob demanda significa que o servidor pode passar um código (que pode ser executado) para o cliente, como algum JavaScript. Esse recurso estende a funcionalidade do cliente REST
 
-## **Solicitações REST**
+# **Solicitações REST**
 
 - Uma solicitação REST inclui vários componentes:
 
@@ -73,7 +73,7 @@
 
 - O exemplo de resposta está no formato JavaScript Object Notation (JSON)
 
-## **Estrutura de pastas**
+# **Estrutura de pastas**
 
 - A estrutura de pastas em um projeto RESTful pode variar de acordo com a preferência da equipe de desenvolvimento e as tecnologias utilizadas. No entanto, uma estrutura comum pode incluir:
 

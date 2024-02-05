@@ -4,7 +4,7 @@
 let numeros: number[] = [1, 2, 3, 4];
 ```
 
-## **_Arrays Readonly e com Funções_**
+# **_Arrays Readonly e com Funções_**
 
 - Arrays que não podem ser alterados, apenas lidos
 
@@ -12,7 +12,7 @@ let numeros: number[] = [1, 2, 3, 4];
 let numerosReadonly: ReadonlyArray<number> = [1, 2, 3, 4];
 ```
 
-## **_Array com função_**
+# **_Array com função_**
 
 ```javascript
 let arrayComFuncao: {
@@ -26,7 +26,7 @@ let arrayComFuncao: {
 };
 ```
 
-## **_Construtor de Arrays_**
+# **_Construtor de Arrays_**
 
 O usuario pode utilizar construtores para inicializar arrays com valores predefinidos:
 
@@ -34,7 +34,7 @@ O usuario pode utilizar construtores para inicializar arrays com valores predefi
 let arrayConstrutor: number[] = new Array(3).fill(0); // Inicializa um array com três elementos, todos iguais a 0.
 ```
 
-## **_Desconstrução de Arrays_**
+# **_Desconstrução de Arrays_**
 
 Desconstrução permite atribuir valores de um array a variáveis individuais:
 

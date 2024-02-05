@@ -1,15 +1,12 @@
-# **Amazon CLI**
+- [`Para instalar a AWS CLI usando pip, execute o seguinte comando:`](#para-instalar-a-aws-cli-usando-pip-execute-o-seguinte-comando)
+- [`Para verificar a instalação, execute o seguinte comando:`](#para-verificar-a-instalação-execute-o-seguinte-comando)
+- [`AWS Configure`](#aws-configure)
+- [`AWS Help`](#aws-help)
+- [`Opções query`](#opções-query)
+- [`AWS filter`](#aws-filter)
+- [`AWS Dry run`](#aws-dry-run)
 
-- [**Amazon CLI**](#amazon-cli)
-  - [`Para instalar a AWS CLI usando pip, execute o seguinte comando:`](#para-instalar-a-aws-cli-usando-pip-execute-o-seguinte-comando)
-    - [`Para verificar a instalação, execute o seguinte comando:`](#para-verificar-a-instalação-execute-o-seguinte-comando)
-  - [`AWS Configure`](#aws-configure)
-  - [`AWS Help`](#aws-help)
-  - [`Opções query`](#opções-query)
-  - [`AWS filter`](#aws-filter)
-  - [`AWS Dry run`](#aws-dry-run)
-
-## `Para instalar a AWS CLI usando pip, execute o seguinte comando:`
+# `Para instalar a AWS CLI usando pip, execute o seguinte comando:`
 
 ```bash
 pip3 install awscli --upgrade –-user
@@ -17,7 +14,7 @@ pip3 install awscli --upgrade –-user
 
 O switch —user é usado para colocar a instalação da AWS CLI em ~/.local/bin
 
-### `Para verificar a instalação, execute o seguinte comando:`
+# `Para verificar a instalação, execute o seguinte comando:`
 
 ```bash
 aws --version
@@ -29,7 +26,7 @@ aws --version
 aws-cli/1.16.137 Python/3.7.3 Linux/4.14.77-81.59-amzn2.x86_64 botocore/1.12.127
 ```
 
-## `AWS Configure`
+# `AWS Configure`
 
 ```bash
 $ aws configure
@@ -62,7 +59,7 @@ Formato de saída padrão [Nenhum]: json
 
   Observação: **_`os nomes dos parâmetros são precedidos por dois traços (--).`_**
 
-## `AWS Help`
+# `AWS Help`
 
 - Todos os comandos na AWS CLI têm exemplos de sintaxe e comandos disponíveis. Para acessar esses exemplos com o comando help
 
@@ -70,7 +67,7 @@ Formato de saída padrão [Nenhum]: json
 aws ec2 help
 ```
 
-## `Opções query`
+# `Opções query`
 
 - Serve para limitar a resposta no CLI
 
@@ -84,7 +81,7 @@ aws ec2 describe-instances --query 'Reservations[0].Instances[0].State.Name'
 # Mostrar o estado nomeado da primeira instância
 ```
 
-## `AWS filter`
+# `AWS filter`
 
 - Serve para filtrar a resposta do CLI
 
@@ -93,7 +90,7 @@ aws ec2 describe-instances –-filter "Name=platform,Values=windows"
 #  Mostrar apenas instâncias do Microsoft Windows
 ```
 
-## `AWS Dry run`
+# `AWS Dry run`
 
 - Serve para testar se as permissões estão presentes mas sem realizar uma solicitação
 

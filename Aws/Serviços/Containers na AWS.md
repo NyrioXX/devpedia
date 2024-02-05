@@ -1,11 +1,11 @@
 - [**Containers**](#containers)
-  - [**Docker**](#docker)
-  - [**Amazon Elastic Container Registry (Amazon ECR)**](#amazon-elastic-container-registry-amazon-ecr)
-  - [**Amazon Elastic Container Service (Amazon ECS)**](#amazon-elastic-container-service-amazon-ecs)
-  - [**Kubernetes**](#kubernetes)
-  - [**Amazon Elastic Kubernetes Service (Amazon EKS)**](#amazon-elastic-kubernetes-service-amazon-eks)
-  - [**AWS Fargate**](#aws-fargate)
-    - [**Desafios do uso de containers**](#desafios-do-uso-de-containers)
+- [**Docker**](#docker)
+- [**Amazon Elastic Container Registry (Amazon ECR)**](#amazon-elastic-container-registry-amazon-ecr)
+- [**Amazon Elastic Container Service (Amazon ECS)**](#amazon-elastic-container-service-amazon-ecs)
+- [**Kubernetes**](#kubernetes)
+- [**Amazon Elastic Kubernetes Service (Amazon EKS)**](#amazon-elastic-kubernetes-service-amazon-eks)
+- [**AWS Fargate**](#aws-fargate)
+- [**Desafios do uso de containers**](#desafios-do-uso-de-containers)
 
 # **Containers**
 
@@ -46,7 +46,7 @@
   2. Inspecionar diferenças entre versões
   3. Reverter para versões anteriores
 
-## **Docker**
+# **Docker**
 
 - O Docker é uma plataforma de software que empacota programas de software (como aplicativos) em unidades chamadas contêineres
 
@@ -68,26 +68,33 @@
 
 - O usuario pode optar por gerenciar a infraestrutura do Kubernetes por conta própria executando-a em instâncias do EC2. Ou o usuario pode usar um plano de controle do Kubernetes provisionado e gerenciado automaticamente com o Amazon EKS
 
-- O Amazon EKS facilita a implantação, o gerenciamento e o dimensionamento de aplicativos conteinerizados por meio do Kubernetes. Ele executa a infraestrutura de gerenciamento do Kubernetes para o usuario em várias Zonas de Disponibilidade da AWS para eliminar os pontos únicos de falha
+# **Amazon Elastic Container Registry (Amazon ECR)**
 
-- O Amazon EKS até ao certificado do Kubernetes para que o usuario possa usar todos os plugins e ferramentas existentes de parceiros da AWS e da comunidade do Kubernetes
+- O Amazon Elastic Container Registry (Amazon ECR) é um registro de contêiner do Docker totalmente gerenciado
 
-  - Os aplicativos que são executados em qualquer ambiente padrão do Kubernetes são totalmente compatíveis e podem ser migrados para o Amazon EKS
+- Com o Amazon ECR, os desenvolvedores podem armazenar, gerenciar e implantar facilmente imagens de contêiner do Docker
 
-- `Como o Amazon EKS funciona`:
+- Como ele e é integrado ao Amazon ECS, o usuario pode armazenar, executar e gerenciar imagens de contêiner para aplicativos executados no Amazon ECS. Basta especificar o repositório do Amazon ECR em sua definição de tarefa que o Amazon ECS recupera as imagens apropriadas para seus aplicativos
 
-1. Provisionamento de um cluster do Amazon EKS
-   - O Amazon EKS implanta automaticamente nós do plano de controle do Kubernetes
-2. Implantação de nós de operador
-   - Adiciona o número de nós de operador necessários para seu cluster do Amazon EKS
-3. Conecta-se ao Amazon EKS
-   - Aponta suas ferramentas preferidas do Kubernetes para o cluster do Amazon EKS
-4. Executa os aplicativos do Kubernetes
-   - Implanta seus aplicativos do Kubernetes em seu cluster do Amazon EKS
+- O Amazon ECR é compatível com a API HTTP do Docker Registry versão 2, que permite que o usuario interaja com o Amazon ECR usando comandos da CLI do Docker ou suas ferramentas preferidas do Docker. Assim, o usuario pode manter seu fluxo de trabalho de desenvolvimento atual
 
-## **Amazon Elastic Container Registry (Amazon ECR)**
+- O Amazon ECR pode ser acessado de qualquer ambiente do Docker, seja na nuvem, no local ou em sua máquina local
 
-## **Amazon Elastic Container Service (Amazon ECS)**
+- `O Amazon ECR armazena suas imagens de contêiner no Amazon Simple Storage Service (Amazon S3)` para aproveitar a alta disponibilidade e durabilidade do Amazon S3
+
+- O usuario pode definir e organizar repositórios em seu registro do Amazon ECR usando namespaces. Desse modo, o usuario pode organizar seus repositórios com base nos fluxos de trabalho existentes de sua equipe
+
+- É também possível definir as ações de API que outro usuário pode executar em seu repositório. Dessa forma, o usuario pode compartilhar facilmente seus repositórios com diferentes usuários e contas da AWS
+
+- O Amazon ECR usa o AWS Identity and Access Management (IAM) para controle de acesso
+
+  - Isso permite que o usuario controle quem e o quê (por exemplo, instâncias do EC2) podem acessar suas imagens de contêiner por meio de políticas definidas
+
+- O usuario pode transferir suas imagens de contêiner do e para Amazon ECS via HTTPS. Suas imagens também são automaticamente criptografadas em repouso usando a criptografia do lado do servidor do Amazon S3
+
+- Por fim, o Amazon ECR também é compatível com integrações de terceiros
+
+# **Amazon Elastic Container Service (Amazon ECS)**
 
 - O Amazon Elastic Container Service (Amazon ECS) é um serviço de gerenciamento de contêineres altamente dimensionável e de alto desempenho compatível com contêineres do Docker
 
@@ -118,33 +125,7 @@
 
 - O usuario pode executar quantas tarefas quiser com base em uma única definição de tarefa, que o usuario registra com o serviço
 
-- O Amazon Elastic Container Registry (Amazon ECR) é um registro de contêiner do Docker totalmente gerenciado
-
-- Com o Amazon ECR, os desenvolvedores podem armazenar, gerenciar e implantar facilmente imagens de contêiner do Docker
-
-- Como ele e é integrado ao Amazon ECS, o usuario pode armazenar, executar e gerenciar imagens de contêiner para aplicativos executados no Amazon ECS. Basta especificar o repositório do Amazon ECR em sua definição de tarefa que o Amazon ECS recupera as imagens apropriadas para seus aplicativos
-
-- O Amazon ECR é compatível com a API HTTP do Docker Registry versão 2, que permite que o usuario interaja com o Amazon ECR usando comandos da CLI do Docker ou suas ferramentas preferidas do Docker. Assim, o usuario pode manter seu fluxo de trabalho de desenvolvimento atual
-
-- O Amazon ECR pode ser acessado de qualquer ambiente do Docker, seja na nuvem, no local ou em sua máquina local
-
-- `O Amazon ECR armazena suas imagens de contêiner no Amazon Simple Storage Service (Amazon S3)` para aproveitar a alta disponibilidade e durabilidade do Amazon S3
-
-- O usuario pode definir e organizar repositórios em seu registro do Amazon ECR usando namespaces. Desse modo, o usuario pode organizar seus repositórios com base nos fluxos de trabalho existentes de sua equipe
-
-- É também possível definir as ações de API que outro usuário pode executar em seu repositório. Dessa forma, o usuario pode compartilhar facilmente seus repositórios com diferentes usuários e contas da AWS
-
-- O Amazon ECR usa o AWS Identity and Access Management (IAM) para controle de acesso
-
-  - Isso permite que o usuario controle quem e o quê (por exemplo, instâncias do EC2) podem acessar suas imagens de contêiner por meio de políticas definidas
-
-- O usuario pode transferir suas imagens de contêiner do e para Amazon ECS via HTTPS. Suas imagens também são automaticamente criptografadas em repouso usando a criptografia do lado do servidor do Amazon S3
-
-- Por fim, o Amazon ECR também é compatível com integrações de terceiros
-
--
-
-## **Kubernetes**
+# **Kubernetes**
 
 - O Kubernetes é um software de orquestração de contêineres de código aberto. Ele permite que o usuario implante e gerencie aplicativos conteinerizados em escala
 
@@ -173,9 +154,26 @@
 - Como é um projeto de código aberto, é fácil adicionar novas funcionalidades ao Kubernetes
   - Uma grande comunidade de desenvolvedores e empresas cria extensões, integrações e plugins que ajudam os usuários do Kubernetes a fazer mais
 
-## **Amazon Elastic Kubernetes Service (Amazon EKS)**
+# **Amazon Elastic Kubernetes Service (Amazon EKS)**
 
-## **AWS Fargate**
+- O Amazon EKS facilita a implantação, o gerenciamento e o dimensionamento de aplicativos conteinerizados por meio do Kubernetes. Ele executa a infraestrutura de gerenciamento do Kubernetes para o usuario em várias Zonas de Disponibilidade da AWS para eliminar os pontos únicos de falha
+
+- O Amazon EKS até ao certificado do Kubernetes para que o usuario possa usar todos os plugins e ferramentas existentes de parceiros da AWS e da comunidade do Kubernetes
+
+  - Os aplicativos que são executados em qualquer ambiente padrão do Kubernetes são totalmente compatíveis e podem ser migrados para o Amazon EKS
+
+- `Como o Amazon EKS funciona`:
+
+1. Provisionamento de um cluster do Amazon EKS
+   - O Amazon EKS implanta automaticamente nós do plano de controle do Kubernetes
+2. Implantação de nós de operador
+   - Adiciona o número de nós de operador necessários para seu cluster do Amazon EKS
+3. Conecta-se ao Amazon EKS
+   - Aponta suas ferramentas preferidas do Kubernetes para o cluster do Amazon EKS
+4. Executa os aplicativos do Kubernetes
+   - Implanta seus aplicativos do Kubernetes em seu cluster do Amazon EKS
+
+# **AWS Fargate**
 
 - O AWS Fargate é uma tecnologia para o Amazon ECS que permite que o usuario execute contêineres sem precisar gerenciar servidores nem clusters
 
@@ -217,7 +215,7 @@
 
 - Nenhum plugin adicional é necessário para executar seus contêineres como Fargate
 
-### **Desafios do uso de containers**
+# **Desafios do uso de containers**
 
 - Tendo em vista as várias vantagens oferecidas pelos contêineres, esses benefícios também apresentam alguns desafios, como
   - O uso de contêineres está aumentando rapidamente

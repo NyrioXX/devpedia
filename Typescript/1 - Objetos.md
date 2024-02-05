@@ -7,7 +7,7 @@ let pessoa: { nome: string; idade: number } = {
 };
 ```
 
-## **_Objetos Readonly_**
+# **_Objetos Readonly_**
 
 - É um mobjeto que não pode ser alterado, apenas lido
 
@@ -18,7 +18,7 @@ let pessoaReadOnly: Readonly<{ nome: string; idade: number }> = {
 };
 ```
 
-## **_Objetos Nested_**
+# **_Objetos Nested_**
 
 - É um objeto dentro de um objeto
 
@@ -31,7 +31,7 @@ let detalhes: { endereco: { rua: string; cidade: string } } = {
 };
 ```
 
-## **_Objetos com Funções_**
+# **_Objetos com Funções_**
 
 ```typescript
 let objetoComFuncao: {

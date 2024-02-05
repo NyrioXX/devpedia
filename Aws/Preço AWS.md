@@ -1,16 +1,13 @@
-# **Preços AWS**
+- [**_3 fatores fundamentais de custos na AWS_**](#3-fatores-fundamentais-de-custos-na-aws)
+- [**_Caracteristicas da precificação na AWS_**](#caracteristicas-da-precificação-na-aws)
 
-- [**Preços AWS**](#preços-aws)
-  - [**_3 fatores fundamentais de custos na AWS_**](#3-fatores-fundamentais-de-custos-na-aws)
-  - [**_Caracteristicas da precificação na AWS_**](#caracteristicas-da-precificação-na-aws)
-
-## **_3 fatores fundamentais de custos na AWS_**
+# **_3 fatores fundamentais de custos na AWS_**
 
 1. Computação: é cobrado por hora/minuto e varia com o tipo de instancia (somente linux)
 2. Armazenamento: Cobrado, normamente, por GB
 3. Transferência de dados: Saida é agregada e cobrada, a **`entrada não tem cobrança`** (possui excessões), cobrado normalmente por GB
 
-## **_Caracteristicas da precificação na AWS_**
+# **_Caracteristicas da precificação na AWS_**
 
 - Os **`pagamentos são feitos conforme o uso`**, possuem desconto em caso de reservas e tendem a diminuir com o crescimento da AWS. É possível calcular custos com a calculadora da própria AWS.
 - Não são necessarios contratos de longo prazo para o uso dos serviços, portanto podem ser cancelados a qualquer momento

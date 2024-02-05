@@ -1,12 +1,12 @@
 - [**Amazon Identity Access Mananger (IAM)**](#amazon-identity-access-mananger-iam)
-  - [**Tipos de credenciais de segurança**](#tipos-de-credenciais-de-segurança)
-    - [**Multi-factor authentication (MFA)**](#multi-factor-authentication-mfa)
-    - [**Funcionamento do IAM**](#funcionamento-do-iam)
-  - [**Grupos IAM**](#grupos-iam)
-  - [**Funções do IAM**](#funções-do-iam)
-  - [**Tipos de politica do IAM**](#tipos-de-politica-do-iam)
-    - [**_Politicas baseadas em identidade_**](#politicas-baseadas-em-identidade)
-    - [**_Politicas baseadas em recursos_**](#politicas-baseadas-em-recursos)
+- [**Tipos de credenciais de segurança**](#tipos-de-credenciais-de-segurança)
+- [**Multi-factor authentication (MFA)**](#multi-factor-authentication-mfa)
+- [**Funcionamento do IAM**](#funcionamento-do-iam)
+- [**Grupos IAM**](#grupos-iam)
+- [**Funções do IAM**](#funções-do-iam)
+- [**Tipos de politica do IAM**](#tipos-de-politica-do-iam)
+  - [**_Politicas baseadas em identidade_**](#politicas-baseadas-em-identidade)
+  - [**_Politicas baseadas em recursos_**](#politicas-baseadas-em-recursos)
 
 # **Amazon Identity Access Mananger (IAM)**
 
@@ -26,7 +26,7 @@
 - Quando um usuario IAM é criado ele não tem credenciais padrão, estas devem ser criadas pelo controlador e anexadas/distribuidas com suas respectivas politicas
 - Um usuário do IAM é somente uma identidade com permissões associadas. É possivel criar um usuário do IAM para representar um aplicativo que precisa de credenciais para fazer solicitações à AWS. Um aplicativo pode ter sua própria identidade em sua conta e seu próprio conjunto de permissões, da mesma forma que os processos têm suas próprias identidades e permissões em um sistema operacional, como Microsoft Windows ou Linux.
 
-## **Tipos de credenciais de segurança**
+# **Tipos de credenciais de segurança**
 
 1. **_Endereço de email e senha_** - associado a conta raiz da AWS
 2. **_Nome de usuario e senha_** - usados para acessar o console de gerenciamento da AWS
@@ -34,19 +34,19 @@
 4. **_Multi-factor authentication (MFA)_** - camada extra de segurança que pode ser usada (e é extremamente recomendada) por usuarios raiz e IAM
 5. **_Pares de chaves_** - usados apenas para serviços AWS especificos, como amazon EC2
 
-### **Multi-factor authentication (MFA)**
+# **Multi-factor authentication (MFA)**
 
 - A autenticação de 2 fatores pode ser feita com hardware ou software de autenticação (ex: google authenticator, Authy...) ou com codigo via SMS
 - O AWS security token service (STS) tambem permite gerar credenciais temporarias de permissão limitada
 
-### **Funcionamento do IAM**
+# **Funcionamento do IAM**
 
 - Autentica o ID de chave de acesso e a chave de acesso secreta
 - Fornece acesso a interface de programação de aplicativos (API), AWS Command Line Interface (AWS CLI), kits de desenvolvimento de software (SDKs) e outras ferramentas de desenvolvimento
 - Usa o ID da conta ou alias, nome de usuário do IAM e senha
 - Se ativada, a MFA solicita o código de autenticação
 
-## **Grupos IAM**
+# **Grupos IAM**
 
 - Um grupo é um conjunto de usuarios IAM
 - Grupos IAM não podem ser aninhados (grupos não podem conter outros grupos)
@@ -55,7 +55,7 @@
 - Não existe um grupo padrão que inclua todos os usuarios, caso deseje fazer isso deve o usario com controle total deve criar e atribuir todos os novos usarios a ele
 - É uma pratica recomendada atribuir permissões ao grupo em vez de atribuir a mesma permissão a varios usuarios
 
-## **Funções do IAM**
+# **Funções do IAM**
 
 - Delegar acessos
 - Fornecer acesso temporario
@@ -77,16 +77,16 @@
 - Como as políticas são armazenadas no formato JavaScript Object Notation (JSON), o usuario pode usá-las com um sistema de controle de versão.
 - Quando o usuario determina se as permissões são concedidas, o IAM primeiro verifica se há uma política de negação explícita. Se não houver, ele vai então conferir se há uma política de permissão explícita. Caso não haja uma política de permissão nem de negação explícita, o IAM reverterá para o padrão: negação implícita.
 
-## **Tipos de politica do IAM**
+# **Tipos de politica do IAM**
 
-### **_Politicas baseadas em identidade_**
+## **_Politicas baseadas em identidade_**
 
 - As políticas baseadas em identidade são políticas de permissões que o usuario pode anexar a um principal ou uma identidade, como um usuário, uma função ou um grupo do IAM. Essas políticas controlam quais ações essa identidade pode realizar, em quais recursos e em que condições. As políticas baseadas em identidade podem ser categorizadas como:
 
   - **_Políticas gerenciadas_**: políticas independentes baseadas em identidade que o usuario pode anexar a vários usuários, grupos e funções em sua conta da AWS
   - **_Políticas em linha_**: políticas que o usuario cria e gerencia e que são incorporadas diretamente em um único usuário, grupo ou função
 
-### **_Politicas baseadas em recursos_**
+## **_Politicas baseadas em recursos_**
 
 É possivel usar o simulador de políticas do IAM para testar e solucionar problemas do IAM e políticas baseadas em recursos
 

@@ -1,11 +1,8 @@
-- [**Alta confiabilidade e disponibilidade**](#alta-confiabilidade-e-disponibilidade)
-  - [**_Confiabilidade_**](#confiabilidade)
-    - [**_Confiabilidade VS Disponibilidade_**](#confiabilidade-vs-disponibilidade)
-  - [**_Disponibilidade_**](#disponibilidade)
+- [**Confiabilidade**](#confiabilidade)
+  - [**Confiabilidade VS Disponibilidade**](#confiabilidade-vs-disponibilidade)
+- [**Disponibilidade**](#disponibilidade)
 
-# **Alta confiabilidade e disponibilidade**
-
-## **_Confiabilidade_**
+# **Confiabilidade**
 
 - Probabilidade de que o sistema como um todo funcione por um período específico
 - Inclui hardware, firmware e software
@@ -14,7 +11,7 @@
   1. Tempo médio entre falhas (MTBF): tempo total em serviço/número de falhas
   2. Taxa de falhas: número de falhas/tempo total em serviço
 
-### **_Confiabilidade VS Disponibilidade_**
+## **Confiabilidade VS Disponibilidade**
 
 - `Confiabilidade` é a medida do tempo durante o qual um recurso executa a função pretendida
 - `Disponibilidade` é a medida da porcentagem do tempo durante o qual um recurso opera normalmente
@@ -23,7 +20,7 @@
     - Abreviação comum:Indica apenas o número de noves
     - Por exemplo, 5 noves equivale a 99,999% de disponibilidade
 
-## **_Disponibilidade_**
+# **Disponibilidade**
 
 - Garantir que o tempo de inatividade do aplicativo seja minimizado o máximo possível sem a necessidade de intervenção humana
 - O objetivo da alta disponibilidade é garantir que os sistemas funcionem e fiquem acessíveis na maior parte do tempo

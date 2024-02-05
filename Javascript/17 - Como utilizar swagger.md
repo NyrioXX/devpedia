@@ -2,7 +2,7 @@
 
 O Swagger Autogen oferece suporte tanto para a geração automática da documentação Swagger utilizando anotações no código quanto para a definição manual das informações. A seguir, apresentaremos um tutorial abrangente que cobre ambos os métodos.
 
-## Instalação
+# Instalação
 
 Certifique-se de ter o Node.js instalado em seu sistema. Em seguida, execute o seguinte comando para instalar o Swagger Autogen e outras dependências:
 
@@ -10,9 +10,9 @@ Certifique-se de ter o Node.js instalado em seu sistema. Em seguida, execute o s
 npm install --save swagger-autogen express
 ```
 
-## Configuração Básica
+# Configuração Básica
 
-### Com Anotações Swagger
+# Com Anotações Swagger
 
 Crie um arquivo `swaggerConfig.js` na raiz do seu projeto para configurar a geração automática da documentação Swagger utilizando anotações.
 
@@ -27,7 +27,7 @@ const endpointsFiles = ["./app.js"]; // Substitua pelo caminho do seu arquivo pr
 swaggerAutogen(outputFile, endpointsFiles);
 ```
 
-### Sem Anotações Swagger
+# Sem Anotações Swagger
 
 Se preferir não usar anotações Swagger, o usuario pode definir manualmente as informações de documentação no mesmo arquivo `swaggerConfig.js`.
 
@@ -54,7 +54,7 @@ const endpoints = [
 swaggerAutogen(outputFile, endpoints);
 ```
 
-## Gerando a Documentação Swagger
+# Gerando a Documentação Swagger
 
 Execute o script `swaggerConfig.js` para gerar o arquivo JSON da documentação Swagger.
 
@@ -64,7 +64,7 @@ node swaggerConfig.js
 
 Isso criará ou atualizará o arquivo chamado `swagger-output.json` na raiz do seu projeto.
 
-## Inicializando o Swagger UI
+# Inicializando o Swagger UI
 
 Para visualizar a documentação Swagger, o usuario pode usar o Swagger UI. Crie um novo arquivo chamado `swagger-ui.js`:
 
@@ -91,7 +91,7 @@ Agora, execute o script `swagger-ui.js`:
 node swagger-ui.js
 ```
 
-## Configuração Básica com OpenAPI 3.x
+# Configuração Básica com OpenAPI 3.x
 
 Crie um arquivo `swaggerConfig.js` na raiz do seu projeto para configurar a geração automática da documentação Swagger utilizando OpenAPI 3.x.
 
@@ -129,14 +129,14 @@ const routes = ["./path/userRoutes.js", "./path/bookRoutes.js"];
 swaggerAutogen(outputFile, routes, doc);
 ```
 
-## Parâmetros da Função Principal
+# Parâmetros da Função Principal
 
 - **outputFile**: (Obrigatório) - Arquivo de saída. Será o arquivo gerado pelo módulo contendo a documentação no formato identificado pelo Swagger.
 - **routes**: (Obrigatório) - Se estiver usando o express Router, passe no 'routes' apenas o arquivo raiz onde a rota começa, como index.js, app.js, routes.js, etc. Caso contrário, são os arquivos que contêm métodos como get, post, put, use, etc., por exemplo: route.use('/v1', ...) ou app.get('/path', ...).
 
 - **doc**: (Não Obrigatório) - Um objeto contendo os detalhes da documentação. Se não for informado, ou se algum parâmetro do objeto estiver faltando, serão utilizados os valores padrão.
 
-## Construindo a Documentação
+# Construindo a Documentação
 
 Para construir a documentação, adicione o seguinte script no arquivo `package.json` do seu projeto:
 
@@ -152,7 +152,7 @@ E execute o seguinte comando:
 npm run swagger
 ```
 
-## Construindo a Documentação na Inicialização do Projeto
+# Construindo a Documentação na Inicialização do Projeto
 
 Para construir a documentação antes do início do projeto e imediatamente iniciá-lo, modifique a função `swaggerAutogen(...)` no seu arquivo `swaggerConfig.js` da seguinte forma:
 

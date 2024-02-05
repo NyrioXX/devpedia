@@ -1,10 +1,7 @@
-# **AWS e AWS Cloud Adoption Framework (AWS CAF)**
+- [**AWS**](#aws)
+- [**AWS Cloud Adoption Framework (AWS CAF)**](#aws-cloud-adoption-framework-aws-caf)
 
-- [**AWS e AWS Cloud Adoption Framework (AWS CAF)**](#aws-e-aws-cloud-adoption-framework-aws-caf)
-  - [**AWS**](#aws)
-  - [**AWS Cloud Adoption Framework (AWS CAF)**](#aws-cloud-adoption-framework-aws-caf)
-
-## **AWS**
+# **AWS**
 
 A aws é um provedor de serviços web. Um serviço da web é qualquer parte do software disponibilizada pela Internet. Ele usa um formato padronizado, como XML ou JavaScript Object Notation (JSON), para solicitação e resposta de uma interação de uma interface de programação de aplicativo (API).
 
@@ -14,7 +11,7 @@ Existem 3 formas de interagir com a AWS:
 2. **AWS Command Line Interface (CLI)**: Interface de linha de comando
 3. **Amazon SDKs, APIs e bibliotecas**: Kits de programação de interface (API's), bibliotecas e SDK's
 
-## **AWS Cloud Adoption Framework (AWS CAF)**
+# **AWS Cloud Adoption Framework (AWS CAF)**
 
 - O AWS CAF oferece orientações e práticas recomendadas para ajudar as organizações a criar uma abordagem abrangente de computação em nuvem em toda a organização e durante todo o ciclo de vida da TI para acelerar a adoção bem-sucedida da nuvem
 - O AWS CAF está estruturado em torno de seis perspectivas. Essas perspectivas consistem em conjuntos de recursos

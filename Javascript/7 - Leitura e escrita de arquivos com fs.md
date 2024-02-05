@@ -1,10 +1,18 @@
+- [Leitura e Escrita de Arquivos em JavaScript utilizando o módulo `fs`](#leitura-e-escrita-de-arquivos-em-javascript-utilizando-o-módulo-fs)
+- [Leitura de Arquivos](#leitura-de-arquivos)
+  - [Síncrona](#síncrona)
+  - [Assíncrona](#assíncrona)
+- [Escrita de Arquivos](#escrita-de-arquivos)
+  - [Síncrona](#síncrona-1)
+  - [Assíncrona](#assíncrona-1)
+
 # Leitura e Escrita de Arquivos em JavaScript utilizando o módulo `fs`
 
 O Node.js fornece o módulo `fs` (File System) para realizar operações de leitura e escrita de arquivos. Este módulo oferece métodos síncronos e assíncronos para lidar com operações de arquivo. Abaixo, apresento um guia básico sobre como realizar leitura e escrita de arquivos em JavaScript utilizando o módulo `fs`.
 
-## Leitura de Arquivos
+# Leitura de Arquivos
 
-### Síncrona
+## Síncrona
 
 ```javascript
 const fs = require("fs");
@@ -18,7 +26,7 @@ try {
 }
 ```
 
-### Assíncrona
+## Assíncrona
 
 ```javascript
 const fs = require("fs");
@@ -33,9 +41,9 @@ fs.readFile("caminho/do/arquivo.txt", "utf-8", (err, data) => {
 });
 ```
 
-## Escrita de Arquivos
+# Escrita de Arquivos
 
-### Síncrona
+## Síncrona
 
 ```javascript
 const fs = require("fs");
@@ -53,7 +61,7 @@ try {
 }
 ```
 
-### Assíncrona
+## Assíncrona
 
 ```javascript
 const fs = require("fs");

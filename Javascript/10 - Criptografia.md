@@ -1,6 +1,6 @@
 # Princípios de Criptografia e Autenticação
 
-## 4 Princípios da Criptografia
+# 4 Princípios da Criptografia
 
 1. **Confidencialidade**: Garante que as informações são acessíveis apenas por usuários autorizados.
 
@@ -10,14 +10,14 @@
 
 4. **Não-Repúdio**: Impede que uma parte negue a autenticidade de uma comunicação ou transação.
 
-## Bibliotecas Utilizadas
+# Bibliotecas Utilizadas
 
 - **bcrypt**: Biblioteca para a criptografia de senhas.
 - **jsonwebtoken**: Biblioteca para a criação e verificação de tokens JWT.
 
-## Exemplo de Cadastro com Senha Criptografada
+# Exemplo de Cadastro com Senha Criptografada
 
-### Método: `cadastrarUsuario`
+# Método: `cadastrarUsuario`
 
 ```javascript
 const cadastrarUsuario = async (req, res) => {
@@ -39,9 +39,9 @@ const cadastrarUsuario = async (req, res) => {
 };
 ```
 
-## Exemplo de Login
+# Exemplo de Login
 
-### Método: `login`
+# Método: `login`
 
 ```javascript
 const login = async (req, res) => {
@@ -78,9 +78,9 @@ const login = async (req, res) => {
 };
 ```
 
-## Exemplo de Intermediário de Verificação
+# Exemplo de Intermediário de Verificação
 
-### Método: `verificarUsuarioLogado`
+# Método: `verificarUsuarioLogado`
 
 ```javascript
 const jwt = require("jsonwebtoken");

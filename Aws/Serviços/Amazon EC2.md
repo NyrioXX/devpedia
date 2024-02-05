@@ -1,24 +1,24 @@
-# **Amazon Elastic Compute Cloud (EC2)**
-
 - [**Amazon Elastic Compute Cloud (EC2)**](#amazon-elastic-compute-cloud-ec2)
-  - [**9 Passos para implantar um instancia EC2**](#9-passos-para-implantar-um-instancia-ec2)
-    - [1. **_Selecionar uma AMI_**](#1-selecionar-uma-ami)
-    - [2. **_Tipo de instância_**](#2-tipo-de-instância)
-    - [3. **_Configurações de rede_**](#3-configurações-de-rede)
-    - [4. **_Função do IAM (Opcional)_**](#4-função-do-iam-opcional)
-    - [5. **_Dados do usuário (Opcional)_**](#5-dados-do-usuário-opcional)
-    - [6. **_Opções de armazenamento_**](#6-opções-de-armazenamento)
-    - [7. **_Tags_**](#7-tags)
-    - [8. **_Security group_**](#8-security-group)
-    - [9. **_Par de chaves_**](#9-par-de-chaves)
-  - [**Ciclo de vida de uma instancia**](#ciclo-de-vida-de-uma-instancia)
-    - [**_Status das instancias:_**](#status-das-instancias)
-  - [**Modelos de preço**](#modelos-de-preço)
-  - [**Como funciona**](#como-funciona)
-  - [**EC2 Auto Scaling**](#ec2-auto-scaling)
-    - [**_Escalabilidade_**](#escalabilidade)
-      - [**_Dimensionamento com base em um cronograma_**](#dimensionamento-com-base-em-um-cronograma)
-      - [**_Dimensionamento dinâmico_**](#dimensionamento-dinâmico)
+- [**9 Passos para implantar um instancia EC2**](#9-passos-para-implantar-um-instancia-ec2)
+  - [1. **_Selecionar uma AMI_**](#1-selecionar-uma-ami)
+  - [2. **_Tipo de instância_**](#2-tipo-de-instância)
+  - [3. **_Configurações de rede_**](#3-configurações-de-rede)
+  - [4. **_Função do IAM (Opcional)_**](#4-função-do-iam-opcional)
+  - [5. **_Dados do usuário (Opcional)_**](#5-dados-do-usuário-opcional)
+  - [6. **_Opções de armazenamento_**](#6-opções-de-armazenamento)
+  - [7. **_Tags_**](#7-tags)
+  - [8. **_Security group_**](#8-security-group)
+  - [9. **_Par de chaves_**](#9-par-de-chaves)
+- [**Ciclo de vida de uma instancia**](#ciclo-de-vida-de-uma-instancia)
+  - [**Status das instancias**](#status-das-instancias)
+- [**Modelos de preço**](#modelos-de-preço)
+- [**Como funciona**](#como-funciona)
+- [**EC2 Auto Scaling**](#ec2-auto-scaling)
+  - [**_Escalabilidade_**](#escalabilidade)
+  - [**_Dimensionamento com base em um cronograma_**](#dimensionamento-com-base-em-um-cronograma)
+  - [**_Dimensionamento dinâmico_**](#dimensionamento-dinâmico)
+
+# **Amazon Elastic Compute Cloud (EC2)**
 
 O EC2 é uma maquina virtual e seu uso mais comum é como servidor
 
@@ -32,9 +32,9 @@ O EC2 é uma maquina virtual e seu uso mais comum é como servidor
 
 - A instancia pode ser implantada via interface grafica AWS ou por CLI
 
-## **9 Passos para implantar um instancia EC2**
+# **9 Passos para implantar um instancia EC2**
 
-### 1. **_Selecionar uma AMI_**
+## 1. **_Selecionar uma AMI_**
 
 - A AMI contem uma imagem de SO
 
@@ -56,7 +56,7 @@ O EC2 é uma maquina virtual e seu uso mais comum é como servidor
 
 - `Modo AMI de comunidade`: são AMIs criadas pela comunidade e deve ser usado por conta e risco do usuario
 
-### 2. **_Tipo de instância_**
+## 2. **_Tipo de instância_**
 
 - O tipo de instancia determinará:
 
@@ -77,7 +77,7 @@ O EC2 é uma maquina virtual e seu uso mais comum é como servidor
   - exemplo: t3.large -> **`T`** (nome da familia) **`3`** (geração) .**`large`** (tamanho)
 - Quanto maior a geração mais potente e mais caro
 
-### 3. **_Configurações de rede_**
+## 3. **_Configurações de rede_**
 
 - A largura de rede de uma instancia varia de acordo com o seu tipo
 
@@ -130,7 +130,7 @@ O EC2 é uma maquina virtual e seu uso mais comum é como servidor
 
 - Uma conexão entre duas ou mais VPCs é conhecida como conexão de emparelhamento
 
-### 4. **_Função do IAM (Opcional)_**
+## 4. **_Função do IAM (Opcional)_**
 
 - Caso a instancia precise interagir com outros serviços AWS uma função IAM apropriada deve ser anexada
 
@@ -147,7 +147,7 @@ O EC2 é uma maquina virtual e seu uso mais comum é como servidor
 
 - `Nunca se deve armazenar credenciais AWS em uma instancia EC2`
 
-### 5. **_Dados do usuário (Opcional)_**
+## 5. **_Dados do usuário (Opcional)_**
 
 - É possivel especificar um script de dados do usuario ao iniciar uma instancia. O script é usado na primeira execução
 
@@ -155,7 +155,7 @@ O EC2 é uma maquina virtual e seu uso mais comum é como servidor
 
 - Pode ser usado, por exemplo, para reduzir a quantidade de AMIs personalizadas
 
-### 6. **_Opções de armazenamento_**
+## 6. **_Opções de armazenamento_**
 
 - Configurar o volume raiz onde o SO será instalado
 
@@ -177,7 +177,7 @@ O EC2 é uma maquina virtual e seu uso mais comum é como servidor
   1. Elastic file system
   2. Amazon S3
 
-### 7. **_Tags_**
+## 7. **_Tags_**
 
 - É um rotulo que consiste em uma chave e um valor opcional
 
@@ -212,7 +212,7 @@ export INSTANCE_ID=$(curl http://169.254.169.254/latest/meta-data/instance-id)
 aws ec2 describe-instances --instance-id $INSTANCE_ID
 ```
 
-### 8. **_Security group_**
+## 8. **_Security group_**
 
 - Configurar o conjunto de regras de firewall que controlam o trafego da instancia
 
@@ -230,7 +230,7 @@ aws ec2 describe-instances --instance-id $INSTANCE_ID
 
 - Se não existirem regras de saida entao por padrão nenhum trafego de saida será permitido
 
-### 9. **_Par de chaves_**
+## 9. **_Par de chaves_**
 
 - Especificar ou criar um par de chaves é fundamental para o uso da instancia e consiste em uma chave publica que a AWS armazena e uma chave privada que o usuario armazena
 
@@ -277,9 +277,9 @@ aws ec2 describe-instances --instance-id $INSTANCE_ID
 
 - Aplicativos de gerenciamento de configuração (como o `Chef`, o `Puppet` e o `Ansible`) podem simplificar bastante o processo de concessão e revogação de acesso em um grande número de máquinas. Muitas vezes reduz o processo para alguns comandos
 
-## **Ciclo de vida de uma instancia**
+# **Ciclo de vida de uma instancia**
 
-### **_Status das instancias:_**
+## **Status das instancias**
 
 - **_Pendente_**
 
@@ -369,7 +369,7 @@ aws ec2 describe-instances --instance-id $INSTANCE_ID
   |**Ip publico**|RETIDO|LANÇADO|LANÇADO|LANÇADO|
   |**Ip elastico**|RETIDO|RETIDO|DESASSOCIADO|RETIDO|
 
-## **Modelos de preço**
+# **Modelos de preço**
 
 - **_Instancias on-demand_** (Baixo custo e flexibilidade)
   - Pagamento por hora
@@ -397,7 +397,7 @@ aws ec2 describe-instances --instance-id $INSTANCE_ID
   - É feito o pagamento pela programação de uso mesmo que não aconteça
   - Permite que o usuario faça sugestões de preço em instâncias do EC2 não utilizadas, o que pode reduzir seus custos do significativamente. O preço por hora de uma instância spot varia de acordo com a oferta e a demanda. A instância spot é executada sempre que sua sugestão de preço excede o preço de mercado atual.
 
-## **Como funciona**
+# **Como funciona**
 
 - As instâncias do EC2 são executadas como máquinas virtuais em computadores host localizados nas zonas de disponibilidade da AWS
 
@@ -536,7 +536,7 @@ aws ec2 describe-instances --instance-id $INSTANCE_ID
 
      - Há também ferramentas de gerenciamento de configuração de terceiros disponíveis
 
-## **EC2 Auto Scaling**
+# **EC2 Auto Scaling**
 
 - O Amazon EC2 Auto Scaling ajuda o usuario a manter a disponibilidade dos aplicativos
 
@@ -655,9 +655,9 @@ aws ec2 describe-instances --instance-id $INSTANCE_ID
 - O grupo do Amazon EC2 Auto Scaling encerrará a instância existente e criará uma nova instância a partir do modelo de execução do grupo
   - Observe que, em casos como a implantação de uma instância NAT, o NAT ainda é um único ponto de falha. O usuario ainda pode experimentar um tempo de inatividade significativo enquanto uma instância NAT com falha está sendo reciclada
 
-### **_Escalabilidade_**
+## **_Escalabilidade_**
 
-#### **_Dimensionamento com base em um cronograma_**
+## **_Dimensionamento com base em um cronograma_**
 
 - Permite que o usuario dimensione seu aplicativo em resposta a alterações de carga previsíveis
 
@@ -669,7 +669,7 @@ aws ec2 describe-instances --instance-id $INSTANCE_ID
   2. Especifique o horário de início em que a ação de escalabilidade deve entrar em vigor, além dos novos tamanhos mínimo, máximo e desejado para a ação de escalabilidade
   3. No horário especificado, o Amazon EC2 Auto Scaling atualiza o grupo. Ele atualiza os valores para o tamanho mínimo, máximo e desejado que a ação de dimensionamento especificou.
 
-#### **_Dimensionamento dinâmico_**
+## **_Dimensionamento dinâmico_**
 
 - Por exemplo, digamos que o usuario tenha um aplicativo da Web que é executada em duas instâncias atualmente. O usuario não deseja que a utilização da CPU do grupo do Auto Scaling exceda 70% por mais de 2 minutos. O usuario pode configurar seu grupo de Auto Scaling para dimensionar automaticamente a fim de atender a essa necessidade.
 

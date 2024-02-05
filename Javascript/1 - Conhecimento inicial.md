@@ -2,15 +2,15 @@
 
 Este projeto foi criado com o objetivo de ser uma enciclopédia livre e um manual de consulta.
 
-## Comandos e Operadores Básicos
+# Comandos e Operadores Básicos
 
-### Tipos de Variáveis
+# Tipos de Variáveis
 
 - `let variavelMutavel;`: O uso do `let` permite mudar o valor da variável quando necessário.
 - `const constante = "valor";`: O uso de `const` é apropriado quando o valor ou tipo não devem ser alterados.
 - `var variavelMovel;`: O uso de `var` não é recomendado, pois eleva a variável para o início do código durante a execução e pode gerar problemas.
 
-### Comparar Conteúdos
+# Comparar Conteúdos
 
 ```javascript
 const conteudo1 = "1";
@@ -34,9 +34,9 @@ const igualOuDiferente =
   conteudo1 == conteudo2 ? console.log(conteudo1) : console.log(conteudo2);
 ```
 
-### Repetidores
+# Repetidores
 
-#### Uso do `for`
+# Uso do `for`
 
 ```javascript
 const arrayDeNumeros = require("./3-arrays");
@@ -47,7 +47,7 @@ for (let numero of arrayDeNumeros) {
 }
 ```
 
-#### Uso do `for` de C
+# Uso do `for` de C
 
 ```javascript
 for (let index = 0; index < arrayDeNumeros.length; index++) {
@@ -55,7 +55,7 @@ for (let index = 0; index < arrayDeNumeros.length; index++) {
 }
 ```
 
-#### Uso do `while`
+# Uso do `while`
 
 ```javascript
 while (index < arrayDeNumeros.length) {
@@ -63,7 +63,7 @@ while (index < arrayDeNumeros.length) {
 }
 ```
 
-#### Uso do `do while`
+# Uso do `do while`
 
 ```javascript
 do {

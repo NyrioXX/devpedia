@@ -1,9 +1,9 @@
-# Infraestrutura AWS
+- [**Infraestrutura AWS**](#infraestrutura-aws)
+- [**Zonas de disponibilidade** (Região conjunta de data centers)](#zonas-de-disponibilidade-região-conjunta-de-data-centers)
+- [**Regiões AWS** (Região conjunta de zonas de disponibilidade)](#regiões-aws-região-conjunta-de-zonas-de-disponibilidade)
+- [**Pontos de presença** (Rede de entrega de conteudo)](#pontos-de-presença-rede-de-entrega-de-conteudo)
 
-- [Infraestrutura AWS](#infraestrutura-aws)
-  - [**Zonas de disponibilidade** (Região conjunta de data centers)](#zonas-de-disponibilidade-região-conjunta-de-data-centers)
-  - [**Regiões AWS** (Região conjunta de zonas de disponibilidade)](#regiões-aws-região-conjunta-de-zonas-de-disponibilidade)
-  - [**Pontos de presença** (Rede de entrega de conteudo)](#pontos-de-presença-rede-de-entrega-de-conteudo)
+# **Infraestrutura AWS**
 
 Os data centers são a base da infraestrutura da AWS. Data center é um local onde os dados físicos reais residem e o processamento de dados ocorre. Os data centers da AWS são construídos em clusters em várias Regiões globais.
 Os data centers são projetados com segurança, com vários fatores em mente.
@@ -17,7 +17,7 @@ Os data centers são projetados com segurança, com vários fatores em mente.
 - Em caso de falha, os processos automatizados desviam o tráfego de dados do cliente para fora da área afetada
 - Um único data center normalmente abriga de 50.000 a 80.000 servidores físicos. Todos os data centers ficam on-line e atendem aos clientes; nenhum data center fica off-line
 
-## **Zonas de disponibilidade** (Região conjunta de data centers)
+# **Zonas de disponibilidade** (Região conjunta de data centers)
 
 - Cada Zona de Disponibilidade é composta de um ou mais data centers
 - Projetada para isolamento de falhas
@@ -25,7 +25,7 @@ Os data centers são projetados com segurança, com vários fatores em mente.
 - O usuario escolhe suas Zonas de Disponibilidade
 - A AWS recomenda replicar entre Zonas de Disponibilidade para fins de resiliência
 
-## **Regiões AWS** (Região conjunta de zonas de disponibilidade)
+# **Regiões AWS** (Região conjunta de zonas de disponibilidade)
 
 - Uma Região da AWS é uma área geográfica
 - A AWS tem 24 regiões ao redor do mundo
@@ -40,7 +40,7 @@ O usuario deve considerar alguns fatores ao selecionar a Região ou as Regiões 
 - Lembre-se de que nem todos os serviços estão disponíveis em todas as Regiões. Para saber mais, consulte a página AWS Regional Services.
 - Por fim, **`há alguma variação no custo da execução de serviços, que pode depender da Região escolhida`**.
 
-## **Pontos de presença** (Rede de entrega de conteudo)
+# **Pontos de presença** (Rede de entrega de conteudo)
 
 - A AWS fornece uma rede global de 216 locais de pontos de presença.
 - Consiste em 205 locais de borda e 11 caches de borda regionais

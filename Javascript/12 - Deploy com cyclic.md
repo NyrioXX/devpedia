@@ -1,6 +1,6 @@
 # Deploy na Cyclic sem CLI e Utilizando o CORS na API
 
-## Cyclic Deployment sem CLI
+# Cyclic Deployment sem CLI
 
 A Cyclic oferece opções para realizar o deploy sem a necessidade do CLI, utilizando alternativas como integração contínua (CI/CD) ou diretamente no painel de controle da plataforma. A seguir, estão os passos básicos para realizar o deploy sem usar o CLI:
 
@@ -16,11 +16,11 @@ A Cyclic oferece opções para realizar o deploy sem a necessidade do CLI, utili
 
 Lembre-se de ajustar as configurações conforme as necessidades específicas do seu projeto.
 
-## Configuração do CORS na API
+# Configuração do CORS na API
 
 O CORS (Cross-Origin Resource Sharing) é uma medida de segurança implementada nos navegadores para controlar solicitações HTTP feitas a partir de origens diferentes. Para permitir solicitações de origens específicas, como frontend hospedado em domínio diferente, o usuario pode configurar o CORS na sua API.
 
-### Exemplo de Configuração do CORS com Express (Node.js)
+# Exemplo de Configuração do CORS com Express (Node.js)
 
 1. **Instalação do Pacote CORS:**
 

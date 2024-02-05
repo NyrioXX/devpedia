@@ -34,7 +34,7 @@ O AWS config é um serviço totalmente gerenciado que permite avaliar, analisar 
     - Os volumes do Amazon Elastic Block Store (Amazon EBS) sejam criptografados
     - As instâncias estejam sendo criadas apenas de imagens de máquina da Amazon (AMIs) aprovadas
 
-## **Como funciona?**
+# **Como funciona?**
 
 1. Ocorre uma alteração em um de seus recursos da AWS.
 2. O mecanismo do AWS Config registra e normaliza essa alteração em um formato consistente.

@@ -40,7 +40,7 @@ Existem 3 tipos de volume docker:
 - Docker bind -> cria um caminho entre um diretorio local e o volume docker
 - tmpfs -> armazenamente temporario de recursos que só existe enquanto o container estiver ativo, usado para dados sensiveis
 
-## Criar volume
+# Criar volume
 
 - Docker volume
 
@@ -62,13 +62,13 @@ Geralmente containers não são usados sozinhos e devem se conectar com outros c
 - Host -> usa a rede do host para compartilhar. O que for valido como rede para o pc será valido como rede para o docker
 - Overlay -> quando ha varios hosts permite comunicação segura entre diversos componentes e hosts, podendo ser em maquinas diferentes
 
-## Criar rede
+# Criar rede
 
 ```bash
 docker network create --driver='tipo_da_rede' --subnet=`numero_da_subnet` --ip-range='range_de_ip' --gateway='numero_do_gateway' 'nome da rede'
 ```
 
-## Ver rede
+# Ver rede
 
 ```bash
 docker network ls

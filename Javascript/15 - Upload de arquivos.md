@@ -2,9 +2,9 @@
 
 O Amazon S3 (Simple Storage Service) é um serviço de armazenamento de objetos escalável oferecido pela Amazon Web Services (AWS). Este guia aborda como realizar o upload de arquivos para o Amazon S3 utilizando o Node.js, com exemplos práticos.
 
-## Configuração Básica
+# Configuração Básica
 
-### 1. **Instalação dos Pacotes Necessários**
+# 1. **Instalação dos Pacotes Necessários**
 
 Certifique-se de ter o pacote `aws-sdk` instalado para interagir com o Amazon S3:
 
@@ -12,7 +12,7 @@ Certifique-se de ter o pacote `aws-sdk` instalado para interagir com o Amazon S3
 npm install aws-sdk
 ```
 
-### 2. **Configuração das Credenciais da AWS**
+# 2. **Configuração das Credenciais da AWS**
 
 Antes de começar, configure as credenciais da AWS. O usuario pode fazer isso de várias maneiras:
 
@@ -45,9 +45,9 @@ Antes de começar, configure as credenciais da AWS. O usuario pode fazer isso de
   });
   ```
 
-## Implementação do Upload para o Amazon S3
+# Implementação do Upload para o Amazon S3
 
-### 1. **Uso do SDK AWS no Código**
+# 1. **Uso do SDK AWS no Código**
 
 Crie um arquivo para gerenciar o upload para o Amazon S3 (`uploadS3.js`):
 

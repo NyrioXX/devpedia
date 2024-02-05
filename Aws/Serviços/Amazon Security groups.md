@@ -1,6 +1,6 @@
-# **Security Groups**
-
 - [**Security Groups**](#security-groups)
+
+# **Security Groups**
 
 Atua como um firewall integrado aos servidores virtuais e suas regras determinam quem tem acesso às instancias.
 

@@ -1,5 +1,5 @@
 - [**AWS System Manager**](#aws-system-manager)
-  - [**Recursos do System Manager**](#recursos-do-system-manager)
+- [**Recursos do System Manager**](#recursos-do-system-manager)
 
 # **AWS System Manager**
 
@@ -21,7 +21,7 @@
 
   - Com a Janela de manutenção, o usuario pode definir uma janela de tempo recorrente para executar tarefas administrativas e de manutenção nas suas instâncias
 
-## **Recursos do System Manager**
+# **Recursos do System Manager**
 
 - **_`Automação`_**
 

@@ -10,7 +10,7 @@
 - O DynamoDB permite criar tabelas e itens e permite adicionar itens
 - Ele particiona automaticamente os dados e oferece armazenamento de tabelas para atender aos requisitos de carga de trabalho
 
-## **Benefícios e Funcionamento**
+# **Benefícios e Funcionamento**
 
 - **`Serviço totalmente gerenciado`**
   - Ao criar uma tabela de banco de dados e definir a utilização de destino para escalabilidade automática, o serviço executa automaticamente as tarefas de gerenciamento de banco de dados
@@ -46,7 +46,7 @@
   - Ao criar uma tabela global, especifique as regiões AWS nas quais o usuario deseja disponibilizar a tabela. O DynamoDB executa todas as tarefas necessárias para criar tabelas idênticas nessas regiões e propaga as alterações de dados contínuas a todas elas.
   - `As tabelas globais do DynamoDB funcionam bem para aplicativos de grande escala com usuários dispersos pelo mundo. Os usuários esperam um desempenho rápido do aplicativo, que eles obtêm acessando a réplica mais próxima a eles. Além disso, ainda que uma das regiões AWS fique temporariamente indisponível, os usuários poderão acessar os mesmos dados nas outras regiões`
 
-## **Conceitos basicos**
+# **Conceitos basicos**
 
 - **_`Tabelas`_**
   - Semelhante a outros sistemas de banco de dados, o DynamoDB armazena dados em tabelas
