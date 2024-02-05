@@ -33,7 +33,7 @@
 
   - **_Endpoint_**
 
-    - Quando você faz uma solicitação para um servidor REST, precisa conhecer o endpoint. O formato do endpoint é um URL. O URL permite que o cliente notifique o servidor sobre os recursos com os quais deseja interagir
+    - Quando o usuario faz uma solicitação para um servidor REST, precisa conhecer o endpoint. O formato do endpoint é um URL. O URL permite que o cliente notifique o servidor sobre os recursos com os quais deseja interagir
 
   - **_Método_**
 
@@ -50,7 +50,7 @@
 
   - **_Corpo da solicitação_**
 
-    - O corpo de uma solicitação são os dados que o cliente envia ao servidor. Uma solicitação POST ou PUT normalmente contém um corpo. Por exemplo, se você invocar um método PUT, é bem provável que precise incluir detalhes na solicitação que indiquem como um recurso existente deve ser atualizado. No entanto, as solicitações GET raramente incluem um corpo
+    - O corpo de uma solicitação são os dados que o cliente envia ao servidor. Uma solicitação POST ou PUT normalmente contém um corpo. Por exemplo, se o usuario invocar um método PUT, é bem provável que precise incluir detalhes na solicitação que indiquem como um recurso existente deve ser atualizado. No entanto, as solicitações GET raramente incluem um corpo
 
 - `Exemplo de solicitação com curl`
 
@@ -65,7 +65,7 @@
   No exemplo:
 
   - –i indica que a resposta deve incluir os cabeçalhos de resposta
-  - –X indica o método que você está invocando; por exemplo, POST
+  - –X indica o método que o usuario está invocando; por exemplo, POST
   - –d costuma ser usado com os métodos POST ou PUT e fornece os dados (corpo) que estão sendo enviados ao servidor REST. Nesse caso, os dados estão em um arquivo chamado file.json.
   - –H transmite as informações de cabeçalho. O cabeçalho pode conter informações, como o tipo de conteúdo, que uma resposta aceitável incluirá
 
