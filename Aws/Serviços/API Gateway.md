@@ -21,7 +21,7 @@
 
 - Com o Amazon API Gateway, o usuario pode criar APIs baseadas em recursos RESTful. Depois, o usuario pode usar os recursos de transformação de dados para gerar as solicitações no idioma que seus serviços de destino esperam
 
-- As interfaces da API que você desenvolve têm um front-end e um back-end
+- As interfaces da API que o usuario desenvolve têm um front-end e um back-end
 
 - O cliente usa os aplicativos front-end para fazer solicitações
 
