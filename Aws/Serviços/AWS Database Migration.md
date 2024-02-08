@@ -153,5 +153,3 @@
   1. Primeiro, crie um servidor de replicação
   2. Em seguida, especifique endpoints de origem e de destino que tenham informações de conexão sobre os seus armazenamentos de dados
   3. Por fim, crie uma ou mais tarefas na instância de replicação para migrar dados entre os armazenamentos de dados de origem e de destino
-
--

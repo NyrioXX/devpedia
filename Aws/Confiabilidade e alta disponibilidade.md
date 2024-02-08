@@ -14,6 +14,7 @@
 ## **Confiabilidade VS Disponibilidade**
 
 - `Confiabilidade` é a medida do tempo durante o qual um recurso executa a função pretendida
+
 - `Disponibilidade` é a medida da porcentagem do tempo durante o qual um recurso opera normalmente
   - Porcentagem do tempo de atividade (como 99,9%) durante um período (geralmente um ano)
   - Disponibilidade = tempo de operação normal/tempo total
