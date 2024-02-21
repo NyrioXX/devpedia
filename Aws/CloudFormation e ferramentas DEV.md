@@ -98,7 +98,7 @@
 
 - Uma pilha é uma coleção de recursos da AWS que foram criados a partir de um modelo
 
-- Você pode provisionar (criar) uma pilha várias vezes
+- O usuario pode provisionar (criar) uma pilha várias vezes
 
 - Quando uma pilha é provisionada, os recursos da AWS especificados pelo modelo de pilha são criados
 
@@ -108,11 +108,11 @@
 
 - A ordem de exclusão é determinada pelo AWS CloudFormation
 
-- Você não tem controle direto sobre o que e quando é excluído
+- O usuario não tem controle direto sobre o que e quando é excluído
 
-- Se um erro for encontrado quando você iniciar um modelo do AWS CloudFormation, todos os recursos serão revertidos por padrão
+- Se um erro for encontrado quando o usuario iniciar um modelo do AWS CloudFormation, todos os recursos serão revertidos por padrão
 
-  - Você pode alterar essa opção na linha de comando
+  - O usuario pode alterar essa opção na linha de comando
 
 - O AWS CloudFormation garante que todos os recursos de pilha sejam criados ou excluídos, conforme apropriado
 
@@ -127,7 +127,7 @@
 - Para preservar um recurso, defina o atributo **DeletionPolicy** como **Reter**
 
 - Alguns recursos podem não ser excluídos quando uma pilha é excluída, como um bucket do S3
-  - Opcionalmente, você também pode habilitar a proteção contra encerramento em uma pilha
+  - Opcionalmente, o usuario também pode habilitar a proteção contra encerramento em uma pilha
 
 ![modelo](./Arquivos/Estrutura%20de%20modelo%20cloudformation.png)
 
@@ -135,9 +135,9 @@
 
 - O AWS CloudFormation Designer é uma ferramenta visual que permite criar e modificar modelos do AWS CloudFormation usando uma interface de arrastar e soltar
 
-- Você pode facilmente adicionar, modificar ou remover recursos e o JSON subjacente será alterado de acordo
+- O usuario pode facilmente adicionar, modificar ou remover recursos e o JSON subjacente será alterado de acordo
 
-- Se você modificar um modelo que seja associado a uma pilha em execução, você poderá alterar a pilha de modo que ela fique de acordo com o modelo
+- Se o usuario modificar um modelo que seja associado a uma pilha em execução, o usuario poderá alterar a pilha de modo que ela fique de acordo com o modelo
 
 - Ferramentas de terceiros também podem fornecer soluções para ajudá-lo a projetar modelos do AWS CloudFormation
 

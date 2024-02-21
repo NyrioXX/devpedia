@@ -720,7 +720,7 @@ aws ec2 describe-instances --instance-id $INSTANCE_ID
 
 # **Estrategias de construção de AMIs**
 
-- Considerando requisitos, você pode considerar o desenvolvimento de uma ou mais AMIs personalizadas como uma configuração básica
+- Considerando requisitos, o usuario pode considerar o desenvolvimento de uma ou mais AMIs personalizadas como uma configuração básica
 
 - Para realizar essa tarefa, siga estas etapas:
 
@@ -737,7 +737,7 @@ aws ec2 describe-instances --instance-id $INSTANCE_ID
 
 - Outra opção é configurar instâncias no momento da inicialização
 
-- Um exemplo de configuração de uma instância no momento da inicialização é o uso da opção de dados do usuário para executar um script quando você executa uma instância do EC2
+- Um exemplo de configuração de uma instância no momento da inicialização é o uso da opção de dados do usuário para executar um script quando o usuario executa uma instância do EC2
 
 - Muitas organizações adotam uma abordagem híbrida, em que algumas configurações são incorporadas a uma AMI de base personalizada e outras configurações são configuradas dinamicamente no lançamento
 
@@ -754,7 +754,7 @@ aws ec2 describe-instances --instance-id $INSTANCE_ID
     - Uma AMI com uma configuração somente de sistema operacional (SO) leva muito tempo para inicializar quando uma nova instância é inicializada. O empacotamento de pré-requisitos em uma AMI personalizada reduz os tempos de inicialização
 
   - **Prazo de validade**
-    - Quando você instala mais pré-requisitos em uma AMI, corre um risco maior de que seu aplicativo fique vulnerável a um risco de segurança
+    - Quando o usuario instala mais pré-requisitos em uma AMI, corre um risco maior de que seu aplicativo fique vulnerável a um risco de segurança
     - O risco existe se a AMI subjacente não for atualizada com frequência com atualizações de segurança ou de aplicativos
     - Avalie o risco que as atualizações para suas dependências representam
 
@@ -777,7 +777,7 @@ aws ec2 describe-instances --instance-id $INSTANCE_ID
 
 # **Criação de AMIs**
 
-- Para criar uma AMI, você pode usar qualquer uma das seguintes ferramentas:
+- Para criar uma AMI, o usuario pode usar qualquer uma das seguintes ferramentas:
 
   - Console de Gerenciamento da AWS
   - AWS Command Line Interface (AWS CLI)
@@ -786,33 +786,33 @@ aws ec2 describe-instances --instance-id $INSTANCE_ID
 - **AMI ancorada na região atual**
 
   - A AMI resultante existe somente na região da AWS atual
-  - Por exemplo, se você criar uma AMI a partir de uma instância do EC2 em execução na região eu-west-2, a AMI resultante só existirá na região eu-west-2. Você pode executar uma nova instância a partir da AMI na região us-east-1 somente se copiar a AMI para outra região primeiro
+  - Por exemplo, se o usuario criar uma AMI a partir de uma instância do EC2 em execução na região eu-west-2, a AMI resultante só existirá na região eu-west-2. O usuario pode executar uma nova instância a partir da AMI na região us-east-1 somente se copiar a AMI para outra região primeiro
 
 - **Reinicialização automática da instância**
 
-  - Por padrão, quando você cria uma AMI a partir de uma instância, a instância é reinicializada para garantir a consistência. Você pode substituir esse comportamento padrão. No entanto, se você escolher essa opção, a AWS não poderá facilitar a integridade do sistema de arquivos da imagem criada
+  - Por padrão, quando o usuario cria uma AMI a partir de uma instância, a instância é reinicializada para garantir a consistência. O usuario pode substituir esse comportamento padrão. No entanto, se o usuario escolher essa opção, a AWS não poderá facilitar a integridade do sistema de arquivos da imagem criada
 
 - **AMIs com volumes do EBS anexados**
 
-  - Além disso, se você criar uma AMI a partir de uma instância do EC2 com volumes adicionais anexados a ela, os volumes anexados serão capturados como parte do processo de criação da AMI
+  - Além disso, se o usuario criar uma AMI a partir de uma instância do EC2 com volumes adicionais anexados a ela, os volumes anexados serão capturados como parte do processo de criação da AMI
 
-- Quando você cria uma AMI, o Amazon EC2 cria snapshots do volume raiz da instância e de quaisquer outros volumes do EBS anexados à sua instância
+- Quando o usuario cria uma AMI, o Amazon EC2 cria snapshots do volume raiz da instância e de quaisquer outros volumes do EBS anexados à sua instância
 
-- Você é cobrado pelos snapshots até que você cancele o registro da AMI e exclua os snapshots
+- O usuario é cobrado pelos snapshots até que o usuario cancele o registro da AMI e exclua os snapshots
 
-- Para criar uma AMI do Linux baseada no Amazon EBS, comece de uma instância que você executou de uma AMI do Linux baseada no Amazon EBS existente
+- Para criar uma AMI do Linux baseada no Amazon EBS, comece de uma instância que o usuario executou de uma AMI do Linux baseada no Amazon EBS existente
 
-- Essa AMI pode ser uma AMI obtida do AWS Marketplace, uma AMI importada ou qualquer outra AMI que você possa acessar
+- Essa AMI pode ser uma AMI obtida do AWS Marketplace, uma AMI importada ou qualquer outra AMI que o usuario possa acessar
 
 ## **Criando AMIs Windows**
 
 - A ferramenta Microsoft System Preparation (Sysprep) simplifica o processo de duplicar uma instalação personalizada do Windows
 
-- Recomendamos que você use o Sysprep para criar uma AMI padronizada
+- Recomendamos que o usuario use o Sysprep para criar uma AMI padronizada
 
-- Você pode criar novas instâncias do Amazon EC2 para o Windows desta imagem padronizada
+- O usuario pode criar novas instâncias do Amazon EC2 para o Windows desta imagem padronizada
 
-- Também recomendamos que você execute o Sysprep com o EC2Launch (Windows Server 2016 e posterior) ou o serviço EC2Config (antes do Windows Server 2016)
+- Também recomendamos que o usuario execute o Sysprep com o EC2Launch (Windows Server 2016 e posterior) ou o serviço EC2Config (antes do Windows Server 2016)
 
 - **Inicialização do EC2**
   - O serviço EC2Launch é iniciado quando a instância é inicializada e executa tarefas durante a inicialização
@@ -820,7 +820,7 @@ aws ec2 describe-instances --instance-id $INSTANCE_ID
 - **Configuração do EC2**
   - As AMIs do Microsoft Windows para Windows Server 2012 R2 e anteriores incluem um serviço opcional, o serviço EC2Config (EC2Config.exe)
   - O EC2Config começa quando a instância é inicializada
-  - Ele executa tarefas durante a inicialização e cada vez que você interrompe ou inicia a instânci
+  - Ele executa tarefas durante a inicialização e cada vez que o usuario interrompe ou inicia a instânci
   - O EC2Config também executa tarefas sob demanda
   - Algumas dessas tarefas são ativadas automaticamente, enquanto outras devem ser ativadas manualmente
   - Embora esse serviço seja opcional, ele fornece acesso a recursos avançados que não estão disponíveis de outra forma
@@ -832,23 +832,23 @@ aws ec2 describe-instances --instance-id $INSTANCE_ID
 # **Copiando AMIs**
 
 - Uma AMI está ancorada no nível da Região
-- Como resultado, se você quiser executar uma instância do EC2 de uma AMI criada em uma região diferente, deverá primeiro copiar a AMI para a região de destino
-- Você pode copiar uma AMI em uma região da AWS ou em uma região da AWS usando um dos seguintes métodos:
+- Como resultado, se o usuario quiser executar uma instância do EC2 de uma AMI criada em uma região diferente, deverá primeiro copiar a AMI para a região de destino
+- O usuario pode copiar uma AMI em uma região da AWS ou em uma região da AWS usando um dos seguintes métodos:
 
   - Console de Gerenciamento da AWS
   - AWS CLI
   - API do Amazon EC2
 
-- Você pode copiar as AMIs baseadas no Amazon EBS e AMIs com armazenamento de instâncias
+- O usuario pode copiar as AMIs baseadas no Amazon EBS e AMIs com armazenamento de instâncias
 
-- Você pode copiar AMIs criptografadas e AMIs com snapshots criptografados
+- O usuario pode copiar AMIs criptografadas e AMIs com snapshots criptografados
 
 - **Snapshots criptografados**
 
-  - Você pode criptografar snapshots com sua chave mestra de cliente (CMK) padrão do AWS Key Management Service (AWS KMS) ou uma chave personalizada especificada
-  - Em todos os casos, você deve ter permissão para usar a chave selecionada
-  - Se você tiver uma AMI com snapshots criptografados, poderá optar por criptografá-los novamente com uma chave de criptografia diferente como parte da ação CopyImage
-  - A CopyImage aceita apenas uma chave por vez e criptografa todos os instantâneos de uma imagem (seja raiz ou dados) para essa chave. No entanto, você pode criar manualmente uma AMI com snapshots criptografados com várias chaves
+  - O usuario pode criptografar snapshots com sua chave mestra de cliente (CMK) padrão do AWS Key Management Service (AWS KMS) ou uma chave personalizada especificada
+  - Em todos os casos, o usuario deve ter permissão para usar a chave selecionada
+  - Se o usuario tiver uma AMI com snapshots criptografados, poderá optar por criptografá-los novamente com uma chave de criptografia diferente como parte da ação CopyImage
+  - A CopyImage aceita apenas uma chave por vez e criptografa todos os instantâneos de uma imagem (seja raiz ou dados) para essa chave. No entanto, o usuario pode criar manualmente uma AMI com snapshots criptografados com várias chaves
 
 - Observação: uma cópia pode falhar se a AWS não conseguir encontrar uma imagem do Amazon Kernel (AKI) correspondente na região de destino
 
@@ -858,37 +858,37 @@ aws ec2 describe-instances --instance-id $INSTANCE_ID
 
 - Outros métodos incluem o assistente, usando uma AMI ou um modelo do CloudFormation
 
-- Os modelos de inicialização permitem que você crie modelos para suas solicitações de inicialização
+- Os modelos de inicialização permitem que o usuario crie modelos para suas solicitações de inicialização
 
-- Ao criar um modelo de inicialização, você pode especificar as seguintes configurações:
+- Ao criar um modelo de inicialização, o usuario pode especificar as seguintes configurações:
 
   - Tipo de instância
   - Sub-rede na qual iniciar a instância
   - Par de chaves • Grupo de segurança
 
-- Você pode armazenar os parâmetros de inicialização para não precisar especificá-los toda vez que executar uma instância
+- O usuario pode armazenar os parâmetros de inicialização para não precisar especificá-los toda vez que executar uma instância
 
-- Ao criar o modelo de inicialização, você decide quais opções de inicialização incluir no modelo
+- Ao criar o modelo de inicialização, o usuario decide quais opções de inicialização incluir no modelo
 
 - Além disso, os modelos de inicialização fornecem os seguintes recursos:
 
-  - Permite que você pré-selecione opções de inicialização do EC2
+  - Permite que o usuario pré-selecione opções de inicialização do EC2
   - Suporte ao versionamento
 
 - Os modelos de inicialização oferecem os seguintes benefícios:
 
   - Racionalize e simplifique o processo de inicialização para o EC2 Auto Scaling, Spot Fleet, Instâncias Spot e Instâncias Sob Demanda
   - Reduza o número de etapas necessárias para criar uma instância capturando todos os parâmetros de inicialização em um recurso
-  - Facilite a implementação de padrões e práticas recomendadas. Como resultado, você percebe os seguintes benefícios adicionais
+  - Facilite a implementação de padrões e práticas recomendadas. Como resultado, o usuario percebe os seguintes benefícios adicionais
     - Ajuda no gerenciamento de custos
     - Melhora a segurança
     - Minimiza o risco de erros de implantação
 
-- Para cada modelo de inicialização, você pode criar uma ou mais versões de modelo de inicialização numeradas. Cada versão pode ter parâmetros de inicialização diferentes
+- Para cada modelo de inicialização, o usuario pode criar uma ou mais versões de modelo de inicialização numeradas. Cada versão pode ter parâmetros de inicialização diferentes
 
-- Ao inicializar uma instância de um modelo de inicialização, você poderá usar qualquer versão do modelo de inicialização. Se você não especificar uma versão, a versão padrão será usada
+- Ao inicializar uma instância de um modelo de inicialização, o usuario poderá usar qualquer versão do modelo de inicialização. Se o usuario não especificar uma versão, a versão padrão será usada
 
-- Você pode definir qualquer versão do modelo de inicialização como a versão padrão. Por padrão, é a primeira versão do modelo de inicialização
+- O usuario pode definir qualquer versão do modelo de inicialização como a versão padrão. Por padrão, é a primeira versão do modelo de inicialização
 
 - Exemplo de uso:
 
@@ -896,4 +896,4 @@ aws ec2 describe-instances --instance-id $INSTANCE_ID
 
   - _Versão 2_ – A segunda versão é baseada na primeira versão e também especifica um grupo de segurança para a instância
 
-  - _Versão 3_ — Usa valores diferentes para alguns dos parâmetros. A versão 2 é definida como a versão padrão. Se você tiver inicializado uma instância desse modelo de inicialização, os parâmetros de inicialização da versão 2 serão usados caso nenhuma outra versão tenha sido especificada.
+  - _Versão 3_ — Usa valores diferentes para alguns dos parâmetros. A versão 2 é definida como a versão padrão. Se o usuario tiver inicializado uma instância desse modelo de inicialização, os parâmetros de inicialização da versão 2 serão usados caso nenhuma outra versão tenha sido especificada.

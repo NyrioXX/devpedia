@@ -53,39 +53,39 @@
 
 ## **Painel de faturamento AWS**
 
-- O painel de faturamento da AWS permite que você visualize o status das despesas da AWS acumuladas no mês
+- O painel de faturamento da AWS permite que o usuario visualize o status das despesas da AWS acumuladas no mês
 
-- Você também pode usá-lo para identificar os serviços que representam a maior parte das suas despesas gerais
+- O usuario também pode usá-lo para identificar os serviços que representam a maior parte das suas despesas gerais
 
-- Você também pode usar o painel de faturamento da AWS para obter uma compreensão de alto nível de como seus custos estão em alta
+- O usuario também pode usar o painel de faturamento da AWS para obter uma compreensão de alto nível de como seus custos estão em alta
 
 - Um dos gráficos no painel é o Spend Summary (Resumo de gastos)
 
-- Ele mostra quanto você gastou no mês passado, o custo do uso da AWS no mês até o momento e uma previsão de quanto você provavelmente gastará este mês
+- Ele mostra quanto o usuario gastou no mês passado, o custo do uso da AWS no mês até o momento e uma previsão de quanto o usuario provavelmente gastará este mês
 
-- Outro gráfico é o gráfico Month-to-Date Spend by Service (Gastos acumulados no mês por serviço). Ele mostra os principais serviços que você mais usa e a proporção de seus custos atribuídos a esse serviço
+- Outro gráfico é o gráfico Month-to-Date Spend by Service (Gastos acumulados no mês por serviço). Ele mostra os principais serviços que o usuario mais usa e a proporção de seus custos atribuídos a esse serviço
 
-- Você pode acessar várias outras ferramentas de gerenciamento de custos no painel de faturamento
+- O usuario pode acessar várias outras ferramentas de gerenciamento de custos no painel de faturamento
 
-- Você pode usar essas ferramentas para estimar e planejar seus custos da AWS, incluindo contas da AWS, o AWS Cost Explorer, os orçamentos da AWS e os relatórios de custo e uso da AWS
+- O usuario pode usar essas ferramentas para estimar e planejar seus custos da AWS, incluindo contas da AWS, o AWS Cost Explorer, os orçamentos da AWS e os relatórios de custo e uso da AWS
 
 ## **AWS Bills**
 
-- A página AWS Bills lista os custos que você incorreu no último mês para cada serviço da AWS. Ela também inclui um detalhamento adicional por região da AWS e conta vinculada
+- A página AWS Bills lista os custos que o usuario incorreu no último mês para cada serviço da AWS. Ela também inclui um detalhamento adicional por região da AWS e conta vinculada
 
-- Essa ferramenta fornece acesso às informações mais atualizadas sobre seus custos e uso, incluindo sua fatura mensal e a análise detalhada dos serviços da AWS que você usa.
+- Essa ferramenta fornece acesso às informações mais atualizadas sobre seus custos e uso, incluindo sua fatura mensal e a análise detalhada dos serviços da AWS que o usuario usa.
 
 ## **AWS Cost Explorer**
 
 - O AWS Cost Explorer permite visualizar os seus custos e o uso, além de analisá-los para identificar tendências
 
-- Você pode filtrar e agrupar dados ao longo de várias dimensões, como serviço, tipo de instância e tag
+- O usuario pode filtrar e agrupar dados ao longo de várias dimensões, como serviço, tipo de instância e tag
 
 - O Cost Explorer fornece dois tipos de relatórios padrão:
 
   1. **Relatórios de custo e uso**
 
-  - Esses relatórios permitem que você entenda seus custos e uso de todos os serviços
+  - Esses relatórios permitem que o usuario entenda seus custos e uso de todos os serviços
   - Por exemplo, o relatório Custos mensais por serviço (exibidos na captura de tela) mostra os custos dos últimos 3 meses, agrupados por serviço
   - Os cinco principais serviços são mostrados por eles mesmos, e o restante é agrupado em uma barra (rotulada Outros)
 
@@ -94,21 +94,21 @@
   - Esses relatórios são específicos para o uso de Instâncias Reservadas
   - Eles fornecem uma compreensão dos seus custos de utilização comparativos para instâncias reservadas em comparação a instâncias sob demanda
 
-- Você pode visualizar dados até dos últimos 13 meses, prever quanto provavelmente gastará nos próximos 3 meses e obter recomendações sobre quais instâncias reservadas para comprar.
+- O usuario pode visualizar dados até dos últimos 13 meses, prever quanto provavelmente gastará nos próximos 3 meses e obter recomendações sobre quais instâncias reservadas para comprar.
 
-- Se você tiver muitas contas e tiver habilitado o faturamento consolidado para o AWS Organizations, poderá usar o AWS Cost Explorer para visualizar os custos em todas as contas vinculadas. Você também pode monitorar os gastos individuais diários e mensais de cada conta vinculada
+- Se o usuario tiver muitas contas e tiver habilitado o faturamento consolidado para o AWS Organizations, poderá usar o AWS Cost Explorer para visualizar os custos em todas as contas vinculadas. O usuario também pode monitorar os gastos individuais diários e mensais de cada conta vinculada
 
 # **Orçamentos da AWS**
 
-- O Orçamentos da AWS permite que você defina orçamentos personalizados que enviam alertas quando o uso ou os custos excedem (ou têm previsão de exceder) o valor orçado
+- O Orçamentos da AWS permite que o usuario defina orçamentos personalizados que enviam alertas quando o uso ou os custos excedem (ou têm previsão de exceder) o valor orçado
 
 - O AWS Budgets usa a visualização de custos fornecida pelo Cost Explorer para mostrar o status dos seus orçamentos e fornecer previsões dos custos estimados
 
-- Você também pode usar os Orçamentos para criar notificações quando ultrapassarem os valores previstos em orçamento ou quando seus custos previstos ultrapassarem seus orçamentos
+- O usuario também pode usar os Orçamentos para criar notificações quando ultrapassarem os valores previstos em orçamento ou quando seus custos previstos ultrapassarem seus orçamentos
 
 - Os orçamentos podem ser rastreados nos níveis mensal, trimestral ou anual
 
-- Você pode personalizar as datas de início e término
+- O usuario pode personalizar as datas de início e término
 
 - Os alertas de orçamento podem ser enviados por e-mail ou por meio de um tópico do Amazon Simple Notification Service (Amazon SNS)
 
@@ -116,27 +116,27 @@
 
 - A página Relatórios de custo e uso da AWS é um local único para acessar informações abrangentes sobre os custos e o uso da AWS
 
-- Você pode usá-lo para gerar relatórios que contenham itens de linha para cada combinação exclusiva de produtos da AWS, tipo de uso e operação que você usa na sua conta da AWS
+- O usuario pode usá-lo para gerar relatórios que contenham itens de linha para cada combinação exclusiva de produtos da AWS, tipo de uso e operação que o usuario usa na sua conta da AWS
 
-- Você pode personalizar os relatórios gerados para agregar as informações por hora ou por dia
+- O usuario pode personalizar os relatórios gerados para agregar as informações por hora ou por dia
 
-- Você também pode publicar seus relatórios de faturamento da AWS em um bucket do Amazon Simple Storage Service (Amazon S3), e a AWS atualizará os relatórios no bucket uma vez por dia
+- O usuario também pode publicar seus relatórios de faturamento da AWS em um bucket do Amazon Simple Storage Service (Amazon S3), e a AWS atualizará os relatórios no bucket uma vez por dia
 
 # **Integração com Cloudwatch**
 
-- Você pode monitorar as suas cobranças estimadas da AWS ao usar o Amazon CloudWatch para gerar um alerta quando as suas cobranças excederem um limite especificado
+- O usuario pode monitorar as suas cobranças estimadas da AWS ao usar o Amazon CloudWatch para gerar um alerta quando as suas cobranças excederem um limite especificado
 
-- Quando você habilitar o monitoramento de estimativas de cobrança para sua conta da AWS, as estimativas de cobrança serão calculadas e enviadas várias vezes por dia para o CloudWatch como dados de métrica
+- Quando o usuario habilitar o monitoramento de estimativas de cobrança para sua conta da AWS, as estimativas de cobrança serão calculadas e enviadas várias vezes por dia para o CloudWatch como dados de métrica
 
-- Os dados de métricas de faturamento são armazenados na região Leste dos EUA (Virgínia do Norte) e representam cobranças em todo o mundo. Esses dados incluem as estimativas de cobrança para cada serviço da AWS que você usa, além do total geral estimado das suas cobranças da AWS
+- Os dados de métricas de faturamento são armazenados na região Leste dos EUA (Virgínia do Norte) e representam cobranças em todo o mundo. Esses dados incluem as estimativas de cobrança para cada serviço da AWS que o usuario usa, além do total geral estimado das suas cobranças da AWS
 
-- O alarme é acionado quando o faturamento da conta excede o limite que você especificar
+- O alarme é acionado quando o faturamento da conta excede o limite que o usuario especificar
 
 - Ele é acionado somente quando o faturamento real excede o limite
 
 - Ele não usa projeções baseadas no seu uso durante o mês
 
-- Se você criar um alerta de faturamento quando as suas cobranças já tiverem excedido o limite, o alarme mudará para o estado de ALARME imediatamente
+- Se o usuario criar um alerta de faturamento quando as suas cobranças já tiverem excedido o limite, o alarme mudará para o estado de ALARME imediatamente
 
 - As notificações de alarme são enviadas para um endereço de e-mail por meio de um tópico do SNS
 
@@ -146,9 +146,9 @@
 
 - Outra técnica eficaz de redução de custos é encontrar e eliminar desperdícios
 
-  - Por exemplo, a facilidade de criar recursos às vezes pode levar a situações em que recursos desnecessários são mantidos em execução. Você pode usar as métricas do Amazon CloudWatch e os alarmes do CloudWatch para encontrar essas instâncias ociosas de longa execução e desativá-las
+  - Por exemplo, a facilidade de criar recursos às vezes pode levar a situações em que recursos desnecessários são mantidos em execução. O usuario pode usar as métricas do Amazon CloudWatch e os alarmes do CloudWatch para encontrar essas instâncias ociosas de longa execução e desativá-las
 
-- Você também pode usar o AWS Cost Explorer para encontrar os custos associados a projetos inteiros ou a iniciativas
+- O usuario também pode usar o AWS Cost Explorer para encontrar os custos associados a projetos inteiros ou a iniciativas
 
   - O AWS Cost Explorer pode ajudar a identificar os projetos mais caros e a priorizar quais projetos devem ser examinados primeiro para oportunidades de redução de custos
 
@@ -158,9 +158,9 @@
 
 - Usar um stopinator pode resultar em economias significativas de custos para uma organização, o que pode liberar seu orçamento de computação na nuvem para novos projetos
 
-- Ele também é um script utilitário de função dupla útil porque normalmente é projetado para permitir que você inicie recursos quando você precisar deles (por exemplo, no início do dia de trabalho)
+- Ele também é um script utilitário de função dupla útil porque normalmente é projetado para permitir que o usuario inicie recursos quando o usuario precisar deles (por exemplo, no início do dia de trabalho)
 
-- Você não precisa criar ou usar uma instância do Amazon Elastic Compute Cloud (Amazon EC2) para executar um stopinator
+- O usuario não precisa criar ou usar uma instância do Amazon Elastic Compute Cloud (Amazon EC2) para executar um stopinator
 
 - Um design simples e eficiente é usar uma combinação de uma função do Lambda e um evento do Amazon CloudWatch Events em uma solução sem servidor
 
@@ -174,7 +174,7 @@
 
 - O AWS Trusted Advisor analisa seu ambiente da AWS e fornece recomendações para as práticas recomendadas em cinco categorias:
 
-  - **Otimização de custos** — Conselhos sobre como você pode economizar dinheiro eliminando recursos não utilizados e ociosos ou assumindo compromissos com a capacidade reservada
+  - **Otimização de custos** — Conselhos sobre como o usuario pode economizar dinheiro eliminando recursos não utilizados e ociosos ou assumindo compromissos com a capacidade reservada
 
   - **Desempenho** — Conselhos sobre como melhorar o desempenho dos seus serviços verificando os limites de serviço, garantindo o uso da taxa de transferência provisionada e monitorando instâncias superutilizadas
 
@@ -184,8 +184,8 @@
 
   - **Limites de serviço** — Conselhos sobre os serviços cujo uso excede 80% do limite de serviço
 
-- Você pode usar o AWS Trusted Advisor para identificar recursos ociosos, como instâncias do EC2, balanceadores de carga e volumes subutilizados e endereços IP elásticos não utilizados
+- O usuario pode usar o AWS Trusted Advisor para identificar recursos ociosos, como instâncias do EC2, balanceadores de carga e volumes subutilizados e endereços IP elásticos não utilizados
 
-- O Trusted Advisor também é uma boa ferramenta para otimização de custos. Ele fornece verificações e recomendações que permitem que você obtenha economia de custos
+- O Trusted Advisor também é uma boa ferramenta para otimização de custos. Ele fornece verificações e recomendações que permitem que o usuario obtenha economia de custos
 
 - O AWS Trusted Advisor oferece planos de suporte de alto nível — Business Support e Enterprise Support — que fornecem verificações e recomendações adicionais
