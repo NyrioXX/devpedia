@@ -24,7 +24,7 @@
 
 - Em vez disso, os volumes de armazenamento de instâncias são especificados usando o recurso de mapeamento de dispositivos de blocos da API do Amazon EC2 e do Console de gerenciamento da AWS
 
-- Você não pode criar ou destruir volumes de armazenamento de instâncias, mas pode controlar se eles estão expostos à instância do Amazon EC2 e qual nome de dispositivo é usado
+- O usuario não pode criar ou destruir volumes de armazenamento de instâncias, mas pode controlar se eles estão expostos à instância do Amazon EC2 e qual nome de dispositivo é usado
 
 # **Volumes**
 
@@ -36,22 +36,22 @@
 
 - O NVMe pode executar milhares de comandos simultaneamente e é uma forma de acessar a memória
 
-- Esses tipos de instância são uma boa opção quando você precisa de armazenamento com baixa latência, mas não precisa que os dados persistam quando a instância for encerrada
+- Esses tipos de instância são uma boa opção quando O usuario precisa de armazenamento com baixa latência, mas não precisa que os dados persistam quando a instância for encerrada
 
-- Você deve especificar os volumes de armazenamento de instâncias que deseja usar ao executar uma instância (exceto os volumes de armazenamento de instâncias NVMe, que estão disponíveis por padrão)
+- O usuario deve especificar os volumes de armazenamento de instâncias que deseja usar ao executar uma instância (exceto os volumes de armazenamento de instâncias NVMe, que estão disponíveis por padrão)
 
-- Você não pode disponibilizar um volume de armazenamento de instâncias depois de executar a instância
+- O usuario não pode disponibilizar um volume de armazenamento de instâncias depois de executar a instância
 
 - Depois que a instância é executada, os volumes de armazenamento de instâncias ficam disponíveis para a instância
 
-- No entanto, você não pode acessar os volumes de armazenamento de instâncias até que eles sejam montados
+- No entanto, O usuario não pode acessar os volumes de armazenamento de instâncias até que eles sejam montados
 
 - Para instâncias do Microsoft Windows, o serviço EC2Launch monta os volumes de armazenamento de instâncias para uma instância
 
-- Para instâncias do Linux, o tipo de instância determina quais volumes de armazenamento de instâncias são montados para você e quais exigem que você mesmo monte
+- Para instâncias do Linux, o tipo de instância determina quais volumes de armazenamento de instâncias são montados para O usuario e quais exigem que O usuario mesmo monte
 
 # **Casos de uso**
 
 - Os volumes de armazenamento de instâncias da AWS funcionam bem para o armazenamento temporário de informações que estão mudando continuamente, como buffers, caches, dados temporários e outros conteúdos temporários
 
-- Você também pode usá-los para dados que são replicados em uma frota de instâncias, como um pool de servidores Web com balanceamento de carga
+- O usuario também pode usá-los para dados que são replicados em uma frota de instâncias, como um pool de servidores Web com balanceamento de carga

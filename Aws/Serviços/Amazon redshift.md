@@ -17,16 +17,16 @@
 
   - O Amazon Redshift é rápido e poderoso
   - O Amazon Redshift é um serviço de data warehouse totalmente gerenciado
-  - Ele permite que você execute consultas analíticas complexas em petabytes de dados estruturados
+  - Ele permite que O usuario execute consultas analíticas complexas em petabytes de dados estruturados
   - O Amazon Redshift usa otimização de consulta sofisticada, armazenamento colunar em discos locais de alto desempenho e execução de consultas paralelas
 
-- Você pode automatizar a maioria das tarefas administrativas comuns para gerenciar, monitorar e escalar seu cluster do Amazon Redshift. Essa automação permite que você se concentre nos seus dados e negócios
+- O usuario pode automatizar a maioria das tarefas administrativas comuns para gerenciar, monitorar e escalar seu cluster do Amazon Redshift. Essa automação permite que O usuario se concentre nos seus dados e negócios
 
 - A escalabilidade é intrínseca no Amazon Redshift. Seu cluster pode expandir para cima e para baixo à medida que suas necessidades mudam com apenas alguns cliques no console
 
 - A segurança é a maior prioridade na AWS. Com o Amazon Redshift, a segurança é integrada e foi projetada para fornecer criptografia forte de dados ociosos e em trânsito
 
-- O Amazon Redshift é compatível com linguagem de consulta estruturada padrão (SQL). Ele fornece conectores de alto desempenho para Java Database Connectivity (JDBC) e Open Database Connectivity (ODBC). Esses conectores permitem que você use os clientes SQL e as ferramentas de business intelligence (BI) de sua escolha
+- O Amazon Redshift é compatível com linguagem de consulta estruturada padrão (SQL). Ele fornece conectores de alto desempenho para Java Database Connectivity (JDBC) e Open Database Connectivity (ODBC). Esses conectores permitem que O usuario use os clientes SQL e as ferramentas de business intelligence (BI) de sua escolha
 
 # **Data warehouse**
 
@@ -40,8 +40,8 @@
 
   - Um data warehouse pode conter vários bancos de dados
   - Dentro de cada banco de dados, os dados são organizados em tabelas e colunas
-  - Dentro de cada coluna, você pode definir uma descrição dos dados, como número inteiro, campo de dados ou sequência
-  - As tabelas podem ser organizadas dentro de esquemas, que você pode considerar como pastas.
+  - Dentro de cada coluna, O usuario pode definir uma descrição dos dados, como número inteiro, campo de dados ou sequência
+  - As tabelas podem ser organizadas dentro de esquemas, que O usuario pode considerar como pastas.
 
 - `Os benefícios de um data warehouse são:`
 
@@ -72,8 +72,8 @@
 
 - Os nós de computação executam o código compilado e enviam resultados intermediários ao nó líder para agregação final
 
-- Assim como outros serviços da AWS, você paga apenas pelo que usar
-  - Você pode começar por apenas 25 centavos por hora
+- Assim como outros serviços da AWS, O usuario paga apenas pelo que usar
+  - O usuario pode começar por apenas 25 centavos por hora
   - Em escala, o Amazon Redshift oferece armazenamento e processamento por aproximadamente US$1.000 dólares por TB por ano
   - O recurso Amazon Redshift Spectrum permite executar consultas em exabytes de dados diretamente no Amazon S3
 

@@ -21,15 +21,15 @@
 
 - O AWS DMS pode migrar seus dados de e para os bancos de dados comerciais e de código aberto mais usados no mercado
 
-- Ao usar este serviço, você pode migrar do serviço do sistema de gerenciamento de banco de dados (DBMS) para um serviço do DBMS diferente
+- Ao usar este serviço, O usuario pode migrar do serviço do sistema de gerenciamento de banco de dados (DBMS) para um serviço do DBMS diferente
 
-  - Por exemplo, você pode ir de: – Oracle para Oracle – Microsoft SQL Server para Amazon Aurora
+  - Por exemplo, O usuario pode ir de: – Oracle para Oracle – Microsoft SQL Server para Amazon Aurora
 
 - Os aplicativos podem permanecer ativos ou em execução durante a migração
 
 - O serviço oferece suporte a `migrações homogêneas` (como, por exemplo, de Oracle para Oracle) e `migrações heterogêneas` entre plataformas de banco de dados diferentes (como de Oracle para MySQL ou de MySQL para o Amazon Aurora)
 
-- Você também pode usar o AWS DMS para migrar o seu banco de dados local para um banco de dados em execução em uma instância do Amazon Elastic Compute Cloud (Amazon EC2)
+- O usuario também pode usar o AWS DMS para migrar o seu banco de dados local para um banco de dados em execução em uma instância do Amazon Elastic Compute Cloud (Amazon EC2)
 
 - O AWS DMS pode replicar dados quase continuamente e é usado com alta disponibilidade
 
@@ -72,7 +72,7 @@
   3. Formata os dados para consumo pelo armazenamento de dados de destino
   4. Depois, ela carrega os dados no datastore de destino
 
-- Ao usar o AWS DMS, você executa as seguintes ações:
+- Ao usar o AWS DMS, O usuario executa as seguintes ações:
 
   1. Criar um servidor de replicação (instância)
   2. Criar pontos de extremidade de origem e de destino que tenham informações de conexão sobre os datastores
@@ -127,7 +127,7 @@
   1. `Instância de replicação`
 
      - Uma instância do EC2 que executa as tarefas de que o processo de migração precisa
-     - Para começar a usar o AWS DMS, você precisa de uma instância de replicação para executar as tarefas de migração
+     - Para começar a usar o AWS DMS, O usuario precisa de uma instância de replicação para executar as tarefas de migração
      - A instância de replicação é executada em uma Virtual Private Cloud (VPC) e realiza o trabalho de replicação de banco de dados
      - A instância de replicação é altamente disponível por meio da implantação Multi-AZ
      - A instância de replicação principal é replicada de forma síncrona entre as zonas de disponibilidade para uma réplica em espera, que fornece redundância de dados

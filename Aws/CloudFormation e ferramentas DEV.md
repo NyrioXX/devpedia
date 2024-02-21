@@ -1,12 +1,11 @@
-- [**Ferramentas de administração e desenvolvimento**](#ferramentas-de-administração-e-desenvolvimento)
-  - [**_AWS Tools for PowerShell_**](#aws-tools-for-powershell)
-    - [**_Comandos powershell_**](#comandos-powershell)
-  - [**_AWS CloudFormation_**](#aws-cloudformation)
-  - [**_Ops Works_**](#ops-works)
+- [**_AWS Tools for PowerShell_**](#aws-tools-for-powershell)
+  - [**_Comandos powershell_**](#comandos-powershell)
+- [**_AWS CloudFormation_**](#aws-cloudformation)
+  - [**Como funciona**](#como-funciona)
+  - [**Projeto de modelos**](#projeto-de-modelos)
+- [**_Ops Works_**](#ops-works)
 
-# **Ferramentas de administração e desenvolvimento**
-
-## **_AWS Tools for PowerShell_**
+# **_AWS Tools for PowerShell_**
 
 - Permite criar scripts para operações nos recursos da AWS por meio da linha de comando do PowerShell
 
@@ -23,7 +22,7 @@
 - O AWS Tools for PowerShell fornece um conjunto de cmdlets, que são comandos usados em um ambiente do Microsoft Windows PowerShell para executar uma ação
 - O AWS Tools for PowerShell oferece suporte ao mesmo conjunto de serviços e regiões compatíveis com os SDKs da AWS
 
-### **_Comandos powershell_**
+## **_Comandos powershell_**
 
 - `Executar uma instancia EC2`
 
@@ -62,7 +61,7 @@
     PS C:\> Add-IAMUserToGroup -UserName myNewUser -GroupName powerUsers
   ```
 
-## **_AWS CloudFormation_**
+# **_AWS CloudFormation_**
 
 - O AWS CloudFormation é outra ferramenta útil que permite a um usuário criar, atualizar ou excluir implantações completas de infraestrutura da AWS de forma previsível e repetida
 
@@ -76,7 +75,7 @@
 
 - Os recursos na pilha podem incluir instâncias do EC2, instâncias do Amazon Relational Database Service (Amazon RDS), Virtual Private Clouds (VPCs) e muitos outros recursos criados a partir de serviços da AWS
 
-- O AWS CloudFormation também permite que os usuários visualizem como as alterações propostas em uma pilha podem afetar seus recursos em execução, como se as alterações excluirão ou substituirão recursos críticos
+- O AWS CloudFormation também permite que os usuários visualizem como as alterações propostas em uma pilha podem afetar seus recursos em execução, como as alterações excluirão ou substituirão recursos críticos
 
 - `O AWS CloudFormation só faz as alterações na pilha depois que o usuário decide executá-las`
 
@@ -93,7 +92,56 @@
 
   - Por exemplo, o usuario pode escrever uma lógica de provisionamento personalizada para tarefas, como procurar os IDs mais recentes da imagem de máquina da Amazon (AMI) para que o usuario possa usá-los nas suas pilhas
 
-## **_Ops Works_**
+## **Como funciona**
+
+- Um modelo é uma especificação dos recursos da AWS a serem provisionados
+
+- Uma pilha é uma coleção de recursos da AWS que foram criados a partir de um modelo
+
+- Você pode provisionar (criar) uma pilha várias vezes
+
+- Quando uma pilha é provisionada, os recursos da AWS especificados pelo modelo de pilha são criados
+
+- Todas as cobranças incorridas pelo uso desses serviços começarão a ser geradas quando forem criadas como parte da pilha do AWS CloudFormation
+
+- Quando uma pilha é excluída, os recursos associados a essa pilha são excluídos
+
+- A ordem de exclusão é determinada pelo AWS CloudFormation
+
+- Você não tem controle direto sobre o que e quando é excluído
+
+- Se um erro for encontrado quando você iniciar um modelo do AWS CloudFormation, todos os recursos serão revertidos por padrão
+
+  - Você pode alterar essa opção na linha de comando
+
+- O AWS CloudFormation garante que todos os recursos de pilha sejam criados ou excluídos, conforme apropriado
+
+- Como o AWS CloudFormation trata os recursos da pilha como uma única unidade, eles devem ser criados ou excluídos com êxito para que a pilha seja criada ou excluída
+
+- Se um recurso não puder ser criado, o AWS CloudFormation reverterá a pilha e excluirá automaticamente todos os recursos criados
+
+- Se um recurso não pode ser excluído, todos os recursos restantes são mantidos até que a pilha possa ser excluída com êxito
+
+- Para preservar um volume do Amazon Elastic Block Store (Amazon EBS), defina seu atributo **DeleteOnTermination** como **Falso**
+
+- Para preservar um recurso, defina o atributo **DeletionPolicy** como **Reter**
+
+- Alguns recursos podem não ser excluídos quando uma pilha é excluída, como um bucket do S3
+  - Opcionalmente, você também pode habilitar a proteção contra encerramento em uma pilha
+
+![modelo](./Arquivos/Estrutura%20de%20modelo%20cloudformation.png)
+
+## **Projeto de modelos**
+
+- O AWS CloudFormation Designer é uma ferramenta visual que permite criar e modificar modelos do AWS CloudFormation usando uma interface de arrastar e soltar
+
+- Você pode facilmente adicionar, modificar ou remover recursos e o JSON subjacente será alterado de acordo
+
+- Se você modificar um modelo que seja associado a uma pilha em execução, você poderá alterar a pilha de modo que ela fique de acordo com o modelo
+
+- Ferramentas de terceiros também podem fornecer soluções para ajudá-lo a projetar modelos do AWS CloudFormation
+
+# **_Ops Works_**
 
 - O AWS OpsWorks é um serviço de gerenciamento de configuração que fornece instâncias gerenciadas do Chef e do Puppet
 

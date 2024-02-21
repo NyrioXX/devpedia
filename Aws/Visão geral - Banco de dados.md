@@ -12,7 +12,7 @@
 
 # **Desafios de executar um banco de dados relacional no local**
 
-- Alguns dos desafios que você pode enfrentar podem incluir:
+- Alguns dos desafios que O usuario pode enfrentar podem incluir:
   1. Manutenção do servidor e consumo de energia
   2. Instalação de software e patches
   3. Backups de banco de dados e alta disponibilidade Limites de escalabilidade
@@ -97,8 +97,8 @@
 
 ## **_Não gerenciados_**
 
-- Você provisiona serviços não gerenciados
-- Você gerencia a escalabilidade, a tolerância a falhas e a disponibilidade
+- O usuario provisiona serviços não gerenciados
+- O usuario gerencia a escalabilidade, a tolerância a falhas e a disponibilidade
 
 ## **_Gerenciados_**
 

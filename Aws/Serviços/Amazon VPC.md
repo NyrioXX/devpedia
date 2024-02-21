@@ -90,10 +90,10 @@ $ aws ec2 create-vpc --cidr-block 10.0.0.0/16
 
 - Essa tabela de rotas padrão tem uma regra que roteia o tráfego local para qualquer lugar dentro do intervalo de endereços IP da VPC
 
-  - Você pode adicionar mais rotas à tabela de rotas padrão
+  - O usuario pode adicionar mais rotas à tabela de rotas padrão
 
-- Quando você cria uma sub-rede, ela é automaticamente associada à tabela de rotas padrão da VPC
-  - Se você não quiser usar essa tabela de rotas, em vez disso, poderá criar uma tabela de rotas personalizada e associá-la à sub-rede
+- Quando O usuario cria uma sub-rede, ela é automaticamente associada à tabela de rotas padrão da VPC
+  - Se O usuario não quiser usar essa tabela de rotas, em vez disso, poderá criar uma tabela de rotas personalizada e associá-la à sub-rede
 
 # **Interface de rede elastica(NIC)**
 
@@ -109,19 +109,19 @@ $ aws ec2 create-vpc --cidr-block 10.0.0.0/16
 
   - Não é possível desanexar uma interface de rede primária de uma instância
 
-- Você pode criar e anexar NICs adicionais a uma instância
+- O usuario pode criar e anexar NICs adicionais a uma instância
 
-  - O número de NICs que você pode anexar varia de acordo com o tipo de instância
+  - O número de NICs que O usuario pode anexar varia de acordo com o tipo de instância
 
   - Uma NIC adicional pode ser anexada a uma instância, desanexada dessa instância e anexada a outra instância
 
   - Os atributos da NIC o seguem quando eles são anexados ou desconectados das instâncias
 
-  - Quando você move uma NIC de uma instância para outra, o tráfego de rede é redirecionado para a nova instância.
+  - Quando O usuario move uma NIC de uma instância para outra, o tráfego de rede é redirecionado para a nova instância.
 
 # **VPC Padrão**
 
-- Quando você cria uma conta da AWS, a AWS cria automaticamente uma VPC padrão para você com um bloco CIDR de 172.31.0.0/16
+- Quando O usuario cria uma conta da AWS, a AWS cria automaticamente uma VPC padrão para O usuario com um bloco CIDR de 172.31.0.0/16
 
 - Essa VPC fornece até 65.536 endereços IPv4 privados no intervalo 172.31.0.0—172.31.255.255
 
@@ -137,13 +137,13 @@ $ aws ec2 create-vpc --cidr-block 10.0.0.0/16
 
 - Um servidor DNS (Domain Name System) é usado para resolver um nome de host DNS (como www.example.com) para seu endereço IP correspondente (como 192.0.2.1)
 
-- Quando você cria uma VPC, a AWS atribui automaticamente um servidor DNS (fornecido pela Amazon) a ela para resolver nomes de host na VPC
+- Quando O usuario cria uma VPC, a AWS atribui automaticamente um servidor DNS (fornecido pela Amazon) a ela para resolver nomes de host na VPC
 
   - A partir de dezembro de 2018, esse servidor DNS passa a ser chamado de resolvedor do Amazon Route 53
   - Por padrão, o resolvedor responde diretamente a consultas de DNS para nomes de domínio dentro da VPC
   - Ele realiza pesquisas recursivas em servidores de nomes públicos para todos os outros nomes de domínio
 
-- Se você quiser usar um servidor DNS diferente para uma VPC, as opções disponíveis são:
+- Se O usuario quiser usar um servidor DNS diferente para uma VPC, as opções disponíveis são:
 
   1.  Usar o seu próprio servidor DNS
 
@@ -157,7 +157,7 @@ $ aws ec2 create-vpc --cidr-block 10.0.0.0/16
             - Um caso de uso comum para criar um DNS de zona hospedada privada é chamado de DNS com omissão de rotas
             - Um DNS de omissão de rotas emparelha um DNS de zona hospedada privada com um DNS de zona hospedada pública
             - Com essa implementação, um determinado nome de host DNS resolve de forma diferente, dependendo se a pesquisa vem de dentro ou de fora da VPC
-            - Se uma pesquisa for iniciada de dentro da VPC, o nome do host DNS resolverá para um endereço IP especificado. No entanto, se a pesquisa for originada fora da VPC, o mesmo nome de host DNS será resolvido para um endereço IP diferente. Um exemplo de cenário para usar um DNS com omissão de rotas é quando você deseja manter uma versão interna e externa do mesmo site. O DNS com omissão de rotas permite que você acesse a versão interna do site usando o mesmo nome de domínio usado para o site público
+            - Se uma pesquisa for iniciada de dentro da VPC, o nome do host DNS resolverá para um endereço IP especificado. No entanto, se a pesquisa for originada fora da VPC, o mesmo nome de host DNS será resolvido para um endereço IP diferente. Um exemplo de cenário para usar um DNS com omissão de rotas é quando O usuario deseja manter uma versão interna e externa do mesmo site. O DNS com omissão de rotas permite que O usuario acesse a versão interna do site usando o mesmo nome de domínio usado para o site público
 
 # **Opções de conectividade**
 
@@ -200,14 +200,14 @@ $ aws ec2 create-vpc --cidr-block 10.0.0.0/16
 
 - Para criar um gateway NAT:
 
-  1. Especifique a sub-rede em que você deseja criá-la e selecione o ID de alocação de um endereço IP elástico para associar a ela
+  1. Especifique a sub-rede em que O usuario deseja criá-la e selecione o ID de alocação de um endereço IP elástico para associar a ela
   2. Atualize as tabelas de rotas das sub-redes privadas para apontar o tráfego da Internet para ela. Isso permite que as instâncias nessas sub-redes se comuniquem com a Internet
 
 # **Emparelhamento de VPC (Peering)**
 
-- Para conectar duas VPCs juntas para trocar tráfego ou dados, você pode criar uma conexão de emparelhamento da VPC
+- Para conectar duas VPCs juntas para trocar tráfego ou dados, O usuario pode criar uma conexão de emparelhamento da VPC
 
-- Uma `conexão de emparelhamento` da VPC é uma conexão de redes entre duas VPCs que permite que você direcione o tráfego entre elas usando endereços IP privados
+- Uma `conexão de emparelhamento` da VPC é uma conexão de redes entre duas VPCs que permite que O usuario direcione o tráfego entre elas usando endereços IP privados
 
 - As VPCs podem estar na mesma região, em regiões diferentes ou até mesmo em contas diferentes da AWS
 
@@ -215,10 +215,10 @@ $ aws ec2 create-vpc --cidr-block 10.0.0.0/16
 
 - A conexão é controlada pelas tabelas de rotas, que fazem referência à conexão de emparelhamento como um destino para as rotas. Isso resulta em uma conexão sem ponto único de falhas para comunicação ou gargalos de largura de banda
 
-  - Um exemplo de uso de emparelhamento da VPC é permitir que outras VPCs acessem recursos que você possui em uma de suas VPCs. Por exemplo, imagine que uma conexão de emparelhamento de VPC é estabelecida entre duas VPCs em diferentes contas da AWS: Conta 1 e Conta 2. A conexão permite que os recursos da Conta 1 se comuniquem com os recursos na Conta 2 e vice-versa
-  - Outro caso de uso para o emparelhamento da VPC é facilitar a transferência de dados. Por exemplo, se você tiver mais de uma conta da AWS, poderá emparelhar as VPCs entre essas contas para criar uma rede de compartilhamento de arquivos
+  - Um exemplo de uso de emparelhamento da VPC é permitir que outras VPCs acessem recursos que O usuario possui em uma de suas VPCs. Por exemplo, imagine que uma conexão de emparelhamento de VPC é estabelecida entre duas VPCs em diferentes contas da AWS: Conta 1 e Conta 2. A conexão permite que os recursos da Conta 1 se comuniquem com os recursos na Conta 2 e vice-versa
+  - Outro caso de uso para o emparelhamento da VPC é facilitar a transferência de dados. Por exemplo, se O usuario tiver mais de uma conta da AWS, poderá emparelhar as VPCs entre essas contas para criar uma rede de compartilhamento de arquivos
 
-- Você pode criar uma conexão de emparelhamento da VPC usando o Console de gerenciamento da AWS
+- O usuario pode criar uma conexão de emparelhamento da VPC usando o Console de gerenciamento da AWS
 
 - O emparelhamento de VPC envolve o estabelecimento de uma conexão bidirecional que ambas as partes devem inicializar e aceitar
 
@@ -239,14 +239,14 @@ $ aws ec2 create-vpc --cidr-block 10.0.0.0/16
      - Essa rota aponta para o intervalo de endereços IP da outra VPC, conhecida como VPC de mesmo nível
      - Essa rota permite o fluxo de tráfego entre as VPCs usando endereços IP privados
 
-  4. Se necessário, você pode atualizar as regras do grupo de segurança associadas a instâncias em cada VPC
+  4. Se necessário, O usuario pode atualizar as regras do grupo de segurança associadas a instâncias em cada VPC
 
      - Essa atualização pode garantir que o tráfego de e para o emparelhamento da VPC não seja restrito
-     - Se ambas as VPCs estiverem na mesma região, você poderá fazer referência a um grupo de segurança comum como a origem ou o destino das regras do grupo de segurança
+     - Se ambas as VPCs estiverem na mesma região, O usuario poderá fazer referência a um grupo de segurança comum como a origem ou o destino das regras do grupo de segurança
 
   5. Opcionalmente, é possivel habilitar a resolução de nome de host DNS para a sua conexão da VPC
 
-  - Suponha que as instâncias em ambos os lados da conexão de emparelhamento da VPC se endereçam usando um nome de host DNS público, que é o comportamento padrão. No entanto, talvez você queira que o nome do host seja resolvido para o endereço IP privado da instância em vez do endereço IP público. Nesse caso, a opção de resolução de nome de host DNS é necessária
+  - Suponha que as instâncias em ambos os lados da conexão de emparelhamento da VPC se endereçam usando um nome de host DNS público, que é o comportamento padrão. No entanto, talvez O usuario queira que o nome do host seja resolvido para o endereço IP privado da instância em vez do endereço IP público. Nesse caso, a opção de resolução de nome de host DNS é necessária
 
 ## **Comando CLI para conexão de emparelhamento**
 
@@ -281,21 +281,21 @@ aws ec2 create-vpc-peering-connection --vpc-id vpc-1a2b3c4d --peer-vpc-id vpc-11
 
 6. `Não é possível resolver endereços IP privados`
 
-   - Se você estiver na VPC A e fizer uma pesquisa de DNS de um endereço privado na VPC B, ela não será resolvida
+   - Se O usuario estiver na VPC A e fizer uma pesquisa de DNS de um endereço privado na VPC B, ela não será resolvida
 
 7. `Nenhuma referência cruzada de grupos de segurança entre regiões`
 
-   - Você não pode azer referência ao grupo de segurança de uma VPC de mesmo nível que esteja em uma região diferente
+   - O usuario não pode azer referência ao grupo de segurança de uma VPC de mesmo nível que esteja em uma região diferente
    - Use o bloco CIDR (Classless Inter-Domain Routing) da VPC de emparelhamento no campo de origem ou de destino da regra do grupo de segurança
 
 # **AWS Direct Connect plus VPN**
 
-- Ao usar o AWS Direct Connect, você pode criar uma conexão física entre o data center e a AWS
+- Ao usar o AWS Direct Connect, O usuario pode criar uma conexão física entre o data center e a AWS
 
 - Essa conexão cria um ponto de extremidade seguro e dedicado entre suas redes internas e sua rede na nuvem
 - Uma extremidade do cabo está conectada ao roteador do seu data center. A outra extremidade está conectada a um roteador do AWS Direct Connect em um local do AWS Direct Connect
 
-- Com essa conexão em vigor, você cria interfaces virtuais para acessar diretamente serviços públicos da AWS ou VPCs
+- Com essa conexão em vigor, O usuario cria interfaces virtuais para acessar diretamente serviços públicos da AWS ou VPCs
 
 - A conexão ignora os provedores de serviços de Internet em seu caminho de rede
 
@@ -303,11 +303,11 @@ aws ec2 create-vpc-peering-connection --vpc-id vpc-1a2b3c4d --peer-vpc-id vpc-11
 
 - Uma interface virtual privada permite o acesso a uma VPC e é anexada a um gateway privado virtual
 
-- Ao combinar uma conexão do AWS Direct Connect com a AWS Site-to-Site VPN, você adiciona a criptografia IPsec à conexão
+- Ao combinar uma conexão do AWS Direct Connect com a AWS Site-to-Site VPN, O usuario adiciona a criptografia IPsec à conexão
 
 # **AWS VPN CloudHub**
 
-- Se você tiver vários requisitos de conexão VPN entre a VPC e o site remoto, considere o uso de um modelo AWS VPN CloudHub para implementá-los de forma conveniente e econômica
+- Se O usuario tiver vários requisitos de conexão VPN entre a VPC e o site remoto, considere o uso de um modelo AWS VPN CloudHub para implementá-los de forma conveniente e econômica
 
 - O AWS VPN CloudHub opera em um modelo simples de hub-and-spoke e pode incluir as conexões do AWS Site-to-Site e do AWS Direct Connect plus VPN
 
@@ -319,7 +319,7 @@ aws ec2 create-vpc-peering-connection --vpc-id vpc-1a2b3c4d --peer-vpc-id vpc-11
 2. Cada gateway do cliente é configurado para anunciar as suas rotas do Border Gateway Patrol (BGP) por meio da sua conexão da AWS Site-to-Site VPN
    - Esses anúncios de roteamento são recebidos e anunciados novamente para cada par do BGP. Agora, cada site pode enviar e receber dados dos outros sites e da VPC.
 
-- Exemplo: a sede corporativa em Nova York tem uma conexão do AWS Direct Connect com a VPC. As filiais, você liga conexões VPN de local para local com a VPC. As filiais em Los Angeles e Miami podem enviar e receber dados entre si e com a sede corporativa, sempre usando o AWS VPN CloudHub. Todos os sites estão usando o AWS VPN CloudHub
+- Exemplo: a sede corporativa em Nova York tem uma conexão do AWS Direct Connect com a VPC. As filiais, O usuario liga conexões VPN de local para local com a VPC. As filiais em Los Angeles e Miami podem enviar e receber dados entre si e com a sede corporativa, sempre usando o AWS VPN CloudHub. Todos os sites estão usando o AWS VPN CloudHub
 
 # **AWS Site-to-site VPN**
 
@@ -336,7 +336,7 @@ aws ec2 create-vpc-peering-connection --vpc-id vpc-1a2b3c4d --peer-vpc-id vpc-11
 
 # **VPC endpoints (Private Link)**
 
-- Um ponto de extremidade de VPC permite que você conecte de maneira privada a VPC aos serviços da AWS compatíveis e aos serviços de ponto de extremidade de VPC desenvolvidos pelo AWS PrivateLink
+- Um ponto de extremidade de VPC permite que O usuario conecte de maneira privada a VPC aos serviços da AWS compatíveis e aos serviços de ponto de extremidade de VPC desenvolvidos pelo AWS PrivateLink
 
 - Esse método não requer um gateway de Internet, dispositivo NAT, conexão VPN ou conexão do AWS Direct Connect
 
@@ -348,21 +348,21 @@ aws ec2 create-vpc-peering-connection --vpc-id vpc-1a2b3c4d --peer-vpc-id vpc-11
 
   1. `Ponto de extremidade da interface`
 
-     - Um ponto de extremidade da interface é um componente virtual que permite que você se conecte a um serviço exposto por meio do AWS PrivateLink
+     - Um ponto de extremidade da interface é um componente virtual que permite que O usuario se conecte a um serviço exposto por meio do AWS PrivateLink
      - De forma específica, é uma interface de rede elástica, que é uma interface de rede virtual (NIC) que pode ser anexada a uma instância do Amazon EC2
      - Esse cartão virtual possui um endereço IP privado que serve como ponto de registro para o tráfego destinado ao serviço de destino
      - Muitos serviços da AWS podem ser alimentados pelo AWS Private Link
-     - Você também pode criar seu próprio aplicativo e configurá-lo como um serviço desenvolvido pelo AWS PrivateLink. Esse tipo de serviço é conhecido como um serviço de ponto de extremidade de VPN
+     - O usuario também pode criar seu próprio aplicativo e configurá-lo como um serviço desenvolvido pelo AWS PrivateLink. Esse tipo de serviço é conhecido como um serviço de ponto de extremidade de VPN
 
   2. `Ponto de extremidade do gateway`
      - Um ponto de extremidade do gateway fornece um mecanismo para acessar diretamente recursos no Amazon S3 e no Amazon DynamoDB sem precisar passar pela Internet
-     - Ele é usado como destino em uma tabela de rotas: de uma rota para o recurso ao qual você está se conectando
+     - Ele é usado como destino em uma tabela de rotas: de uma rota para o recurso ao qual O usuario está se conectando
 
-- O AWS PrivateLink permite que você conecte com segurança VPCs a serviços da AWS compatíveis, serviços de terceiros no AWS Marketplace e aos seus próprios serviços na AWS
+- O AWS PrivateLink permite que O usuario conecte com segurança VPCs a serviços da AWS compatíveis, serviços de terceiros no AWS Marketplace e aos seus próprios serviços na AWS
 
 - O tráfego entre a VPC e o serviço de destino usa endereços IP privados e nunca sai da rede da AWS
 
-- Para acessar um serviço usando o AWS PrivateLink, você cria um ponto de extremidade da interface para ele na VPC do consumidor do serviço
+- Para acessar um serviço usando o AWS PrivateLink, O usuario cria um ponto de extremidade da interface para ele na VPC do consumidor do serviço
 
 - Esse ponto de extremidade cria uma interface de rede (NIC) na sub-rede do consumidor de serviços
 
@@ -374,30 +374,30 @@ aws ec2 create-vpc-peering-connection --vpc-id vpc-1a2b3c4d --peer-vpc-id vpc-11
 
 # **AWS Transit gateway**
 
-- O AWS Transit Gateway permite que você conecte VPCs e redes locais a um único gateway
+- O AWS Transit Gateway permite que O usuario conecte VPCs e redes locais a um único gateway
 
 - À medida que o número de VPCs no seu ambiente da Nuvem AWS cresce, a necessidade de interconectá-las torna-se cada vez mais desafiadora de implementar
 
-- Com o AWS Transit Gateway, você só precisa criar e gerenciar uma única conexão
+- Com o AWS Transit Gateway, O usuario só precisa criar e gerenciar uma única conexão
 
 - Essa conexão vai do gateway central para cada Amazon VPC, data center local ou escritório remoto em toda a rede
 
 - O AWS Transit Gateway atua como um hub que controla como o tráfego é roteado entre todas as redes conectadas, que agem como spokes
 
   - Este modelo de hub-and-spoke simplifica significativamente o gerenciamento e reduz os custos operacionais porque cada rede só precisa se conectar ao gateway de trânsito e não a todas as outras redes
-  - Você pode conectar qualquer nova VPC ao gateway de trânsito. Em seguida, ela fica automaticamente disponível para todas as outras redes que também estão conectadas ao gateway de trânsito
+  - O usuario pode conectar qualquer nova VPC ao gateway de trânsito. Em seguida, ela fica automaticamente disponível para todas as outras redes que também estão conectadas ao gateway de trânsito
 
 - O AWS Transit Gateway roteia pacotes IPv4 e IPv6 entre anexos usando tabelas de rotas do gateway de trânsito
 
 - As rotas decidem o próximo salto, dependendo do endereço IP de destino do pacote
 
-- Você pode configurar as VPCs e conexões VPN anexadas para propagar suas tabelas de rotas para as tabelas de rotas do gateway
+- O usuario pode configurar as VPCs e conexões VPN anexadas para propagar suas tabelas de rotas para as tabelas de rotas do gateway
 
 - Quando um pacote surge de um anexo, ele é roteado para outro anexo usando a tabela de rotas que corresponde ao endereço IP de destino
 
 - Uma conexão de gateway de trânsito é a origem e o destino dos pacotes
 
-- Você pode anexar uma ou mais VPCs e uma ou mais conexões VPN a um gateway de trânsito
+- O usuario pode anexar uma ou mais VPCs e uma ou mais conexões VPN a um gateway de trânsito
 
 - Se as VPCs e as conexões VPN estiverem na mesma região que o gateway de trânsito
 
@@ -407,28 +407,28 @@ aws ec2 create-vpc-peering-connection --vpc-id vpc-1a2b3c4d --peer-vpc-id vpc-11
 
 1. O nível de segurança com escopo mais amplo está no nível da tabela de rotas.Ter uma sub-rede privada sem caminho direto para a Internet é uma das melhores maneiras de proteger seus recursos de computação internos contra o acesso não autorizado
 
-2. O segundo nível são as listas de controle de acesso à rede (ACLs de rede). As ACLs de rede permitem que você defina o comportamento de segurança padrão para suas sub-redes. A segurança da VPC ou da camada de sub-rede geralmente é controlada pela equipe de segurança de rede
+2. O segundo nível são as listas de controle de acesso à rede (ACLs de rede). As ACLs de rede permitem que O usuario defina o comportamento de segurança padrão para suas sub-redes. A segurança da VPC ou da camada de sub-rede geralmente é controlada pela equipe de segurança de rede
 
 3. No terceiro nível, os security groups podem ser usados para controlar o comportamento no nível de uma instância ou interface de rede elástica. Geralmente administrados por desenvolvedores de aplicações
 
-4. No quarto nível, você pode optar por usar algum tipo de software de detecção baseado em host de terceiros que monitora instâncias individuais do Amazon Elastic Compute Cloud (Amazon EC2) em busca de ameaças específicas (como invasão de malware, bugs conhecidos do sistema operacional e auditoria de segurança)
+4. No quarto nível, O usuario pode optar por usar algum tipo de software de detecção baseado em host de terceiros que monitora instâncias individuais do Amazon Elastic Compute Cloud (Amazon EC2) em busca de ameaças específicas (como invasão de malware, bugs conhecidos do sistema operacional e auditoria de segurança)
 
 ## **Host Bastion**
 
 - Um host bastion serve como um ponto de partida da Internet pública para as instâncias do Amazon Elastic Compute Cloud (Amazon EC2) e outros recursos em uma sub-rede privada
 
-- Ao usar um bastion host, você pode acessar recursos privados publicamente por meio da Internet de uma forma que ainda minimiza a superfície de ataque da sua sub-rede privada
+- Ao usar um bastion host, O usuario pode acessar recursos privados publicamente por meio da Internet de uma forma que ainda minimiza a superfície de ataque da sua sub-rede privada
 
 - Os usuários devem ter chaves válidas para o bastion host e instâncias privadas
 
-  - A AWS recomenda enfaticamente que você use diferentes pares de chaves públicas/privadas para o host bastion e para os recursos na sub-rede privada
+  - A AWS recomenda enfaticamente que O usuario use diferentes pares de chaves públicas/privadas para o host bastion e para os recursos na sub-rede privada
   - As chaves para os recursos de sub-rede privada não devem ser armazenadas no host bastion, porque qualquer usuário não autorizado que acessar seu host bastion teria acesso aos recursos na sua sub-rede privada
 
 - Para instâncias do Linux, a maioria dos clientes do Secure Shell (SSH) oferece suporte ao que é conhecido como encaminhamento de agente
 
   - Esse recurso permite que seu programa SSH local, como PuTTY, passe sua chave privada do cliente por meio da conexão SSH com o host bastion. Em seguida, ele pode passá-lo para a conexão SSH com seus recursos de rede privada
 
-- Para instâncias do Microsoft Windows, você pode usar o console do Amazon EC2 para gerar uma senha de login usando a chave privada. Em seguida, use o programa do cliente de área de trabalho remota (RDP) para fazer login na instância privada com a senha gerada
+- Para instâncias do Microsoft Windows, O usuario pode usar o console do Amazon EC2 para gerar uma senha de login usando a chave privada. Em seguida, use o programa do cliente de área de trabalho remota (RDP) para fazer login na instância privada com a senha gerada
 
 # **Solução de problemas de rede mais comuns**
 
@@ -446,7 +446,7 @@ aws ec2 create-vpc-peering-connection --vpc-id vpc-1a2b3c4d --peer-vpc-id vpc-11
 
 ## **Problemas ao conectar com o EC2 pela internet**
 
-- Verifique se o endereço IP público ou o nome DNS (Sistema de Nomes de Domínio) que você está usando está correto
+- Verifique se o endereço IP público ou o nome DNS (Sistema de Nomes de Domínio) que O usuario está usando está correto
 
 - Verifique se a instância tem um endereço IP público ou um endereço IP elástico
 

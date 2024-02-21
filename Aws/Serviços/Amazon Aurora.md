@@ -29,17 +29,17 @@
 
 - O Aurora é simples de configurar e usa consultas de linguagem de consulta estruturada (SQL). Ele é compatível com o MySQL v5.6 e usa o mecanismo de armazenamento InnoDB
 
-- O Aurora é um serviço de pagamento conforme o uso, o que garante que você pague apenas pelos serviços e recursos utilizados. Ele é um serviço gerenciado que funciona com recursos como AWS Database Migration Service (AWS DMS) e AWS Schema Conversion Tool. Essas ferramentas podem ajudar você a mover seu conjunto de dados para o Aurora
+- O Aurora é um serviço de pagamento conforme o uso, o que garante que O usuario pague apenas pelos serviços e recursos utilizados. Ele é um serviço gerenciado que funciona com recursos como AWS Database Migration Service (AWS DMS) e AWS Schema Conversion Tool. Essas ferramentas podem ajudar O usuario a mover seu conjunto de dados para o Aurora
 
 - O Aurora também é tolerante a falhas e foi projetado para fornecer armazenamento de autorrecuperação criado para a nuvem
 
   - Esse armazenamento replica seis cópias de seus dados em três Zonas de Disponibilidade e, ao mesmo tempo, faz backup dos dados para o Amazon S3 quase continuamente
 
-- Você pode optar por usar o Amazon Aurora em vez de (por exemplo) o SQL com o Amazon RDS devido à alta disponibilidade e ao design resiliente do Aurora
+- O usuario pode optar por usar o Amazon Aurora em vez de (por exemplo) o SQL com o Amazon RDS devido à alta disponibilidade e ao design resiliente do Aurora
 
 # **Volumes Cluster do Aurora**
 
-- Ao criar uma instância do Amazon Aurora, você cria um cluster de banco de dados (DB)
+- Ao criar uma instância do Amazon Aurora, O usuario cria um cluster de banco de dados (DB)
 
 - Um cluster de banco de dados do Aurora consiste em uma ou mais instâncias do banco de dados e um volume de cluster que gerencia os dados para essas instâncias
 

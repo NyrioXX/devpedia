@@ -8,13 +8,13 @@
 
 - O Storage Gateway é um serviço de armazenamento híbrido que permite que seus aplicativos locais usem o armazenamento na nuvem da AWS
 
-- Você pode usar o Storage Gateway para backup e arquivamento, recuperação de desastres (DR), processamento de dados na nuvem, armazenamento em camadas e migração
+- O usuario pode usar o Storage Gateway para backup e arquivamento, recuperação de desastres (DR), processamento de dados na nuvem, armazenamento em camadas e migração
 
-- O Storage Gateway fornece um conjunto padrão de protocolos de armazenamento, como Internet Small Computer Systems Interface (iSCSI), Server Message Block (SMB) e Network File System (NFS). Esses protocolos permitem que você use o armazenamento da AWS sem reescrever seus aplicativos existentes
+- O Storage Gateway fornece um conjunto padrão de protocolos de armazenamento, como Internet Small Computer Systems Interface (iSCSI), Server Message Block (SMB) e Network File System (NFS). Esses protocolos permitem que O usuario use o armazenamento da AWS sem reescrever seus aplicativos existentes
 
 - O Storage Gateway pode preencher a lacuna entre a infraestrutura local e os serviços na nuvem de um aplicativo
 
-  - Por exemplo, suponha que um aplicativo precise permanecer no local por motivos de desempenho ou conformidade, ou pode ser muito complexo migrar totalmente para a nuvem. Nesse caso, você pode usar o Storage Gateway como uma ponte entre o aplicativo e a nuvem
+  - Por exemplo, suponha que um aplicativo precise permanecer no local por motivos de desempenho ou conformidade, ou pode ser muito complexo migrar totalmente para a nuvem. Nesse caso, O usuario pode usar o Storage Gateway como uma ponte entre o aplicativo e a nuvem
 
 - Seus aplicativos se conectam ao serviço por meio de uma máquina virtual (VM) ou dispositivo de gateway de hardware usando protocolos de armazenamento padrão, como Network File System (NFS), Server Message Block (SMB) e Internal Small Computer Interface (iSCSI)
 
@@ -53,25 +53,25 @@
 
 - Os dados nesses volumes são copiados como snapshots pontuais do Amazon EBS, que permitem acessar os dados por meio do Amazon Elastic Compute Cloud (Amazon EC2), se necessário
 
-- Ao se conectar com essa interface de bloco, você pode executar o gateway em dois modos diferentes: armazenado em cache ou armazenado
+- Ao se conectar com essa interface de bloco, O usuario pode executar o gateway em dois modos diferentes: armazenado em cache ou armazenado
 
-- No modo armazenado em cache, os seus dados principais são armazenados no Amazon S3 e você mantém os dados acessados com frequência armazenados localmente
+- No modo armazenado em cache, os seus dados principais são armazenados no Amazon S3 e O usuario mantém os dados acessados com frequência armazenados localmente
 
 - Isso resulta em uma economia substancial de custos para o armazenamento principal
 
 - Ele minimiza a necessidade de dimensionar o armazenamento local, mantendo o acesso de baixa latência aos dados acessados com frequência
 
-- No modo armazenado, você armazena todo o conjunto de dados localmente, enquanto realiza backups assíncronos desses dados no Amazon S3. Esse modo fornece backups externos duráveis e baratos que você pode recuperar localmente ou a partir do Amazon EC2
+- No modo armazenado, O usuario armazena todo o conjunto de dados localmente, enquanto realiza backups assíncronos desses dados no Amazon S3. Esse modo fornece backups externos duráveis e baratos que O usuario pode recuperar localmente ou a partir do Amazon EC2
 
 ## **Gateway de fita**
 
 - A interface de fita apresenta o Storage Gateway ao seu aplicativo de backup existente como uma biblioteca de fitas virtuais, que consiste em um trocador de mídia virtual e unidades de fita virtuais
 
-- Você pode continuar a usar os seus aplicativos de backup atuais enquanto faz gravações em um conjunto praticamente ilimitado de fitas virtuais
+- O usuario pode continuar a usar os seus aplicativos de backup atuais enquanto faz gravações em um conjunto praticamente ilimitado de fitas virtuais
 
 - Cada fita virtual é armazenada no Amazon S3
 
-- Quando você não precisar mais de acesso a dados em fitas virtuais, seu aplicativo de backup poderá arquivá-los da biblioteca de fitas virtuais no Amazon S3 Glacier
+- Quando O usuario não precisar mais de acesso a dados em fitas virtuais, seu aplicativo de backup poderá arquivá-los da biblioteca de fitas virtuais no Amazon S3 Glacier
 
 - Esse recurso pode reduzir ainda mais os custos de armazenamento
 

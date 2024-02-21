@@ -24,7 +24,7 @@
 - **Elasticidade dinâmica**
 
   - O Amazon EFS foi criado para escalar elasticamente sob demanda, sem interromper os aplicativos
-  - Os sistemas de arquivos do Amazon EFS crescem e diminuem automaticamente à medida que você adiciona e remove arquivos
+  - Os sistemas de arquivos do Amazon EFS crescem e diminuem automaticamente à medida que O usuario adiciona e remove arquivos
   - Seus aplicativos têm o armazenamento de que precisam, quando precisam
 
 - **Totalmente gerenciado**
@@ -38,19 +38,19 @@
 
 ## **Modo de desempenho**
 
-- Você pode selecionar entre dois modos de desempenho ao criar um sistema de arquivos: uso geral e E/S máxima
+- O usuario pode selecionar entre dois modos de desempenho ao criar um sistema de arquivos: uso geral e E/S máxima
 
 - De `Uso geral` é recomendado para a maioria dos sistemas de arquivos do Amazon EFS
 
 - O uso geral funciona bem para casos de uso sensíveis à latência, como ambientes de serviço da Web, sistemas de gerenciamento de conteúdo, diretórios iniciais e serviço geral de arquivos
 
-- Se você não escolher um modo de desempenho ao criar seu sistema de arquivos, o Amazon EFS selecionará o modo de uso geral para você por padrão
+- Se O usuario não escolher um modo de desempenho ao criar seu sistema de arquivos, o Amazon EFS selecionará o modo de uso geral para O usuario por padrão
 
 - Os sistemas de arquivos no modo `E/S máxima` podem ser dimensionados para níveis mais altos de taxa de transferência agregada e operações por segundo com uma compensação de latências ligeiramente mais altas para operações de arquivos
 
 - Aplicativos e cargas de trabalho altamente paralelizados, como análise de big data e processamento de mídia, podem se beneficiar desse modo
 
-- Observe que você não pode alterar o modo de desempenho de um sistema de arquivos após ele ter sido criado
+- Observe que O usuario não pode alterar o modo de desempenho de um sistema de arquivos após ele ter sido criado
 
 ## **Classe de armazenamento**
 
@@ -66,33 +66,33 @@
 
 - **Modo de taxa de transferência**
 
-  - Você pode escolher entre dois modos de taxa de transferência para o sistema de arquivos: taxa de transferência intermitente e taxa de transferência provisionada
+  - O usuario pode escolher entre dois modos de taxa de transferência para o sistema de arquivos: taxa de transferência intermitente e taxa de transferência provisionada
 
   - **Com a Taxa de transferência de intermitência**, a taxa de transferência no Amazon EFS aumenta à medida que o tamanho do seu sistema de arquivos na classe de armazenamento padrão aumenta
 
   - Essa é a configuração do modo padrão
 
-  - **Com a Taxa de transferência provisionada**, você pode instantaneamente provisionar a taxa de transferência do seu sistema de arquivos (em mebibytes por segundo ou MiB/s), independente da quantidade de dados armazenados
+  - **Com a Taxa de transferência provisionada**, O usuario pode instantaneamente provisionar a taxa de transferência do seu sistema de arquivos (em mebibytes por segundo ou MiB/s), independente da quantidade de dados armazenados
 
-  - Esse modo permite que você cresça além dos limites permitidos pelo modo de Taxa de transferência de intermitência
+  - Esse modo permite que O usuario cresça além dos limites permitidos pelo modo de Taxa de transferência de intermitência
 
 - O usuario pode criar um sistema de arquivos, montar o sistema de arquivos em uma instância do EC2 e, em seguida, ler e gravar dados de e para o sistema de arquivos
 
-- Você pode montar um sistema de arquivos do Amazon EFS na sua VPC por meio do protocolo Network File System versões 4.0 e 4.1 (NFSv4)
+- O usuario pode montar um sistema de arquivos do Amazon EFS na sua VPC por meio do protocolo Network File System versões 4.0 e 4.1 (NFSv4)
 
-- Você pode acessar o sistema de arquivos do Amazon EFS simultaneamente a partir de instâncias do EC2 na sua Amazon VPC, para que os aplicativos que escalam além de uma única conexão possam acessar um sistema de arquivos
+- O usuario pode acessar o sistema de arquivos do Amazon EFS simultaneamente a partir de instâncias do EC2 na sua Amazon VPC, para que os aplicativos que escalam além de uma única conexão possam acessar um sistema de arquivos
 
 - As instâncias do EC2 executadas em várias zonas de disponibilidade dentro da mesma região da AWS podem acessar o sistema de arquivos para que muitos usuários possam acessar e compartilhar uma fonte de dados comum
 
 # **Etapas para configurar um sistema de arquivos do Amazon EFS e torná-lo acessível a uma instância do EC2**
 
 1. Criar o sistema de arquivos do Amazon EFS. Observe que ele possui um escopo no nível da região.
-2. Crie um destino de montagem na Virtual Private Cloud (VPC) da instância. Um destino de montagem fornece um endereço IP para um ponto de extremidade NFSv4 onde você pode montar seu sistema de arquivos.
+2. Crie um destino de montagem na Virtual Private Cloud (VPC) da instância. Um destino de montagem fornece um endereço IP para um ponto de extremidade NFSv4 onde O usuario pode montar seu sistema de arquivos.
 3. Montar o sistema de arquivos no destino de montagem. 4. Conectar a instância do EC2 ao destino de montagem.
 
 # **Etapas de implantação**
 
-1. Crie seus recursos do Amazon EC2 e execute sua instância. (Lembre-se de que antes de iniciar e se conectar a uma instância do EC2, você deve criar um par de chaves, a menos que já tenha um.)
+1. Crie seus recursos do Amazon EC2 e execute sua instância. (Lembre-se de que antes de iniciar e se conectar a uma instância do EC2, O usuario deve criar um par de chaves, a menos que já tenha um.)
 2. Crie um sistema de arquivos do Amazon EFS
 3. Na sub-rede apropriada, crie as montagens de destino
 4. Em seguida, conecte-se à sua instância do EC2 e monte o sistema de arquivos do Amazon EFS
@@ -106,17 +106,17 @@
 
 - **Ponto de acesso**
 
-  - Para acessar o sistema de arquivos, você deve criar destinos de montagem na VPC. Cada destino de montagem tem as seguintes propriedades:
+  - Para acessar o sistema de arquivos, O usuario deve criar destinos de montagem na VPC. Cada destino de montagem tem as seguintes propriedades:
     - O ID do destino de montagem
     - O ID da sub-rede em que ele é criado
     - O ID do sistema de arquivos para o qual ele foi criado
     - Um endereço IP onde o sistema de arquivos pode ser montado
     - O estado do destino de montagem
-  - Você pode usar o endereço IP ou o nome Domain Name System (DNS) no comando de montagem
+  - O usuario pode usar o endereço IP ou o nome Domain Name System (DNS) no comando de montagem
 
 - **Tags**
 
-  - Para ajudar a organizar seus sistemas de arquivos, você pode atribuir seus próprios metadados a cada sistema de arquivos criado
+  - Para ajudar a organizar seus sistemas de arquivos, O usuario pode atribuir seus próprios metadados a cada sistema de arquivos criado
   - Cada tag é um par de chave/valor
   - Pense em destinos de montagem e tags como sub-recursos que existem somente se eles estiverem associados a um sistema de arquivos.
 
@@ -133,7 +133,7 @@
 
 - **Teste e desenvolvimento de aplicativos**
 
-  - O Amazon EFS fornece aos seus ambientes de desenvolvimento um repositório de armazenamento comum. Com um sistema de arquivos do Amazon EFS, você pode compartilhar código e outros arquivos de forma segura e organizada
+  - O Amazon EFS fornece aos seus ambientes de desenvolvimento um repositório de armazenamento comum. Com um sistema de arquivos do Amazon EFS, O usuario pode compartilhar código e outros arquivos de forma segura e organizada
   - O Amazon EFS oferece uma solução escalável e altamente disponível que funciona bem para cargas de trabalho de teste e desenvolvimento
 
 - **Backups de banco de dados**

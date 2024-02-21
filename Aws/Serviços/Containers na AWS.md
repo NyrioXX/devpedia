@@ -230,13 +230,13 @@
 
 - Alguns outros desafios:
 
-- Podem ocorrer problemas de empacotamento do compartimento quando você tem pouco espaço disponível nos hosts em que os contêineres podem ser executados
+- Podem ocorrer problemas de empacotamento do compartimento quando O usuario tem pouco espaço disponível nos hosts em que os contêineres podem ser executados
 
-  - Você precisa escolher a melhor colocação de cada contêiner para maximizar o desempenho do aplicativo
+  - O usuario precisa escolher a melhor colocação de cada contêiner para maximizar o desempenho do aplicativo
 
-- Você também pode executar contêineres que não são mais necessários, muitas vezes chamados de contêineres zumbi
+- O usuario também pode executar contêineres que não são mais necessários, muitas vezes chamados de contêineres zumbi
 
   - Contêiner zumbi é um contêiner do Docker que se recusa a parar quando um comando é emitido
   - Os contêineres normais são encerrados normalmente quando recebem um comando -stop de uma console ou API
 
-- Pode ser que você experimente o problema de ter os contêineres de que precisa, mas que não estão mais em execução; eles são conhecidos como contêineres que desaparecem
+- Pode ser que O usuario experimente o problema de ter os contêineres de que precisa, mas que não estão mais em execução; eles são conhecidos como contêineres que desaparecem

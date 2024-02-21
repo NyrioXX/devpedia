@@ -7,7 +7,7 @@
 
 # **Amazon Elastic Block Store (Amazon EBS)**
 
-- A diferença entre o armazenamento de bloco e de objeto é que com o armazenamento em bloco, você precisa alterar apenas o bloco que contém o caractere. Com o armazenamento de objetos, todo o arquivo deve ser atualizado
+- A diferença entre o armazenamento de bloco e de objeto é que com o armazenamento em bloco, O usuario precisa alterar apenas o bloco que contém o caractere. Com o armazenamento de objetos, todo o arquivo deve ser atualizado
 
 - A diferença tem um grande impacto na taxa de transferência, latência e custo da sua solução de armazenamento
 
@@ -19,11 +19,11 @@
 
 - Cada volume do EBS é replicado automaticamente na sua Zona de disponibilidade para protegê-lo contra falhas de componentes, oferecendo alta disponibilidade e durabilidade
 
-- Os volumes do EBS oferecem o desempenho consistente e de baixa latência de que você precisa para executar suas cargas de trabalho
+- Os volumes do EBS oferecem o desempenho consistente e de baixa latência de que O usuario precisa para executar suas cargas de trabalho
 
-- Com o Amazon EBS, você pode escalar seu uso para cima ou para baixo em minutos — tudo isso pagando apenas pelos recursos provisionados
+- Com o Amazon EBS, O usuario pode escalar seu uso para cima ou para baixo em minutos — tudo isso pagando apenas pelos recursos provisionados
 
-- Você pode usar o Amazon EBS para criar volumes de armazenamento individuais e anexá-los a uma instância do EC2
+- O usuario pode usar o Amazon EBS para criar volumes de armazenamento individuais e anexá-los a uma instância do EC2
 
 - O Amazon EBS oferece armazenamento em nível de bloco com volumes replicados automaticamente dentro de sua zona de disponibilidade
 
@@ -42,38 +42,38 @@
   - Hosts de banco de dados
   - Aplicações empresariais
 
-- Para fornecer um nível ainda maior de durabilidade de dados, você pode usar o Amazon EBS para criar snapshots pontuais dos seus volumes
+- Para fornecer um nível ainda maior de durabilidade de dados, O usuario pode usar o Amazon EBS para criar snapshots pontuais dos seus volumes
 
-- Você também pode recriar um novo volume a partir de um instantâneo a qualquer momento
+- O usuario também pode recriar um novo volume a partir de um instantâneo a qualquer momento
 
 - Compartilhe snapshots ou até copie snapshots para diferentes regiões da AWS para uma proteção ainda maior da recuperação de desastres (DR)
 
-- Você pode, por exemplo, criptografar e compartilhar seus instantâneos da Virgínia, EUA para Tóquio, Japão
+- O usuario pode, por exemplo, criptografar e compartilhar seus instantâneos da Virgínia, EUA para Tóquio, Japão
 
-- Você também pode obter volumes criptografados do Amazon EBS sem custo adicional
+- O usuario também pode obter volumes criptografados do Amazon EBS sem custo adicional
 
   - A criptografia ocorre no lado do Amazon EC2
   - Os dados que se movem entre a instância do EC2 e o volume do EBS dentro dos data centers da AWS são criptografados em trânsito
 
 - Os volumes do EBS podem aumentar a capacidade e mudar para diferentes tipos
 
-- Você pode mudar de uma unidade de disco rígido (HDD) para uma unidade de estado sólido (SSD)
+- O usuario pode mudar de uma unidade de disco rígido (HDD) para uma unidade de estado sólido (SSD)
 
-- Você também pode aumentar de um volume de 50 GB para um volume de 16 TB
+- O usuario também pode aumentar de um volume de 50 GB para um volume de 16 TB
 
-  - Por exemplo, você pode fazer essa operação de redimensionamento dinamicamente, sem interromper as instâncias
+  - Por exemplo, O usuario pode fazer essa operação de redimensionamento dinamicamente, sem interromper as instâncias
 
 - O Amazon EBS oferece a capacidade de fazer backup de snapshots de seus dados no Amazon S3 para recuperação durável
 
-- Se você escolher snapshots do Amazon EBS, o custo adicional será calculado por GB por mês de dados armazenados
+- Se O usuario escolher snapshots do Amazon EBS, o custo adicional será calculado por GB por mês de dados armazenados
 
 # **Tipos de volume do EBS**
 
-- Ao estimar o custo do Amazon EBS, você deve considerar o seguinte:
+- Ao estimar o custo do Amazon EBS, O usuario deve considerar o seguinte:
 
 - `Volumes`
 
-  - O armazenamento de volume para todos os tipos de volume do EBS é cobrado pelo valor provisionado em GB por mês, até você liberar o armazenamento
+  - O armazenamento de volume para todos os tipos de volume do EBS é cobrado pelo valor provisionado em GB por mês, até O usuario liberar o armazenamento
 
 - `IOPS`
 
@@ -83,7 +83,7 @@
 
   - Para o Amazon EBS, a E/S está incluída no preço dos volumes de uso geral (SSD), enquanto para volumes magnéticos do Amazon EBS, a E/S é cobrada pelo número de solicitações feitas ao seu volume
 
-  - Com os volumes de IOPS provisionadas (SSD), você também é cobrado pelo valor provisionado em IOPS (multiplicado pela porcentagem de dias provisionados para o mês)
+  - Com os volumes de IOPS provisionadas (SSD), O usuario também é cobrado pelo valor provisionado em IOPS (multiplicado pela porcentagem de dias provisionados para o mês)
 
 - O Amazon EBS fornece tipos de volume que diferem em características de performance e preços para adaptar a performance e o custo de armazenamento às necessidades de diferentes aplicações
 
@@ -114,9 +114,9 @@
 
 # **Snapshots**
 
-- Você pode fazer backup dos dados em um volume do EBS em um snapshot
+- O usuario pode fazer backup dos dados em um volume do EBS em um snapshot
 
-- É crucial tirar snapshots de todos os dados que você possa ter em desenvolvimento, teste ou produção regularmente
+- É crucial tirar snapshots de todos os dados que O usuario possa ter em desenvolvimento, teste ou produção regularmente
 
 - O Amazon EBS oferece a capacidade de tirar snapshots de seus volumes para que eles possam ser restaurados caso o hardware subjacente que oferece suporte ao seu volume falhe ou o volume seja excluído acidentalmente
 
@@ -128,7 +128,7 @@
 
 - Todos os snapshots subsequentes capturarão apenas os deltas (diferenças) em comparação com o snapshot anterior
 
-- Se você adicionar dados ao volume do EBS depois de copiar o primeiro snapshot e criar um segundo snapshot, os novos blocos serão copiados para o Amazon S3
+- Se O usuario adicionar dados ao volume do EBS depois de copiar o primeiro snapshot e criar um segundo snapshot, os novos blocos serão copiados para o Amazon S3
 
 - O segundo snapshot consistirá em uma receita para restaurar o volume
 
@@ -138,21 +138,21 @@
 
 - Somente as alterações de snapshots anteriores devem ser copiadas para o Amazon S3
 
-- Se você atualizar blocos no volume do EBS e criar um terceiro snapshot, somente os blocos alterados serão copiados para o Amazon S3
+- Se O usuario atualizar blocos no volume do EBS e criar um terceiro snapshot, somente os blocos alterados serão copiados para o Amazon S3
 
 - A nova receita para restaurar consistirá nos blocos atualizados e nos blocos restantes que ainda estiverem presentes no volume do EBS
 
 ## **Ciclo de vida do snapshot**
 
-- Você pode usar o Amazon Data Lifecycle Manager (Amazon DLM) para automatizar a criação, a retenção e a exclusão de snapshots tirados para fazer backup dos volumes do EBS
+- O usuario pode usar o Amazon Data Lifecycle Manager (Amazon DLM) para automatizar a criação, a retenção e a exclusão de snapshots tirados para fazer backup dos volumes do EBS
 
-- A automação do gerenciamento de snapshots ajuda você a:
+- A automação do gerenciamento de snapshots ajuda O usuario a:
 
 1. Proteger dados valiosos impondo uma programação regular de backup
 2. Reter os backups conforme exigido por auditores ou pelas regras de conformidade interna
 3. Reduzir os custos de armazenamento ao excluir backup obsoletos
 
-- Para usar o Amazon DLM, marque o seu volume do EBS e crie uma política de ciclo de vida que defina o comportamento de backup e retenção que você deseja aplicar a ele
+- Para usar o Amazon DLM, marque o seu volume do EBS e crie uma política de ciclo de vida que defina o comportamento de backup e retenção que O usuario deseja aplicar a ele
 
 - Uma política de ciclo de vida consiste nas seguintes configurações principais:
 
