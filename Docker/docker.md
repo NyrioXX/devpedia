@@ -8,12 +8,16 @@ docker --help # lista os comandos do docker
 docker ps # listar containers rodando
 ```
 
-```bash
-docker ps -a # lista todos os containers incluindo os que pararam
-```
+- **Listar todos os containers incluindo os que parametros**
 
 ```bash
-docker build -t # constroi a imagem (tem que estar na mesma pagina que o dockerfile); O -t significa tag, o docker gera uma tag ajuda no versionamento
+docker ps -a
+```
+
+- **Construir uma imagem (tem que estar na mesma pagina que o dockerfile); O -t significa tag, o docker gera uma tag ajuda no versionamento**
+
+```bash
+docker build -t
 ```
 
 ```bash
@@ -28,8 +32,26 @@ docker exec -ti 'id_do_container' (obtido com o comando docker ps) # executa o c
 'comando' -d # mantem o container rodando em background (libera o terminal)
 ```
 
+- **Encerrar container**
+
+```bash
+docker stop 'nome_do_container'
+```
+
 ```bash
 docker inspect # inspeciona qualquer coisa e traz um json com informações
+```
+
+- **Ver logs de container**
+
+```bash
+docker logs 'nome_do_container'
+```
+
+- **Ver status do container**
+
+```bash
+docker stats 'nome_do_container'
 ```
 
 # Volumes

@@ -57,7 +57,7 @@ const mySymbol: symbol = Symbol("description");
 
 # Designação de Tipos
 
-O usuario pode definir seus próprios tipos usando a palavra-chave `type` ou `interface`.
+o usuario pode definir seus próprios tipos usando a palavra-chave `type` ou `interface`.
 Os tipos de são:
 string = "Alice";
 number = 25;
@@ -193,7 +193,7 @@ let funcaoAnonima = function (x: number, y: number): number {
 
 # Construtor de Função
 
-O usuario pode usar a função construtora para criar funções dinamicamente:
+o usuario pode usar a função construtora para criar funções dinamicamente:
 
 ```typescript
 let minhaFuncao = new Function("x", "y", "return x + y");
