@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <!--Esse cabeçalho com os links é obrigatorio-->
+  <head>
+    <title>Bootstrap 5</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="h1" style="border: 1px solid">
+          <h1>Titulo1</h1>
+          <p>Paragrafo1</p>
+        </div>
+        <!--As class container, row h1, display são presets do bootstrap-->
+        <div class="display-5" style="border: 1px solid">
+          <h1>Titulo2</h1>
+          <p>Paragrafo2</p>
+        </div>
+        <div class="display-7" style="border: 1px solid">
+          <h1>Titulo3</h1>
+          <p>Paragrafo3</p>
+        </div>
+      </div>
+    </div>
+    <!--O small reduz o tamanho comparado ao anterior da tag-->
+    <h1>Titulo normal <small>Titulo menor</small></h1>
+    <!--Tabelas são customizadas pelo class table. Importante especificar thead e tbody-->
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Idade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Felipe</td>
+          <td>29</td>
+        </tr>
+        <tr>
+          <td>Sergio</td>
+          <td>28</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

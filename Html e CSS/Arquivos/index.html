@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exibição de Imagem com Lista</title>
+    <script>
+      function buscarCep() {
+        let cep = prompt("Digite o cep que deseja buscar");
+        const url = "https://brasilapi.com.br/api/cep/v2/" + cep;
+
+        fetch(url)
+          .then(function (resposta) {
+            resposta.json().then(function (dados) {
+              console.log(dados);
+            });
+          })
+          .catch(error);
+        {
+          console.log(error.message);
+        }
+      }
+      buscarCep();
+    </script>
+  </head>
+  <body></body>
+</html>

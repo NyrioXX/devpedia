@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+  <head>
+    <title>Aula de Css</title>
+    <link rel="stylesheet" href="estilo.css"> <!--Estilo em arquivo externo-->
+    <!--Classes e propriedades são definidas dentro do comando style-->
+    <style>
+    #propriedade{background-color: purple;}
+    .classe{color:green}
+    table,th,td {border: 1px solid black;align-self: center;text-align: center;}
+    h1 {color: greenyellow;text-align: center;}
+    p {color: red; border: solid tomato;text-align: center;}
+    </style> <!--Estilo definido direto no cabeçalho-->
+    
+  </head>
+
+  <body>
+    <div>
+    <h1 style="border: 2px  blue; text-align: left;color: green;background-color: yellow;">Titulo 1</h1><!--Alteração aplicada diretamente, essas alterações sobrepoem as definidas no header-->
+    <p>Paragrafo 1</p>
+    <h1 id="propriedade">Titulo 2</h1><!--Alteração definido por propriedade-->
+    <p style="font-weight: bold;">Paragrafo 2</p>
+    </div>
+    <table style="text-align: center;margin: auto;">
+        <tr>
+            <th>Nome</th>
+            <th>Apelido</th>
+        </tr>
+        <tr>
+            <td>Shaolin</td>
+            <td>Matador de porco</td>
+        </tr>
+    </table>
+    <p class="classe">Esse paragrafo é estilizado por uma classe</p><!--Alteração feita atraves de class-->
+    </body>
+  </body>
+</html>
